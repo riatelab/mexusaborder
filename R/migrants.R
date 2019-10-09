@@ -31,7 +31,7 @@ countries <- st_transform(countries,crs = prj)
 # https://data.world/carlvlewis/border-fence-boundaries-u-s-mexico
 # https://www.revealnews.org/article/the-wall-building-a-continuous-u-s-mexico-barrier-would-be-a-tall-order/
 
-fences <- geojson_sf("../data/data.world/border-fence.geojson")
+fences <- geojson_sf("data/data.world/border-fence.geojson")
 plot(st_geometry(fences))
 fences <- st_transform(fences,crs = prj) 
 
@@ -55,7 +55,7 @@ ocean <- st_transform(ocean,crs = prj)
 # ************* DATA *************
 # ********************************
 
-iom <- read.csv("../data/iom/MissingMigrants-Global-2019-09-04T11-59-55.csv", stringsAsFactors = F)
+iom <- read.csv("data/iom/MissingMigrants-Global-2019-09-04T11-59-55.csv", stringsAsFactors = F)
 iom <- iom[(iom$Location.Coordinates)!="",]
 
 latlon <- matrix(as.numeric(unlist(strsplit(iom$Location.Coordinates, split = ", "))), ncol = 2, byrow = T)
@@ -157,6 +157,24 @@ plot(st_geometry(fences), col= "#3d3c3c", lwd = 3 ,add= T)
 
 # --- MAP 5 : Grid ----
 
+library(osmdata)
+
+bbox <- st_transform(iom_sf, crs = 4326)
+q0 <- opq(bbox = c(st_bbox(bbox)[1], st_bbox(bbox)[2], st_bbox(bbox)[3], st_bbox(bbox)[4])) 
+
+q1 <- add_osm_feature(opq = q0, key = 'man_made', value = "surveillance")
+
+
+iom_sf
+
+bbox <- st_as_sfc(ylim = st_bbox(iom_sf)[c(2,4)], xlim = st_bbox(iom_sf)[c(1,3)],
+                          crs = st_crs(4326))
+
+
+plot(st_geometry(ocean), col= "#b8d5e3", border = NA, ylim = st_bbox(iom_sf)[c(2,4)], xlim = st_bbox(iom_sf)[c(1,3)])
+
+plot(st_geometry(countries), add = TRUE)
+
 # --- MAP 5 : Animated map ----
 
 # --- MAP 6 : 3D ? ----
@@ -164,5 +182,28 @@ plot(st_geometry(fences), col= "#3d3c3c", lwd = 3 ,add= T)
 # --- MAP 7 : Interactive ? ----
 
 
+#---- MAP 8 : Discontinuities
+subregions <- st_read(dsn = "data/regions/mex_us_can_admin_12.shp",options = "ENCODING=UTF-8",
+               stringsAsFactors = FALSE)
+
+subregions <- st_transform(subregions,crs = prj) 
+
+pib <- read.csv("data/regions/PIB.csv", sep = "\t", encoding = "UTF-8", dec = ",",
+                stringsAsFactors=FALSE)
 
 
+subregions <- merge (x = subregions, y = pib, 
+                     by.x = "ID_ADMIN",
+                     by.y = "ID_ADMIN",
+                     all.x = TRUE)
+
+
+lay("USA-Mexico border")
+
+breaks <- c(min(subregions$PIB100_2013, na.rm = T),75,90,100,110,125,150,200,300, max(subregions$PIB100_2013, na.rm = T))
+
+choroLayer(x = subregions, var = "PIB100_2013",
+           breaks = breaks,
+           col = carto.pal(pal1 = "blue.pal", n1 = 3,
+                           pal2 = "red.pal", n2 = 6),
+           border = "grey40")

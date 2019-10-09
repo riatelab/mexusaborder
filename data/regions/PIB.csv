@@ -1,0 +1,2757 @@
+ID_ADMIN	ISO3	ISO2	LEVEL	Name	PIB100_1993	PIB100_2000	PIB100_2007	PIB100_2013							
+0	AAA	AA	0	Monde	100	100	100	100							
+5	AND	AD	0	Andorre			 	268,1							
+202	ARE	AE	0	�mirats arabes unis			698,5	431,5							
+1	AFG	AF	0	Afghanistan			10,6	13,7							
+7	ATG	AG	0	Antigua-et-Barbuda	200,9	185,8	203,2	142,9							
+900	AIA	AI	0	Anguilla			101	101							
+917	AKT	AK	0	Sovereign base Area (Akrotiri and Dhekelia)											
+2	ALB	AL	0	Albanie	37,8	56,2	68	69,4							
+9	ARM	AM	0	Arm�nie	20,1	30,6	59	57							
+6	AGO	AO	0	Angola	19,4	28,2	45,7	48,8							
+8_01	ARG	AR	1	Ciudad de Buenos Aires			682,2	781,5							
+8_02	ARG	AR	1	Buenos Aires			172,2	197,2							
+8_03	ARG	AR	1	Catamarca			100,4	115							
+8_04	ARG	AR	1	Chaco			33,7	38,6							
+8_05	ARG	AR	1	Chubut			257,7	295,2							
+8_06	ARG	AR	1	C�rdoba			167,9	192,4							
+8_07	ARG	AR	1	Corrientes			66,9	76,6							
+8_08	ARG	AR	1	Entre R�os			94,9	108,8							
+8_09	ARG	AR	1	Formosa			48,1	55,1							
+8_10	ARG	AR	1	Jujuy			62,7	71,9							
+8_11	ARG	AR	1	La Pampa			100	114,6							
+8_12	ARG	AR	1	La Rioja			69,5	79,7							
+8_13	ARG	AR	1	Mendoza			179,8	205,9							
+8_14	ARG	AR	1	Misiones			62,7	71,8							
+8_15	ARG	AR	1	Neuqu�n			439	502,9							
+8_16	ARG	AR	1	R�o Negro			137,8	157,9							
+8_17	ARG	AR	1	Salta			70,5	80,8							
+8_18	ARG	AR	1	San Juan			94,3	108							
+8_19	ARG	AR	1	San Luis			93,2	106,8							
+8_20	ARG	AR	1	Santa Cruz			509,6	583,7							
+8_21	ARG	AR	1	Santa Fe			178,3	204,2							
+8_22	ARG	AR	1	Santiago del Estero			50,2	57,5							
+8_23	ARG	AR	1	Tierra del Fuego, Ant�rtida e Islas del Atl�ntico Sur			345,6	395,9							
+8_24	ARG	AR	1	Tucum�n			65,8	75,4							
+4	ASM	AS	0	Samoa am�ricaines			69,2	79,3							
+12_01	AUT	AT	1	Burgenland (AT)		250,7	225,7	211,1							
+12_02	AUT	AT	1	Nieder�sterreich		310,1	279	258,6							
+12_03	AUT	AT	1	Wien		520,2	440,1	401,1							
+12_04	AUT	AT	1	K�rnten		313	288,3	267,4							
+12_05	AUT	AT	1	Steiermark		320,2	296,5	272,7							
+12_06	AUT	AT	1	Ober�sterreich		365,1	333,4	315,8							
+12_07	AUT	AT	1	Salzburg		421,6	392,9	363,3							
+12_08	AUT	AT	1	Tirol		385,4	353,9	323,7							
+12_09	AUT	AT	1	Vorarlberg		388,3	356	334,3							
+11_01	AUS	AU	1	New South Wales		354,1	298,3	282,2							
+11_0101	AUS	AU	2	Greater Sydney				294,4							
+11_0102	AUS	AU	2	Rest of NSW				260,2							
+11_02	AUS	AU	1	Victoria		331,6	286,1	264,2							
+11_0201	AUS	AU	2	Greater Melbourne				271,9							
+11_0202	AUS	AU	2	Reste of Victoria				240							
+11_03	AUS	AU	1	Queensland		290,6	298,5	281,1							
+11_04	AUS	AU	1	South Australia		288,4	263,2	251,3							
+11_05	AUS	AU	1	Western Australia		344,8	383,9	444							
+11_06	AUS	AU	1	Tasmania		249,1	245,8	213,7							
+11_07	AUS	AU	1	Northern Territory		375,6	355,4	357,8							
+11_08	AUS	AU	1	Australian Capital Territory		402,9	382	388,7							
+11_09	AUS	AU	1	Ashmore and Cartier Islands											
+11_10	AUS	AU	1	Coral Sea Islands											
+11_11	AUS	AU	1	Jervis Bay Territory											
+955	ATA	AV	0	Antarctica											
+10	ABW	AW	0	Aruba				182,3							
+13	AZE	AZ	0	Azerba�djan	57,2	43	91,3	112,8							
+25_01	BIH	BA	1	F�d�ration croato-musulmane		68,8	75,7	73,4							
+25_02	BIH	BA	1	R�publique serbe de Bosnie		49,1	56,7	55,1							
+25_03	BIH	BA	1	District de Brcko											
+17	BRB	BB	0	Barbade	140,5	145,6	126	108,7							
+16_0101	BGD	BD	2	Barguna			12,9	15,4							
+16_0102	BGD	BD	2	Barisal			14,7	17,5							
+16_0103	BGD	BD	2	Bhola			16,5	19,6							
+16_0104	BGD	BD	2	Jhalokati			13,2	15,7							
+16_0105	BGD	BD	2	Patuakhali			18,5	22,1							
+16_0106	BGD	BD	2	Pirojpur			13,9	16,6							
+16_0201	BGD	BD	2	Bandarban			19	22,6							
+16_0202	BGD	BD	2	Brahmanbaria			15,1	18							
+16_0203	BGD	BD	2	Chandpur			13,1	15,6							
+16_0204	BGD	BD	2	Chittagong			28,8	34,3							
+16_0205	BGD	BD	2	Comilla			13,6	16,2							
+16_0206	BGD	BD	2	Cox's Bazar			20,1	24							
+16_0207	BGD	BD	2	Feni			12,9	15,4							
+16_0208	BGD	BD	2	Khagrachhari			15,1	18							
+16_0209	BGD	BD	2	Lakshmipur			15,9	19							
+16_0210	BGD	BD	2	Noakhali			14,3	17							
+16_0211	BGD	BD	2	Rangamati			21,2	25,3							
+16_0301	BGD	BD	2	Dhaka			44,9	53,5							
+16_0302	BGD	BD	2	Faridpur			14,2	17							
+16_0303	BGD	BD	2	Gazipur			35,6	42,4							
+16_0304	BGD	BD	2	Gopalganj			13,8	16,5							
+16_0305	BGD	BD	2	Jamalpur			14,2	16,9							
+16_0306	BGD	BD	2	Kishoreganj			14,3	17							
+16_0307	BGD	BD	2	Madaripur			12,8	15,3							
+16_0308	BGD	BD	2	Manikganj			15,3	18,3							
+16_0309	BGD	BD	2	Munshiganj			14,2	16,9							
+16_0310	BGD	BD	2	Mymensingh			15,8	18,8							
+16_0311	BGD	BD	2	Narayanganj			34	40,5							
+16_0312	BGD	BD	2	Narsindgi			18,7	22,3							
+16_0313	BGD	BD	2	Netrakona			15,8	18,8							
+16_0314	BGD	BD	2	Rajbari			14,5	17,3							
+16_0315	BGD	BD	2	Shariatpur			13,2	15,8							
+16_0316	BGD	BD	2	Sherpur			14,1	16,8							
+16_0317	BGD	BD	2	Tangail			13,6	16,2							
+16_0401	BGD	BD	2	Bagerhat			17,3	20,6							
+16_0402	BGD	BD	2	Chuadanga			17	20,3							
+16_0403	BGD	BD	2	Jessore			19,1	22,7							
+16_0404	BGD	BD	2	Jhenaidah			16,6	19,8							
+16_0405	BGD	BD	2	Khulna			23,7	28,2							
+16_0406	BGD	BD	2	Khustia			16,9	20,2							
+16_0407	BGD	BD	2	Magura			16,2	19,3							
+16_0408	BGD	BD	2	Meherpur			17,4	20,7							
+16_0409	BGD	BD	2	Narail			16,7	19,9							
+16_0410	BGD	BD	2	Satkhira			16,4	19,6							
+16_0501	BGD	BD	2	Bogra			14,9	17,7							
+16_0502	BGD	BD	2	Joypurhat			16,4	19,6							
+16_0503	BGD	BD	2	Naogaon			15,3	18,3							
+16_0504	BGD	BD	2	Natore			17,4	20,8							
+16_0505	BGD	BD	2	Nawabganj			13,7	16,4							
+16_0506	BGD	BD	2	Pabna			18,5	22,1							
+16_0507	BGD	BD	2	Rajshahi			17,7	21,1							
+16_0508	BGD	BD	2	Sirajganj			15,1	17,9							
+16_0601	BGD	BD	2	Dinajpur			16,3	19,4							
+16_0602	BGD	BD	2	Gaibandha			12,7	15,2							
+16_0603	BGD	BD	2	Kurigram			14,1	16,8							
+16_0604	BGD	BD	2	Lalmonhirat			14,5	17,3							
+16_0605	BGD	BD	2	Nilphamari			13,6	16,2							
+16_0606	BGD	BD	2	Panchagarh			15,5	18,5							
+16_0607	BGD	BD	2	Rangpur			15,2	18,1							
+16_0608	BGD	BD	2	Thakurgaon			17,8	21,2							
+16_0701	BGD	BD	2	Habiganj			15,4	18,4							
+16_0702	BGD	BD	2	Maulvibazar			14,8	17,7							
+16_0703	BGD	BD	2	Sunamganj			13,7	16,4							
+16_0704	BGD	BD	2	Sylhet			16,6	19,8							
+16_08	BGD	BD	1	Mymensingh Division											
+16_0801	BGD	BD	2	Mymensingh											
+16_0802	BGD	BD	2	Jamalpur											
+16_0803	BGD	BD	2	Netrakona											
+16_0804	BGD	BD	2	Sherpur											
+19_01	BEL	BE	1	Bruxelles-Capitale	733	757,1	609,2	529,6							
+19_0101	BEL	BE	2	Bruxelles-Capitale	733	757,1	609,2	529,6							
+19_02	BEL	BE	1	Vlaams Gewest	353,1	369,4	321,3	287							
+19_0201	BEL	BE	2	Antwerpen	421,8	437,6	375	332,3							
+19_0202	BEL	BE	2	Limburg	307,3	313,4	266,6	237,5							
+19_0203	BEL	BE	2	Oost-Vlaanderen	311,1	322,5	288,9	261,4							
+19_0204	BEL	BE	2	Vlaams-Brabant	353,1	383,1	338,6	303,2							
+19_0205	BEL	BE	2	West-Vlaanderen	334	349,8	306,1	271,6							
+19_03	BEL	BE	1	R�gion wallonne	263,4	269,5	230,1	210,1							
+19_0301	BEL	BE	2	Brabant Wallon	307,3	342,2	308,1	283,6							
+19_0302	BEL	BE	2	Hainaut	244,3	245,3	208,8	188,8							
+19_0303	BEL	BE	2	Li�ge	280,6	280,1	237,2	215,2							
+19_0304	BEL	BE	2	Luxembourg	259,6	260,4	216,9	193							
+19_0305	BEL	BE	2	Namur	246,2	255,9	222	205							
+30	BFA	BF	0	Burkina Faso	10,6	10,9	10,8	11,7							
+29_01	BGR	BG	1	Severozapaden	73,5		69,6	66,9							
+29_02	BGR	BG	1	Severen tsentralen	73,5		73,5	74,8							
+29_03	BGR	BG	1	Severoiztochen	89,7		89,2	87,8							
+29_04	BGR	BG	1	Yugoiztochen	80,7		84,3	89,5							
+29_05	BGR	BG	1	Yugozapaden	102,2		172,5	172,1							
+29_06	BGR	BG	1	Yuzhen tsentralen	71,7		74,5	74,8							
+15	BHR	BH	0	Bahre�n	503,6	448,4	347,5	261,5							
+31	BDI	BI	0	Burundi	11,6	7,5	5,8	5,4							
+21_01	BEN	BJ	1	Alibori		13,2	11,2	10,6							
+21_02	BEN	BJ	1	Atakira		11,1	9,4	8,9							
+21_03	BEN	BJ	1	Atlantique		13,1	11,2	10,5							
+21_04	BEN	BJ	1	Borgou		17,4	14,8	14							
+21_05	BEN	BJ	1	Collines		13,1	11,2	10,5							
+21_06	BEN	BJ	1	Kuoffo		7	6	5,7							
+21_07	BEN	BJ	1	Donga		11,7	10	9,4							
+21_08	BEN	BJ	1	Littoral		42,2	35,9	33,9							
+21_09	BEN	BJ	1	Mono		7,1	6,1	5,7							
+21_10	BEN	BJ	1	Ou�m�		13,4	11,4	10,8							
+21_11	BEN	BJ	1	Plateau		19,1	16,2	15,3							
+21_12	BEN	BJ	1	Zou		7,5	6,3	6							
+915	BLM	BL	0	Saint-Barth�l�my		374,8	330,4	292,8							
+22	BMU	BM	0	Bermudes	483,9		649,2	478,7							
+28	BRN	BN	0	Brun�i Darussalam	914,6	759,7	614,4	531,4							
+24_01	BOL	BO	1	Beni	42,2	36,9	24,5	23							
+24_02	BOL	BO	1	Chuquisaca	38,5	34,9	26,7	31,5							
+24_03	BOL	BO	1	Cochabamba	46,4	45,6	34	31,6							
+24_04	BOL	BO	1	LaPaz	43,2	38,5	33,8	37,2							
+24_05	BOL	BO	1	Oruro	42,3	49,6	42,2	46,9							
+24_06	BOL	BO	1	Pando	48,4	62,5	50	42,9							
+24_07	BOL	BO	1	Potosi	21,8	23,3	26,1	30,2							
+24_08	BOL	BO	1	SantaCruz	58,3	54,2	41,4	41,1							
+24_09	BOL	BO	1	Tarija	46,8	47,9	98,5	113							
+901	BES	BQ	0	Bonaire, Eustache et Saba				130,4							
+27_01	BRA	BR	1	Rond�nia	70,3	68,6	72,8	83,9							
+27_02	BRA	BR	1	Acre	58	51,4	62	57,6							
+27_03	BRA	BR	1	Amazonas	129,3	112,8	72,4	81,1							
+27_04	BRA	BR	1	Par�	59,4	57,8	49,5	53							
+27_05	BRA	BR	1	Roraima	53,6	51,4	74,4	70,7							
+27_06	BRA	BR	1	Amap�	88,8	69,2	92,1	67,7							
+27_07	BRA	BR	1	Tocantins	34	35,6	63	62,6							
+27_08	BRA	BR	1	Maranh�o	28,8	27,4	36,5	39,8							
+27_09	BRA	BR	1	Piau�	33,6	31,6	32,9	37							
+27_10	BRA	BR	1	Cear�	53,4	47,1	43,4	47,6							
+27_11	BRA	BR	1	Rio Grande Do Norte	53,8	56,4	53,7	55,6							
+27_12	BRA	BR	1	Para�ba	45,3	45,2	43	46,1							
+27_13	BRA	BR	1	Pernambuco	67,1	62	51,8	59,7							
+27_14	BRA	BR	1	Alagoas	44,9	41,9	41,4	42,4							
+27_15	BRA	BR	1	Sergipe	62,5	55,9	61,5	59,9							
+27_16	BRA	BR	1	Bahia	61,6	62,2	55	53,7							
+27_17	BRA	BR	1	Minas Gerais	109	100	88,4	92,3							
+27_18	BRA	BR	1	Esp�rito Santo	126,4	117,1	127,1	136,2							
+27_19	BRA	BR	1	Rio De Janeiro	156	161,5	135,9	141,1							
+27_2001	BRA	BR	2	Sao Paulo metro				169,9							
+27_2002	BRA	BR	2	Reste de Sao Paulo				107,8							
+27_21	BRA	BR	1	Paran�	122,7	116,2	110,9	109,9							
+27_22	BRA	BR	1	Santa Catarina	137,9	133,4	125,9	126,1							
+27_23	BRA	BR	1	Rio Grande Do Sul	155,2	140,9	117,8	117,1							
+27_24	BRA	BR	1	Mato Grosso Do Sul	102,6	96,2	87,6	98,8							
+27_25	BRA	BR	1	Mato Grosso	84,7	90,3	105,6	117,8							
+27_26	BRA	BR	1	Goi�s	74,9	72,9	81,5	91,4							
+27_27	BRA	BR	1	Distrito Federal (BR)	218,6	242,7	287,3	293,6							
+14	BHS	BS	0	Bahamas	286,4	259,3	203,5	158,3							
+23	BTN	BT	0	Bhoutan	27,4	36,7	44,3	48,3							
+951	BVT	BV	0	Bouvet											
+26	BWA	BW	0	Botswana	107,1	98,5	100,3	109,1							
+18_01	BLR	BY	1	Br?st		64,4	87,6	87,1							
+18_02	BLR	BY	1	Homel		71,6	98,2	107,8							
+18_03	BLR	BY	1	Hrodna		66,3	94	100							
+18_04	BLR	BY	1	Mahil�?		66,8	83,3	92,5							
+18_05	BLR	BY	1	Minsk		73,5	109,1	139,6							
+18_06	BLR	BY	1	Minsk city		96,7	155,5	169,3							
+18_07	BLR	BY	1	Vicebsk		67	88,5	100,9							
+20	BLZ	BZ	0	Belize	73,9	79,5	58,9	54,9							
+35_01	CAN	CA	1	Newfoundland and Labrador		273,9	409,8	360,1							
+35_02	CAN	CA	1	Prince Edward Island		253,1	235,5	214,4							
+35_03	CAN	CA	1	Nova Scotia		279,3	254,6	228							
+35_04	CAN	CA	1	New Brunswick		279	262,5	233,8							
+35_0501	CAN	CA	2	Montr�al m�tro				280,8							
+35_0502	CAN	CA	2	Qu�bec Sud				233,9							
+35_0503	CAN	CA	2	Qu�bec Nord				258,1							
+35_0601	CAN	CA	2	Toronto metro				272,6							
+35_0602	CAN	CA	2	Ontario South				309							
+35_0603	CAN	CA	2	Ontario North				304,7							
+35_07	CAN	CA	1	Manitoba		308	290,8	261,4							
+35_08	CAN	CA	1	Saskatchewan		347,5	366,1	402							
+35_09	CAN	CA	1	Alberta		496,9	517,6	450							
+35_1001	CAN	CA	2	Vancouver � Victoria				270,6							
+35_1002	CAN	CA	2	Rest of British Columbia				273,9							
+35_11	CAN	CA	1	Yukon		418,7	383	407,3							
+35_12	CAN	CA	1	Northwest Territories		666,6	750,6	601,3							
+35_13	CAN	CA	1	Nunavut		331,5	306,1	355,4							
+902	CCK	CC	0	Cocos (Keeling) Iles											
+44_01	COD	CD	1	Bandundu	4,5			3,2							
+44_02	COD	CD	1	Bas-Congo	13,6			7,6							
+44_03	COD	CD	1	�quateur	5,3			3,7							
+44_04	COD	CD	1	Kasa�-Occidental	6,3			1,9							
+44_05	COD	CD	1	Kasa�-Oriental	7,6			4,7							
+44_06	COD	CD	1	Katanga	23,7			8,6							
+44_07	COD	CD	1	Kinshasa	21,6			9,2							
+44_08	COD	CD	1	Maniema	4,3			3,1							
+44_09	COD	CD	1	Nord-Kivu	4,3			3,7							
+44_10	COD	CD	1	Orientale	5,3			3,9							
+44_11	COD	CD	1	Sud-Kivu	4,3			3,5							
+37	CAF	CF	0	R�publique centrafricaine	8	7,1	6,4	4,2							
+45	COG	CG	0	Congo, R�publique du	48,5	33,3	27,5	32,1							
+186_01	CHE	CH	1	R�gion l�manique			427,4	427,4							
+186_02	CHE	CH	1	Espace Mittelland			351,3	357,6							
+186_03	CHE	CH	1	Nordwestschweiz			459,5	461,9							
+186_04	CHE	CH	1	Z�rich			537,9	520,9							
+186_05	CHE	CH	1	Ostschweiz			336,2	348,8							
+186_06	CHE	CH	1	Zentralschweiz			373,7	385,1							
+186_07	CHE	CH	1	Ticino			367,4	374,1							
+47_01	CIV	CI	1	Centre		23,3	20,3	13,2							
+47_02	CIV	CI	1	Centre-Est		38,2	20,6	24,5							
+47_03	CIV	CI	1	Centre-Nord		24	17	19,4							
+47_04	CIV	CI	1	Centre-Ouest		19	16,7	13,8							
+47_05	CIV	CI	1	Nord		23,1	13,2	16							
+47_06	CIV	CI	1	Nord-Est		37,8	21,7	17,2							
+47_07	CIV	CI	1	Nord-Ouest		32	18,4	17,8							
+47_08	CIV	CI	1	Ouest		15	18,1	12,1							
+47_09	CIV	CI	1	Sud (sans Abidjan)		42,7	31,9	30,7							
+47_10	CIV	CI	1	Abidjan		57,3	42,1	39,9							
+47_11	CIV	CI	1	Sud-Ouest		34	25,9	19							
+47_12	CIV	CI	1	Abidjan											
+47_13	CIV	CI	1	Yamassoukro											
+47_14	CIV	CI	1	Bas Sassandra											
+47_15	CIV	CI	1	Comoe											
+47_16	CIV	CI	1	Denguele											
+47_17	CIV	CI	1	G�h-Djiboua											
+47_18	CIV	CI	1	Lacs											
+47_19	CIV	CI	1	Lagunes											
+47_20	CIV	CI	1	Montagnes											
+47_21	CIV	CI	1	Sassandra-Marahou�											
+47_22	CIV	CI	1	Savanes											
+47_23	CIV	CI	1	Vall�e du Bandama											
+47_24	CIV	CI	1	Woroba											
+47_25	CIV	CI	1	Zanzan											
+903	COK	CK	0	Cook Iles			95,8	109,8							
+40_01	CHL	CL	1	Tarapac�	138,6	276	237,9	333							
+40_02	CHL	CL	1	Antofagasta	215,9	435,8	446,2	537,9							
+40_03	CHL	CL	1	Atacama	132,5	162,6	176,1	191,3							
+40_04	CHL	CL	1	Coquimbo	68,8	83,8	93,2	101,2							
+40_05	CHL	CL	1	Valpara�so	89,4	98,4	107	125,2							
+40_06	CHL	CL	1	O'Higgins	91,8	104,3	111,5	132							
+40_07	CHL	CL	1	Maule	73,9	68,8	73,7	89,6							
+40_08	CHL	CL	1	B�o-B�o	70,1	81	85,4	101,1							
+40_09	CHL	CL	1	Araucan�a	42,7	47,2	50	56,5							
+40_10	CHL	CL	1	Los Lagos	55,2	96,5	72,2	120,1							
+40_11	CHL	CL	1	Ays�n	72,2	90,7	95,9	106,6							
+40_12	CHL	CL	1	Magallanes y Ant�rtica	200,7	121	123	168,8							
+40_13	CHL	CL	1	Santiago Metropolitan	117,7	139,2	150,2	167,4							
+40_14	CHL	CL	1	Los Rios			67,6	85,2							
+40_15	CHL	CL	1	Arica Y Parinacota			80,7	92,7							
+34_01	CMR	CM	1	Adamaoua (Adamawa)				15,5							
+34_02	CMR	CM	1	Centre (Central)				22,4							
+34_03	CMR	CM	1	Est (East)				14,9							
+34_04	CMR	CM	1	Extr�me-Nord (Far North) {Extreme-Nord}				12,9							
+34_05	CMR	CM	1	Littoral				22,2							
+34_06	CMR	CM	1	Nord (North)				12,4							
+34_07	CMR	CM	1	Nord-Ouest (North West)				18,8							
+34_08	CMR	CM	1	Ouest (West)				18							
+34_09	CMR	CM	1	Sud (South)				20,3							
+34_10	CMR	CM	1	Sud-Ouest (South West)				20,6							
+41_26	CHN	CN	1	Tibet	13,2	31,4	32,3	51,8							
+41_0101	CHN	CN	2	Beijing Sh�	58,8	123,7	160,5	177,1							
+41_0201	CHN	CN	2	Tianjin Sh�	50,9	107,2	128,7	186,3							
+41_0301	CHN	CN	2	Baod�ng Sh�			35,7	47,2							
+41_0302	CHN	CN	2	Cangzhou Sh�			59,1	78,2							
+41_0303	CHN	CN	2	Ch�ngd� Sh�			38,2	50,6							
+41_0304	CHN	CN	2	H�ndan Sh�			47,8	63,2							
+41_0305	CHN	CN	2	H�ngshui Sh�			44	58,2							
+41_0306	CHN	CN	2	L�ngfang Sh�			56,1	74,1							
+41_0307	CHN	CN	2	Q�nhu�ngdao Sh�			61,2	81							
+41_0308	CHN	CN	2	Sh�jiazhuang Sh�			66,6	88							
+41_0309	CHN	CN	2	T�ngshan Sh�			99,8	132							
+41_0310	CHN	CN	2	X�ngt�i Sh�			35,8	47,3							
+41_0311	CHN	CN	2	Zhangjiakou Sh�			35,5	46,9							
+41_0401	CHN	CN	2	Ch�ngzh� Sh�			48,2	61,7							
+41_0402	CHN	CN	2	D�t�ng Sh�			46,4	59,5							
+41_0403	CHN	CN	2	J�nch�ng Sh�			56	71,6							
+41_0404	CHN	CN	2	J�nzhong Sh�			42	53,8							
+41_0405	CHN	CN	2	L�nf�n Sh�			49,7	63,6							
+41_0406	CHN	CN	2	Luli�ng Sh�			34,3	43,9							
+41_0407	CHN	CN	2	Shu�zhou Sh�			47,1	60,4							
+41_0408	CHN	CN	2	T�iyu�n Sh�			101,8	130,3							
+41_0409	CHN	CN	2	Xinzhou Sh�			21,5	27,5							
+41_0410	CHN	CN	2	Y�ngqu�n Sh�			60	76,8							
+41_0411	CHN	CN	2	Y�nch�ng Sh�			36,9	47,3							
+41_0501	CHN	CN	2	Alash�n M�ng [Alxa] (League)			129,1	224,9							
+41_0502	CHN	CN	2	Baot�u Sh�			170,8	297,5							
+41_0503	CHN	CN	2	Bay�nn�o'er Sh� [Bayan Nur]			53	92,3							
+41_0504	CHN	CN	2	Ch�feng Sh�			33,3	58							
+41_0505	CHN	CN	2	�'erduosi Sh� [Ordos]			169,6	295,3							
+41_0506	CHN	CN	2	Huh�h�ot� Sh� [Hohhot]			122,6	213,6							
+41_0507	CHN	CN	2	Hul�nb�i'er Sh� [Hulunbuir]			50,3	87,6							
+41_0508	CHN	CN	2	Tongli�o Sh�			44,8	78,1							
+41_0509	CHN	CN	2	Wuhai Sh�			114,8	199,9							
+41_0510	CHN	CN	2	Wul�nch�b� Sh� [Ulanqab]			35,8	62,3							
+41_0511	CHN	CN	2	Xil�nguol� M�ng [Xilin Gol] (League)			72,2	125,7							
+41_0512	CHN	CN	2	Xing'an M�ng [Hinggan] (League)			31,7	55,2							
+41_0601	CHN	CN	2	Anshan Sh�			99,3	161,7							
+41_0602	CHN	CN	2	Benxi Sh�			74,5	121,2							
+41_0603	CHN	CN	2	Ch�oy�ng Sh�			21,3	34,6							
+41_0604	CHN	CN	2	D�li�n Sh�			129,3	210,5							
+41_0605	CHN	CN	2	Dandong Sh�			45,7	74,4							
+41_0606	CHN	CN	2	Fush�n Sh�			58,8	95,7							
+41_0607	CHN	CN	2	F�xin Sh�			25,1	40,8							
+41_0608	CHN	CN	2	H�l�dao Sh�			37,1	60,4							
+41_0609	CHN	CN	2	Jinzhou Sh�			42	68,3							
+41_0610	CHN	CN	2	Li�oy�ng Sh�			61,4	99,9							
+41_0611	CHN	CN	2	P�njin Sh�			117,3	190,9							
+41_0612	CHN	CN	2	Sheny�ng Sh�			101,4	165							
+41_0613	CHN	CN	2	Tieling Sh�			29,7	48,3							
+41_0614	CHN	CN	2	Y�ngkou Sh�			55,8	90,8							
+41_0701	CHN	CN	2	B�ich�ng Sh�			27,4	45,9							
+41_0702	CHN	CN	2	B�ishan Sh�			44	73,9							
+41_0703	CHN	CN	2	Ch�ngchun Sh�			83,5	140,3							
+41_0704	CHN	CN	2	J�l�n Sh�			52,5	88,2							
+41_0705	CHN	CN	2	Li�oyu�n Sh�			40,1	67,4							
+41_0706	CHN	CN	2	S�p�ng Sh�			36,3	61							
+41_0707	CHN	CN	2	Songyu�n Sh�			47,7	80,2							
+41_0708	CHN	CN	2	Tonghu� Sh�			37,2	62,4							
+41_0709	CHN	CN	2	Y�nbianch�o Xianz� Z�zh�zhou (Korean Autonomous Prefecture)			35,3	59,3							
+41_0801	CHN	CN	2	D�q�ng Sh�			186,9	255,9							
+41_0802	CHN	CN	2	D�xing'anling D�qu			30,2	41,4							
+41_0803	CHN	CN	2	Ha'erbin Sh� [Harbin]			66,2	90,7							
+41_0804	CHN	CN	2	H�gang Sh�			35,8	49							
+41_0805	CHN	CN	2	Heih� Sh�			24,2	33,1							
+41_0806	CHN	CN	2	Jiam�si Sh�			34,5	47,2							
+41_0807	CHN	CN	2	Jixi Sh�			37,3	51							
+41_0808	CHN	CN	2	Mudanjiang Sh�			39,7	54,3							
+41_0809	CHN	CN	2	Q�q�ha'er Sh� [Qiqihar]			28,1	38,5							
+41_0810	CHN	CN	2	Qit�ih� Sh�			42,1	57,7							
+41_0811	CHN	CN	2	Shuangyashan Sh�			34,2	46,8							
+41_0812	CHN	CN	2	Su�hu� Sh�			21,9	30							
+41_0813	CHN	CN	2	Yichun Sh�			31,5	43,2							
+41_0901	CHN	CN	2	Sh�nghai Sh�	91,8	192,8	165,4	172,4							
+41_1001	CHN	CN	2	Ch�ngzhou Sh�			117,6	185,3							
+41_1002	CHN	CN	2	Hu�i'an Sh�			41,4	65,2							
+41_1003	CHN	CN	2	Li�ny�ngang Sh�			36,8	57,9							
+41_1004	CHN	CN	2	N�njing Sh�			150,3	236,8							
+41_1005	CHN	CN	2	N�ntong Sh�			73,5	115,7							
+41_1006	CHN	CN	2	S�qian Sh�			26,4	41,6							
+41_1007	CHN	CN	2	Suzhou Sh�			199,1	313,8							
+41_1008	CHN	CN	2	T�izhou Sh�			64,2	101,2							
+41_1009	CHN	CN	2	W�xi Sh�			229,2	361,1							
+41_1010	CHN	CN	2	X�zhou Sh�			50,4	79,3							
+41_1011	CHN	CN	2	Y�nch�ng Sh�			47,4	74,7							
+41_1012	CHN	CN	2	Y�ngzhou Sh�			75	118,1							
+41_1013	CHN	CN	2	Zh�njiang Sh�			108,6	171,1							
+41_1101	CHN	CN	2	H�ngzhou Sh�			151,7	197,3							
+41_1102	CHN	CN	2	H�zhou Sh�			84,7	110,1							
+41_1103	CHN	CN	2	Jiaxing Sh�			117,4	152,7							
+41_1104	CHN	CN	2	Jinhu� Sh�			79,4	103,3							
+41_1105	CHN	CN	2	L�shui Sh�			41,2	53,6							
+41_1106	CHN	CN	2	N�ngbo Sh�			149,4	194,2							
+41_1107	CHN	CN	2	Q�zhou Sh�			45,3	59							
+41_1108	CHN	CN	2	Sh�oxing Sh�			112,6	146,4							
+41_1109	CHN	CN	2	T�izhou Sh�			75,9	98,7							
+41_1110	CHN	CN	2	Wenzhou Sh�			72,2	93,9							
+41_1111	CHN	CN	2	Zhoushan Sh�			97,9	127,3							
+41_1201	CHN	CN	2	Anq�ng Sh�			27,8	51,6							
+41_1202	CHN	CN	2	B�ngb� Sh�			34,7	64,3							
+41_1203	CHN	CN	2	B�zhou Sh�			18,6	34,6							
+41_1204	CHN	CN	2	Ch�zhou Sh�			31,9	59,2							
+41_1205	CHN	CN	2	Ch�zhou Sh�			27,6	51,3							
+41_1206	CHN	CN	2	F�y�ng Sh�			13,8	25,5							
+41_1207	CHN	CN	2	H�f�i Sh� (avant 2011)			69,4	128,7							
+41_1208	CHN	CN	2	Hu�ibei Sh�			37,5	69,6							
+41_1209	CHN	CN	2	Hu�in�n Sh�			41,1	76,3							
+41_1210	CHN	CN	2	Hu�ngshan Sh�			39,9	74,1							
+41_1211	CHN	CN	2	L�'an Sh�			18,7	34,6							
+41_1212	CHN	CN	2	Ma'anshan Sh� (avant 2011)			108,8	201,7							
+41_1213	CHN	CN	2	S�zhou Sh�			20	37							
+41_1214	CHN	CN	2	T�ngl�ng Sh�			92,7	171,9							
+41_1215	CHN	CN	2	W�h� Sh� (avant 2011)			65	120,5							
+41_1216	CHN	CN	2	Xuanch�ng Sh�			35,7	66,2							
+41_1217	CHN	CN	2	Chaohu (avant 2011)			26,1	48,5							
+41_1287	CHN	CN	2	H�f�i Sh� (apr�s 2011)			 								
+41_1292	CHN	CN	2	Ma'anshan Sh� (apr�s 2011)			 								
+41_1295	CHN	CN	2	W�h� Sh� (apr�s 2011)			 								
+41_1301	CHN	CN	2	F�zhou Sh�			83,8	134,6							
+41_1302	CHN	CN	2	L�ngy�n Sh�			53	85,2							
+41_1303	CHN	CN	2	N�np�ng Sh�			45,4	72,9							
+41_1304	CHN	CN	2	N�ngd� Sh�			42,3	68							
+41_1305	CHN	CN	2	P�ti�n Sh�			48,3	77,6							
+41_1306	CHN	CN	2	Qu�nzhou Sh�			80,5	129,4							
+41_1307	CHN	CN	2	Sanm�ng Sh�			56	90							
+41_1308	CHN	CN	2	Xi�m�n Sh�			168,1	270,1							
+41_1309	CHN	CN	2	Zhangzhou Sh�			50,4	80,9							
+41_1401	CHN	CN	2	Fuzhou Sh�			27	45,6							
+41_1402	CHN	CN	2	G�nzhou Sh�			24	40,6							
+41_1403	CHN	CN	2	J�'an Sh�			25,3	42,9							
+41_1404	CHN	CN	2	Jingd�zh�n Sh�			49,3	83,4							
+41_1405	CHN	CN	2	Jiujiang Sh�			36,1	61,1							
+41_1406	CHN	CN	2	N�nchang Sh�			87,6	148,2							
+41_1407	CHN	CN	2	P�ngxiang Sh�			49,1	83,1							
+41_1408	CHN	CN	2	Sh�ngr�o Sh�			24	40,6							
+41_1409	CHN	CN	2	Xiny� Sh�			62,4	105,5							
+41_1410	CHN	CN	2	Y�chun Sh�			27,4	46,3							
+41_1411	CHN	CN	2	Yingt�n Sh�			44,8	75,8							
+41_1501	CHN	CN	2	Binzhou Sh�			65,2	93,5							
+41_1502	CHN	CN	2	D�zhou Sh�			54,6	78,3							
+41_1503	CHN	CN	2	Dongy�ng Sh�			234,8	336,7							
+41_1504	CHN	CN	2	H�z� Sh�			18,5	26,5							
+41_1505	CHN	CN	2	J�n�n Sh�			114,3	164							
+41_1506	CHN	CN	2	J�n�ng Sh�			57	81,7							
+41_1507	CHN	CN	2	L�iw� Sh�			74,6	106,9							
+41_1508	CHN	CN	2	Li�och�ng Sh�			46	66							
+41_1509	CHN	CN	2	L�ny� Sh�			45,1	64,7							
+41_1510	CHN	CN	2	Qingdao Sh�			120	172,2							
+41_1511	CHN	CN	2	R�zh�o Sh�			57,4	82,3							
+41_1512	CHN	CN	2	T�i'an Sh�			56,2	80,7							
+41_1513	CHN	CN	2	W�ifang Sh�			62,5	89,6							
+41_1514	CHN	CN	2	Weihai Sh�			170,1	244							
+41_1515	CHN	CN	2	Yant�i Sh�			111,8	160,4							
+41_1516	CHN	CN	2	Zaozhuang Sh�			63,7	91,3							
+41_1517	CHN	CN	2	Zib� Sh�			117,7	168,8							
+41_1601	CHN	CN	2	Any�ng Sh�			42,4	59,6							
+41_1602	CHN	CN	2	H�b� Sh�			52,5	73,8							
+41_1603	CHN	CN	2	Jiaozu� Sh�			69,3	97,6							
+41_1604	CHN	CN	2	J�yu�n Sh�			 	 							
+41_1605	CHN	CN	2	Kaifeng Sh�			34,7	48,8							
+41_1606	CHN	CN	2	Lu�h� Sh�			51,6	72,6							
+41_1607	CHN	CN	2	Lu�y�ng Sh�			70,3	98,9							
+41_1608	CHN	CN	2	N�ny�ng Sh�			39,7	55,9							
+41_1609	CHN	CN	2	P�ngdingshan Sh�			46,1	64,9							
+41_1610	CHN	CN	2	P�y�ng Sh�			43,5	61,2							
+41_1611	CHN	CN	2	Sanm�nxi� Sh�			61,2	86,1							
+41_1612	CHN	CN	2	Shangqiu Sh�			27,8	39,1							
+41_1613	CHN	CN	2	Xinxiang Sh�			39,9	56,2							
+41_1614	CHN	CN	2	X�ny�ng Sh�			26,2	36,8							
+41_1615	CHN	CN	2	Xuchang Sh�			54,5	76,6							
+41_1616	CHN	CN	2	Zh�ngzhou Sh�			103	144,9							
+41_1617	CHN	CN	2	Zhoukou Sh�			22,6	31,7							
+41_1618	CHN	CN	2	Zh�madi�n Sh�			24,3	34,2							
+41_1701	CHN	CN	2	Enshi Tujiaz� Mi�oz� Z�zh�zhou (Tujia and Miao Autonomous Prefecture)			 								
+41_1702	CHN	CN	2	�zhou Sh�			53,3	99,4							
+41_1703	CHN	CN	2	Hu�nggang Sh�			18,4	34,3							
+41_1704	CHN	CN	2	Hu�ngsh� Sh�			51,9	96,7							
+41_1705	CHN	CN	2	H�bei Shengzh�xi�xi�n J�x�ngzh�ng Quhu� [Xiantao, Tianmen, Qianjiang & Shennongjia]			 	 							
+41_1706	CHN	CN	2	Jingm�n Sh�			40,8	76,1							
+41_1707	CHN	CN	2	Jingzhou Sh�			23,6	44							
+41_1708	CHN	CN	2	Sh�y�n Sh�			34,2	63,8							
+41_1709	CHN	CN	2	Su�zhou Sh�			33,3	62,2							
+41_1710	CHN	CN	2	Wuh�n Sh�			100,5	187,5							
+41_1711	CHN	CN	2	Xiangy�ng Sh� [Xiangfan]			37,9	70,7							
+41_1712	CHN	CN	2	Xi�nn�ng Sh�			28,2	52,6							
+41_1713	CHN	CN	2	Xi�ogan Sh�			29,3	54,7							
+41_1714	CHN	CN	2	Y�chang Sh�			58,4	109							
+41_1801	CHN	CN	2	Ch�ngd� Sh�			44,1	77,6							
+41_1802	CHN	CN	2	Ch�ngsha Sh�			89,6	157,5							
+41_1803	CHN	CN	2	Chenzhou Sh�			41,4	72,8							
+41_1804	CHN	CN	2	H�ngy�ng Sh�			33,3	58,5							
+41_1805	CHN	CN	2	Hu�ihu� Sh�			24,5	43,1							
+41_1806	CHN	CN	2	L�udi Sh�			30,6	53,8							
+41_1807	CHN	CN	2	Sh�oy�ng Sh�			20,2	35,5							
+41_1808	CHN	CN	2	Xiangt�n Sh�			50,8	89,4							
+41_1809	CHN	CN	2	Xiangxi Tujiaz� Mi�oz� Z�zh�zhou (Tujia and Miao Autonomous Prefecture)			 	 							
+41_1810	CHN	CN	2	Y�y�ng Sh�			26,6	46,8							
+41_1811	CHN	CN	2	Yongzhou Sh�			26,7	46,9							
+41_1812	CHN	CN	2	Yu�y�ng Sh�			46,8	82,3							
+41_1813	CHN	CN	2	Zhangjiaji� Sh�			28,4	49,9							
+41_1814	CHN	CN	2	Zhuzhou Sh�			54,2	95,2							
+41_1901	CHN	CN	2	Ch�ozhou Sh�			40	50							
+41_1902	CHN	CN	2	Dongguan Sh�			116,3	145,5							
+41_1903	CHN	CN	2	F�shan Sh�			144,3	180,5							
+41_1904	CHN	CN	2	Guangzhou Sh�			242,3	303							
+41_1905	CHN	CN	2	H�yu�n Sh�			26,2	32,8							
+41_1906	CHN	CN	2	Hu�zhou Sh�			76,6	95,8							
+41_1907	CHN	CN	2	Jiangm�n Sh�			68,7	85,9							
+41_1908	CHN	CN	2	Jiey�ng Sh�			26,3	32,9							
+41_1909	CHN	CN	2	M�om�ng Sh�			48,7	60,9							
+41_1910	CHN	CN	2	M�izhou Sh�			26,8	33,5							
+41_1911	CHN	CN	2	Qingyuan Sh�			31,7	39,7							
+41_1912	CHN	CN	2	Sh�nt�u Sh�			46,2	57,7							
+41_1913	CHN	CN	2	Sh�nwei Sh�			26,6	33,3							
+41_1914	CHN	CN	2	Sh�oguan Sh�			41	51,2							
+41_1915	CHN	CN	2	Shenzh�n Sh�			212,7	265,9							
+41_1916	CHN	CN	2	Y�ngjiang Sh�			44,6	55,8							
+41_1917	CHN	CN	2	Y�nf� Sh�			32,1	40,1							
+41_1918	CHN	CN	2	Zh�njiang Sh�			34,6	43,3							
+41_1919	CHN	CN	2	Zh�oq�ng Sh�			43,1	53,9							
+41_1920	CHN	CN	2	Zhongshan Sh�			126,6	158,4							
+41_1921	CHN	CN	2	Zhuhai Sh�			158,4	198,1							
+41_2001	CHN	CN	2	Bais� Sh� [Bose]			26,1	45,9							
+41_2002	CHN	CN	2	Beihai Sh�			49,8	87,4							
+41_2003	CHN	CN	2	Ch�ngzuo Sh�			26,7	47							
+41_2004	CHN	CN	2	F�ngch�nggang Sh�			48,3	84,9							
+41_2005	CHN	CN	2	Gu�gang Sh�			19,5	34,3							
+41_2006	CHN	CN	2	Gu�l�n Sh�			44,2	77,7							
+41_2007	CHN	CN	2	H�ch� Sh�			22	38,7							
+41_2008	CHN	CN	2	H�zhou Sh�			31,9	56							
+41_2009	CHN	CN	2	L�ibin Sh�			28,1	49,4							
+41_2010	CHN	CN	2	Liuzhou Sh�			59,3	104,1							
+41_2011	CHN	CN	2	N�nn�ng Sh�			45	79,1							
+41_2012	CHN	CN	2	Qinzhou Sh�			24,4	42,9							
+41_2013	CHN	CN	2	W�zhou Sh�			30,6	53,7							
+41_2014	CHN	CN	2	Y�l�n Sh�			24,4	42,9							
+41_2101	CHN	CN	2	Hainan	21,2	33,7	40,5	68,9							
+41_2201	CHN	CN	2	Ch�ngq�ng Sh�	17	22,8	45,4	84,8							
+41_2301	CHN	CN	2	Ab� Z�ngz� Qiangz� Z�zh�zhou [Ngawa] (Tibetan and Qiang Autonomous Prefecture)			361,7	633,9							
+41_2302	CHN	CN	2	Bazhong Sh�			15,1	26,5							
+41_2303	CHN	CN	2	Ch�ngdu Sh�			69,9	122,6							
+41_2304	CHN	CN	2	D�zhou Sh�			21,6	37,9							
+41_2305	CHN	CN	2	D�y�ng Sh�			44,9	78,6							
+41_2306	CHN	CN	2	Ganzi Z�ngz� Z�zh�zhou [Garz�] (Tibetan Autonomous Prefecture)			304,3	533,1							
+41_2307	CHN	CN	2	Guang'an Sh�			23,4	41							
+41_2308	CHN	CN	2	Guangyu�n Sh�			16,9	29,5							
+41_2309	CHN	CN	2	L�shan Sh�			32,5	56,9							
+41_2310	CHN	CN	2	Li�ngshan Y�z� Z�zh�zhou (Yi Autonomous Prefecture)			346,3	606,9							
+41_2311	CHN	CN	2	L�zhou Sh�			24,1	42,2							
+41_2312	CHN	CN	2	M�ishan Sh�			28,6	50							
+41_2313	CHN	CN	2	Mi�ny�ng Sh�			34,8	61							
+41_2314	CHN	CN	2	N�nchong Sh�			19,3	33,8							
+41_2315	CHN	CN	2	N�ijiang Sh�			22,9	40,2							
+41_2316	CHN	CN	2	Panzhihua Sh�			78,3	137,2							
+41_2317	CHN	CN	2	Su�n�ng Sh�			20,6	36,1							
+41_2318	CHN	CN	2	Ya'an Sh�			29,6	51,9							
+41_2319	CHN	CN	2	Y�bin Sh�			28,1	49,3							
+41_2320	CHN	CN	2	Z�g�ng Sh�			35,4	62							
+41_2321	CHN	CN	2	Ziy�ng Sh�			21,4	37,6							
+41_2401	CHN	CN	2	Ansh�n Sh�			16,1	34,8							
+41_2402	CHN	CN	2	B�ji� Sh�			12,8	27,6							
+41_2403	CHN	CN	2	Gu�y�ng Sh�			59,8	128,9							
+41_2404	CHN	CN	2	Li�p�nshui Sh�			27,6	59,4							
+41_2405	CHN	CN	2	Qi�ndongn�n Mi�oz� D�ngz� Z�zh�zhou (Buyei and Dong Autonomous Prefecture)			13,2	28,5							
+41_2406	CHN	CN	2	Qi�nn�n B�yiz� Mi�oz� Z�zh�zhou (Buyei and Miao Autonomous Prefecture)			17	36,7							
+41_2407	CHN	CN	2	Qi�nxin�n B�yiz� Mi�oz� Z�zh�zhou (Buyei and Miao Autonomous Prefecture)			15,5	33,4							
+41_2408	CHN	CN	2	T�ngr�n Sh�			 	 							
+41_2409	CHN	CN	2	Zuny� Sh�			22	47,5							
+41_2501	CHN	CN	2	Baoshan Sh�			18,1	30,2							
+41_2502	CHN	CN	2	Chuxi�ng Y�z� Z�zh�zhou (Yi Autonomous Prefecture)			27,5	46							
+41_2503	CHN	CN	2	D�li B�iz� Z�zh�zhou (Bai Autonomous Prefecture)			25,2	42,1							
+41_2504	CHN	CN	2	D�h�ng Daiz� Jingpoz� Z�zh�zhou (Dai and Jingpo Autonomous Prefecture)			18,8	31,4							
+41_2505	CHN	CN	2	D�q�ng Z�ngz� Z�zh�zhou [D�q�n] (Tibetan Autonomous Prefecture)			27,9	46,6							
+41_2506	CHN	CN	2	H�ngh� Han�z� Y�z� Z�zh�zhou (Hani and Yi Autonomous Prefecture)			26,4	44,1							
+41_2507	CHN	CN	2	Kunm�ng Sh�			62,5	104,4							
+41_2508	CHN	CN	2	L�jiang Sh�			19,5	32,5							
+41_2509	CHN	CN	2	L�ncang Sh�			15	25,1							
+41_2510	CHN	CN	2	N�jiang L�s�z� Z�zh�zhou (Lisu Autonomous Prefecture)			18,2	30,4							
+41_2511	CHN	CN	2	Pu'er Sh�			15,2	25,4							
+41_2512	CHN	CN	2	Quj�ng Sh�			28,8	48,2							
+41_2513	CHN	CN	2	W�nshan Zhu�ngz� Mi�oz� Z�zh�zhou (Zhuang and Miao Autonomous Prefecture)			16,1	26,9							
+41_2514	CHN	CN	2	Xishuangbann� Daiz� Z�zh�zhou (Dai Autonomous Prefecture)			27,2	45,5							
+41_2515	CHN	CN	2	Y�xi Sh�			64,4	107,6							
+41_2516	CHN	CN	2	Zhaotong Sh�			11,6	19,3							
+41_2701	CHN	CN	2	Ankang Sh�			44,1	86,5							
+41_2702	CHN	CN	2	Baoji Sh�			95,7	187,5							
+41_2703	CHN	CN	2	H�nzhong Sh�			49,1	96,1							
+41_2704	CHN	CN	2	Shanglu� Sh�			35,3	69,1							
+41_2705	CHN	CN	2	T�ngchuan Sh�			70	137,3							
+41_2706	CHN	CN	2	W�in�n Sh�			48,6	95,3							
+41_2707	CHN	CN	2	Xi'an Sh�			135,5	265,5							
+41_2708	CHN	CN	2	Xi�ny�ng Sh�			74,7	146,4							
+41_2709	CHN	CN	2	Y�n'an Sh�			150,2	294,3							
+41_2710	CHN	CN	2	Y�l�n Sh�			82,6	162							
+41_2801	CHN	CN	2	B�iy�n Sh�			34,1	55,1							
+41_2802	CHN	CN	2	D�ngxi Sh�			9,7	15,7							
+41_2803	CHN	CN	2	Gann�n Z�ngz� Z�zh�zhou (Tibetan Autonomous Prefecture)			 	 							
+41_2804	CHN	CN	2	Jiay�guan Sh�			181,5	293,1							
+41_2805	CHN	CN	2	Jinchang Sh�			101,3	163,7							
+41_2806	CHN	CN	2	Jiuqu�n Sh�			60,7	98							
+41_2807	CHN	CN	2	L�nzhou Sh�			74,3	120							
+41_2808	CHN	CN	2	L�nxi� Hu�z� Z�zh�zhou (Hui Autonomous Prefecture)			 	 							
+41_2809	CHN	CN	2	Longn�n Sh�			11,1	17,9							
+41_2810	CHN	CN	2	P�ngli�ng Sh�			20	32,2							
+41_2811	CHN	CN	2	Q�ngy�ng Sh�			22,7	36,6							
+41_2812	CHN	CN	2	Tianshui Sh�			17	27,5							
+41_2813	CHN	CN	2	Wuwei Sh�			29,7	48							
+41_2814	CHN	CN	2	Zhangy� Sh�			35,1	56,7							
+41_2901	CHN	CN	2	Guolu� Z�ngz� Z�zh�zhou [Golog] (Tibetan Autonomous Prefecture)			20,8	37							
+41_2902	CHN	CN	2	Haibei Z�ngz� Z�zh�zhou (Tibetan Autonomous Prefecture)			29,7	52,8							
+41_2903	CHN	CN	2	Haidong Sh� [? Haidong D�qu]			18,8	33,4							
+41_2904	CHN	CN	2	Hain�n Z�ngz� Z�zh�zhou (Tibetan Autonomous Prefecture)			27,6	49							
+41_2905	CHN	CN	2	Haixi Mengguz� Z�ngz� Z�zh�zhou (Mongol and Tibetan Autonomous Prefecture)			128,9	229,2							
+41_2906	CHN	CN	2	Hu�ngn�n Z�ngz� Z�zh�zhou (Tibetan Autonomous Prefecture)			40,8	72,6							
+41_2907	CHN	CN	2	Xin�ng Sh�			44,9	79,8							
+41_2908	CHN	CN	2	Y�sh� Z�ngz� Z�zh�zhou (Tibetan Autonomous Prefecture)			19,2	34,1							
+41_3001	CHN	CN	2	G�yu�n Sh�			11,9	21,4							
+41_3002	CHN	CN	2	Sh�zuishan Sh�			60	108							
+41_3003	CHN	CN	2	W�zhong Sh�			32,1	57,7							
+41_3004	CHN	CN	2	Y�nchuan Sh�			82,3	148,1							
+41_3005	CHN	CN	2	Zhongw�i Sh�			25,5	45,9							
+41_3101	CHN	CN	2	Ak�su D�qu [Aksu]			28,7	45							
+41_3102	CHN	CN	2	Al�t�i D�qu [Altay]			40,8	63,9							
+41_3103	CHN	CN	2	Bayinguol�ng Menggu Z�zh�zhou [Bayingolin] (Mongol Autonomous Prefecture)			103	161,3							
+41_3104	CHN	CN	2	B�'ertala Menggu Z�zh�zhou [Bortala] (Mongol Autonomous Prefecture)			46	72							
+41_3105	CHN	CN	2	Changj� Hu�z� Z�zh�zhou (Hui Autonomous Prefecture)			57,2	89,6							
+41_3106	CHN	CN	2	Ham� D�qu [Kumul]			48,5	76							
+41_3107	CHN	CN	2	H�ti�n D�qu [Hotan]			10,2	16							
+41_3108	CHN	CN	2	Kash� D�qu [Kashgar, Kaxgar]			21,6	33,8							
+41_3109	CHN	CN	2	K�lamayi Sh� [Karamay]			334,1	523,1							
+41_3110	CHN	CN	2	K�zil�su Ke'erk�zi Z�zh�zhou [Kizilsu] (Kirghiz Autonomous Prefecture)			13,8	21,6							
+41_3111	CHN	CN	2	Tach�ng D�qu			41,9	65,6							
+41_3112	CHN	CN	2	Tulufan D�qu [Turpan]			77,6	121,6							
+41_3113	CHN	CN	2	Wulum�q� Sh� [�r�mqi]			96,2	150,7							
+41_3114	CHN	CN	2	Yil� Has�k� Z�zh�zhou [Ili] (Kazakh Autonomous Prefecture)			33	51,7							
+41_3115	CHN	CN	2	Z�zh�qu Zh�xi�xi�n J�x�ngzh�ng Quhu� [Shihezi, Aral, Tumxuk, Wujiachu]			 								
+42_01	COL	CO	1	Antioquia	107,3	89,4	84,3	81,8							
+42_02	COL	CO	1	Atl�ntico	84,2	72,7	66,1	61,7							
+42_03	COL	CO	1	Bogot� Capital District	148,6	141,1	130,5	126,9							
+42_04	COL	CO	1	Bol�var	67,8	64,7	76,1	76,7							
+42_05	COL	CO	1	Boyac�	73,8	74,7	76,2	87,5							
+42_06	COL	CO	1	Caldas	78,9	59,1	61,3	56,1							
+42_07	COL	CO	1	Caquet�	56,7	38,8	35,1	37,1							
+42_08	COL	CO	1	Cauca	42,4	37,4	37,8	42,9							
+42_09	COL	CO	1	Cesar	63,8	55,1	67,9	79,5							
+42_10	COL	CO	1	C�rdoba (CO)	56,4	49,9	55,7	42,1							
+42_11	COL	CO	1	Cundinamarca	91	86	76	77,9							
+42_12	COL	CO	1	Choc�	37	26,7	26,7	40,3							
+42_13	COL	CO	1	Huila	74,4	66,9	59,2	63							
+42_14	COL	CO	1	La Guajira	79,7	56,6	51,6	53,4							
+42_15	COL	CO	1	Magdalena	51,7	40,6	40,1	40,8							
+42_16	COL	CO	1	Meta	101,5	95,2	100,7	243,9							
+42_17	COL	CO	1	Nari�o	39,2	34,5	35,5	34,2							
+42_18	COL	CO	1	Norte de Santander	52,8	49,6	46,7	46,7							
+42_19	COL	CO	1	Quindio	79,9	62,4	54	54,1							
+42_20	COL	CO	1	Risaralda	76,9	60,9	60,8	57,4							
+42_21	COL	CO	1	Santander	99	102,2	126,8	138,8							
+42_22	COL	CO	1	Sucre	41,9	37,3	35,2	36,6							
+42_23	COL	CO	1	Tolima	74,8	60,9	60,7	60,6							
+42_24	COL	CO	1	Valle del Cauca	112,3	93,4	86,5	80,5							
+42_25	COL	CO	1	Arauca	194,3	143,4	141,9	135,3							
+42_26	COL	CO	1	Casanare	197,9	415,4	186,1	258,6							
+42_27	COL	CO	1	Putumayo	36,6	41,9	36,1	61,2							
+42_28	COL	CO	1	San Andr�s	135,8	79,3	76,7	74,6							
+42_29	COL	CO	1	Amazonas	42,2	43,1	35,7	34,9							
+42_30	COL	CO	1	Guain�a	39,9	43,6	30,2	33							
+42_31	COL	CO	1	Guaviare	89,6	43,2	34,7	30,9							
+42_32	COL	CO	1	Vaup�s	58,4	31,4	22,1	23,3							
+42_33	COL	CO	1	Vichada	43,1	43,8	40	32							
+950	CLP	CP	0	Clipperton											
+46	CRI	CR	0	Costa Rica	95,2	90	95,2	94,6							
+49_01	CUB	CU	1	PinardelR�o 				124,1							
+49_02	CUB	CU	1	Artemisa 				160,5							
+49_03	CUB	CU	1	Mayabeque 				160,5							
+49_05	CUB	CU	1	LaHabana/Ciudad de La Habana 				184,9							
+49_06	CUB	CU	1	Matanzas 				141,5							
+49_07	CUB	CU	1	VillaClara 				143,4							
+49_08	CUB	CU	1	Cienfuegos 				147,8							
+49_09	CUB	CU	1	SanctiSp�ritus 				138,7							
+49_10	CUB	CU	1	Ciegode�vila 				133							
+49_11	CUB	CU	1	Camag�ey 				117,7							
+49_12	CUB	CU	1	LasTunas 				109,1							
+49_13	CUB	CU	1	Holgu�n 				108							
+49_14	CUB	CU	1	Granma 				93,5							
+49_15	CUB	CU	1	SantiagodeCuba 				116							
+49_16	CUB	CU	1	Guant�namo 				92							
+49_17	CUB	CU	1	IsladelaJuventud 											
+32	CPV	CV	0	Cabo Verde	21,8	37,5	45,2	43,3							
+50	CUW	CW	0	Curacao				163							
+51	CYP	CY	0	Chypre	201	199	194,7	168,6							 
+52_01	CZE	CZ	1	Praha 	348,8	401,6	462,3	396,4							
+52_02	CZE	CZ	1	St?edn� ?echy 	182,7	195,8	200,8	167,7							
+52_03	CZE	CZ	1	Jihoz�pad 	197,5	192,5	192,3	163,9							
+52_04	CZE	CZ	1	Severoz�pad 	199,3	172,6	170,4	146,1							
+52_05	CZE	CZ	1	Severov�chod 	190,1	185,9	177,2	155							
+52_06	CZE	CZ	1	Jihov�chod 	190,1	182,6	192,3	170,3							
+52_07	CZE	CZ	1	St?edn� Morava 	177,2	169,3	167	152,5							
+52_08	CZE	CZ	1	Moravskoslezsko 	182,7	162,6	180,5	163,9							
+72_0101	DEU	DE	2	Stuttgart	441,6	424,7	405	386,6							
+72_0102	DEU	DE	2	Karlsruhe	420,3	389,2	367,8	346,3							
+72_0103	DEU	DE	2	Freiburg	360,2	338,7	314,1	307,9							
+72_0104	DEU	DE	2	T�bingen	377,7	355,1	342,6	338,4							
+72_0201	DEU	DE	2	Oberbayern	490	486,2	451	429,9							
+72_0202	DEU	DE	2	Niederbayern	352,5	311,4	308,7	319,7							
+72_0203	DEU	DE	2	Oberpfalz	360,2	330,5	322,9	330,6							
+72_0204	DEU	DE	2	Oberfranken	368	304,5	286,8	295,1							
+72_0205	DEU	DE	2	Mittelfranken	410,6	367,3	338,2	339,4							
+72_0206	DEU	DE	2	Unterfranken	354,4	334,6	325,1	319,7							
+72_0207	DEU	DE	2	Schwaben	379,6	331,8	317,4	318,8							
+72_0301	DEU	DE	2	Berlin	371,9	329,1	291,2	288,3							
+72_0401	DEU	DE	2	Brandenburg	242,1	230,8	221,1	224,3							
+72_0501	DEU	DE	2	Bremen	482,2	458,8	437,8	404,4							
+72_0601	DEU	DE	2	Hamburg	613,9	610,4	557,1	516,5							
+72_0701	DEU	DE	2	Darmstadt	499,7	491,6	454,3	413,2							
+72_0702	DEU	DE	2	Gie�en	329,2	310	299,9	285,3							
+72_0703	DEU	DE	2	Kassel	350,5	323,6	309,8	301,1							
+72_0801	DEU	DE	2	Mecklenburg-Vorpommern	242,1	224	215,6	214,5							
+72_0901	DEU	DE	2	Braunschweig	340,9	325	309,8	318,8							
+72_0902	DEU	DE	2	Hannover	447,4	333,2	309,8	305							
+72_0903	DEU	DE	2	L�neburg	294,4	252,6	224,4	216,4							
+72_0904	DEU	DE	2	Weser-Ems	325,4	304,5	282,4	278,4							
+72_1001	DEU	DE	2	D�sseldorf	412,5	374,2	363,4	350,2							
+72_1002	DEU	DE	2	K�ln	410,6	379,6	348,1	329,6							
+72_1003	DEU	DE	2	M�nster	317,6	293,6	285,7	283,3							
+72_1004	DEU	DE	2	Detmold	368	344,1	321,8	307,9							
+72_1005	DEU	DE	2	Arnsberg	344,7	303,2	291,2	288,3							
+72_1101	DEU	DE	2	Koblenz	321,5	295	275,8	273,5							
+72_1102	DEU	DE	2	Trier	309,9	275,9	261,6	256,8							
+72_1103	DEU	DE	2	Rheinhessen-Pfalz	358,3	326,4	301	300,1							
+72_1201	DEU	DE	2	Saarland	346,7	318,2	324	307							
+72_1301	DEU	DE	2	Dresden	249,8	229,4	238,6	228,2							
+72_1302	DEU	DE	2	Chemnitz	226,6	215,8	224,4	219,4							
+72_1303	DEU	DE	2	Leipzig	273,1	245,8	243	242							
+72_1401	DEU	DE	2	Sachsen-Anhalt	226,6	218,5	224,4	219,4							
+72_1501	DEU	DE	2	Schleswig-Holstein	352,5	310	272,6	263,7							
+72_1601	DEU	DE	2	Th�ringen	224,7	215,8	216,7	216,4							
+54	DJI	DJ	0	Djibouti	31,3	21,8		20,5							
+53_01	DNK	DK	1	Hovedstaden	430,8	449,6	398,1	383,9							
+53_02	DNK	DK	1	Sj�lland	275,7	270,7	240,1	220,8							
+53_03	DNK	DK	1	Syddanmark	326,8	334,9	301,4	279,3							
+53_04	DNK	DK	1	Midtjylland	330,4	347,5	308,6	283							
+53_05	DNK	DK	1	Nordjylland	346,9	324,6	294,1	275,7							
+55	DMA	DM	0	Dominique	79,8	72,8	75,5	70,1							
+56_01	DOM	DO	1	Distrito Nacional (Ozama) (Distrito nacional + Santo Domingo)		109,6	111,7	114,3							
+56_02	DOM	DO	1	Valdesia (Monte Plata, Peravia, San Cristobal, San Jose de Ocoa)		55,4	56,5	57,8							
+56_03	DOM	DO	1	Norcentral (Cibao Norte) (Espaillat, Puerto Plata, Santiago)		72,5	73,9	75,6							
+56_04	DOM	DO	1	Nordeste (Cibao Nordeste) (Duarte, Maria Trinidad Sanchez, Salcedo (= Hermanes Mirabal?), Samana)		63,3	64,5	66							
+56_05	DOM	DO	1	Enriquillo (Independencia, Bahoruco, Barahona, Pedernales)		41,8	42,6	43,6							
+56_06	DOM	DO	1	Este (Higuano) (El Seibo, La Altagracia, La Romana, San Pedro de Macoris, Hato Mayor)		62,6	63,8	65,3							
+56_07	DOM	DO	1	El Valle (San Juan, Elias Pina, Azua)		42,3	43,1	44,1							
+56_08	DOM	DO	1	Noroeste (Cibao Noroeste) (Dajabon, Montecristi, Santiago Rodriguez, Valverde)		52,1	53,2	54,4							
+56_09	DOM	DO	1	Cibao Central (= Sur)(La vega, Monsenor Nouel, Sanchez Ramirez)		62,7	63,9	65,4							
+3_01	DZA	DZ	1	Nord-Est			100,4	92,6							
+3_02	DZA	DZ	1	Nord-Centre			99,4	91,7							
+3_03	DZA	DZ	1	Nord-Ouest			101,2	93,4							
+3_04	DZA	DZ	1	Hauts-Plateaux-Est			97,9	90,3							
+3_05	DZA	DZ	1	Hauts-Plateaux-Centre			88,5	81,6							
+3_06	DZA	DZ	1	Hauts-Plateaux-Ouest			96,5	89							
+3_07	DZA	DZ	1	Sud-Est			102,2	94,2							
+3_08	DZA	DZ	1	Sud-Ouest			99,8	92							
+3_09	DZA	DZ	1	Grand-Sud (Hoggar-Tassili)			91,1	84							
+57_01	ECU	EC	1	Azuay			68,8	71,6							
+57_02	ECU	EC	1	Bolivar			31,4	30,1							
+57_03	ECU	EC	1	Ca�ar			45,1	47,9							
+57_04	ECU	EC	1	Carchi			40,4	44							
+57_05	ECU	EC	1	Chimborazo			36,2	37,3							
+57_06	ECU	EC	1	Cotopaxi			41	46							
+57_07	ECU	EC	1	El Oro			51	61,5							
+57_08	ECU	EC	1	Esmeraldas			59,3	43,3							
+57_09	ECU	EC	1	Gal�pagos			132,8	96,9							
+57_10	ECU	EC	1	Guayas			74,8	72,5							
+57_11	ECU	EC	1	Imbabura			43,9	55,3							
+57_12	ECU	EC	1	Loja			40,7	46,1							
+57_13	ECU	EC	1	Los R�os			42,7	45,6							
+57_14	ECU	EC	1	Manab�			40,5	46,1							
+57_15	ECU	EC	1	Morona-Santiago			25,1	33,7							
+57_16	ECU	EC	1	Napo			61,3	37,8							
+57_17	ECU	EC	1	Orellana			508	760,9							
+57_18	ECU	EC	1	Pastaza			111,6	160,7							
+57_19	ECU	EC	1	Pichincha			101	103,8							
+57_20	ECU	EC	1	Santa Elena			0	50,5							
+57_21	ECU	EC	1	Santo Domingo de los Ts�chilas			0	56,1							
+57_22	ECU	EC	1	Sucumb�os			308,1	221,4							
+57_23	ECU	EC	1	Tungurahua			53,5	58,2							
+57_24	ECU	EC	1	Zamora-Chinchipe			30,2	36,3							
+62	EST	EE	0	Estonie		120,9	174,4	173,8							
+58_01	EGY	EG	1	Al Iskandariyah		117,5	81,6	78,9							
+58_02	EGY	EG	1	Aswan		69,4	64,1	62							
+58_03	EGY	EG	1	Asyut		43,7	72,8	70,4							
+58_04	EGY	EG	1	Al Buhayrah		67,9	85,9	83							
+58_05	EGY	EG	1	Bani Suwayf		48,4	80,5	77,8							
+58_06	EGY	EG	1	Al Qahirah (Cairo)		147,7	70,2	67,9							
+58_07	EGY	EG	1	Ad Daqahliyah		63,5	82,8	80							
+58_08	EGY	EG	1	Dimyat		90,8	71,6	69,2							
+58_09	EGY	EG	1	Al Fayyum		52,5	76,6	74,1							
+58_10	EGY	EG	1	Al Gharbiyah		77,2	79,9	77,3							
+58_11	EGY	EG	1	Al Jizah (Giza)		89,4	74,9	72,4							
+58_12	EGY	EG	1	Al Isma'iliyah		87	81,5	78,8							
+58_13	EGY	EG	1	Kafr ash Shaykh		73,2	81,1	78,4							
+58_14	EGY	EG	1	Matruh		92,5	94	90,9							
+58_15	EGY	EG	1	Al Minya		56,9	78,6	76							
+58_16	EGY	EG	1	Al Minufiyah		61,2	89,5	86,6							
+58_17	EGY	EG	1	Al Wadi al Jadid (Nouvelle vall�e)		82,5	115,2	111,4							
+58_18	EGY	EG	1	Shamal Sina' (Sinai Nord)		90,9	80,7	78							
+58_19	EGY	EG	1	Bur Sa'id		175,7	95,8	92,7							
+58_20	EGY	EG	1	Al Qalyubiyah		78,3	73,9	71,4							
+58_21	EGY	EG	1	Qina		57,1	58	56,1							
+58_22	EGY	EG	1	Al Bahr al Ahmar (Mer Rouge)		116,4	76,9	74,3							
+58_23	EGY	EG	1	Ash Sharqiyah		60,7	79	76,4							
+58_24	EGY	EG	1	Suhaj		47,6	66,6	64,4							
+58_25	EGY	EG	1	Janub Sina' (Sud Sinai)		167,9	113,1	109,4							
+58_26	EGY	EG	1	As Suways (Suez)		133	79,4	76,8							
+58_27	EGY	EG	1	Al Uqsur (Louxor)		80,6	82,7	80							
+61	ERI	ER	0	�rythr�e	14	14,8	10,1	8,2							
+176_01	ESP	ES	1	Galicia	207,7	217,5	239,1	207							
+176_02	ESP	ES	1	Asturias	224,9	235,5	254,4	215,1							
+176_03	ESP	ES	1	Cantabria	238,2	262,5	266,1	223,1							
+176_04	ESP	ES	1	Pa�s Vasco	304,9	343,4	350,9	307,9							
+176_05	ESP	ES	1	Navarra	322,1	356	343,9	293,8							
+176_06	ESP	ES	1	La Rioja	293,5	320	302,6	257,5							
+176_07	ESP	ES	1	Arag�n	274,4	293	305	255,4							
+176_08	ESP	ES	1	Madrid	333,5	382,9	359,2	298,9							
+176_09	ESP	ES	1	Castilla y Le�n	245,8	253,5	260,3	225,2							
+176_10	ESP	ES	1	Castilla-la Mancha	209,6	219,3	226,1	182,7							
+176_11	ESP	ES	1	Extremadura	163,9	178	186,1	158,5							
+176_12	ESP	ES	1	Catalu�a	310,6	343,4	321,5	268,6							
+176_13	ESP	ES	1	Com. Valenciana	243,9	271,5	253,2	200,9							
+176_14	ESP	ES	1	Illes Balears	310,6	347	297,9	240,3							
+176_15	ESP	ES	1	Andaluc�a	190,6	206,7	214,3	172,7							
+176_16	ESP	ES	1	Murcia	211,5	235,5	235,5	186,8							
+176_17	ESP	ES	1	Ceuta	215,4	237,3	237,9	197,9							
+176_18	ESP	ES	1	Melilla	228,7	233,7	222,6	179,7							
+176_19	ESP	ES	1	Canarias	245,8	266,1	240,2	194,9							
+63_01	ETH	ET	1	Addis-Abeba		8,2	9,1	11,1							
+63_02	ETH	ET	1	Afar		6,8	7,5	9,2							
+63_03	ETH	ET	1	Amhara		5,5	6,1	9,7							
+63_04	ETH	ET	1	Benishangul-Gumuz		5,5	6,1	10							
+63_05	ETH	ET	1	Dire Dawa		5,7	6,4	9,7							
+63_06	ETH	ET	1	Gambela		3,8	4,2	8,9							
+63_07	ETH	ET	1	Harari											
+63_08	ETH	ET	1	Oromia		6,4	7,1	9,6							
+63_09	ETH	ET	1	Somali		6,3	6,9	9,1							
+63_10	ETH	ET	1	R�gion des nations, nationalit�s et peuples du Sud (SNPP)		7,2	8	9,4							
+63_11	ETH	ET	1	Tigr�		5	5,5	10,3							
+66_01	FIN	FI	1	L�nsi-Suomi		296,1	291,6	251,7							
+66_02	FIN	FI	1	Helsinki-Uusimaa		466,1	433,1	366,9							
+66_03	FIN	FI	1	Etel�-Suomi		317,4	292,6	244,6							
+66_04	FIN	FI	1	Pohjois- ja It�-Suomi		265,6	262,9	228,7							
+66_05	FIN	FI	1	�land		422,3	387,2	331,1							
+65	FJI	FJ	0	Fidji	66,7	67,1	56,8	52,9							
+904	FLK	FK	0	Falkland (Malvinas)		701,3	701,3	701,3							
+127	FSM	FM	0	Micron�sie, �tats f�d�r�s de	40,5	33,2	27,7	25,7							
+64	FRO	FO	0	�les F�ro�			252,5	219,2							
+67_01	FRA	FR	1	�le de France	498,4	533,3	468,9	444							
+67_02	FRA	FR	1	Champagne-Ardenne	305,2	322	274	225,5							
+67_03	FRA	FR	1	Picardie	282,1	278,9	237,5	202,9							
+67_04	FRA	FR	1	Haute-Normandie	307,2	314,8	271	233,3							
+67_05	FRA	FR	1	Centre (FR)	284,1	304,9	265	222							
+67_06	FRA	FR	1	Basse-Normandie	280,1	281,7	240,5	206,4							
+67_07	FRA	FR	1	Bourgogne	291,7	301,9	261,9	221,1							
+67_08	FRA	FR	1	Nord - Pas-de-Calais	260,8	265,9	242,6	215,1							
+67_09	FRA	FR	1	Lorraine	284	281,7	244,6	203,8							
+67_10	FRA	FR	1	Alsace	341,9	339,2	282,2	247,1							
+67_11	FRA	FR	1	Franche-Comt�	289,8	301,9	247,6	210,7							
+67_12	FRA	FR	1	Pays de la Loire	291,7	307,6	269	235							
+67_13	FRA	FR	1	Bretagne	276,3	293,2	260,8	217,7							
+67_14	FRA	FR	1	Poitou-Charentes	274,3	281,7	248,7	212,5							
+67_15	FRA	FR	1	Aquitaine	293,6	303,3	270	232,4							
+67_16	FRA	FR	1	Midi-Pyr�n�es	291,7	297,6	267,9	231,5							
+67_17	FRA	FR	1	Limousin	268,5	278,9	242,6	202							
+67_18	FRA	FR	1	Rh�ne-Alpes	332,3	346,4	302,5	265,4							
+67_19	FRA	FR	1	Auvergne	272,4	286,1	252,7	212,5							
+67_20	FRA	FR	1	Languedoc-Roussillon	256,9	263,1	235,5	203,8							
+67_21	FRA	FR	1	Provence-Alpes-C�te d'Azur	305,2	313,4	282,2	253,2							
+67_22	FRA	FR	1	Corse	239,6	254,4	231,4	222							
+67_23	FRA	FR	1	Guadeloupe	183,5	198,4	207,1	187,3							
+67_24	FRA	FR	1	Martinique	210,6	218,5	201	187,3							
+67_25	FRA	FR	1	Guyane	208,6	156,7	148,2	128,3							
+67_26	FRA	FR	1	R�union	166,1	178,2	188,8	167,4							
+67_27	FRA	FR	1	Mayotte				66,6							
+69	GAB	GA	0	Gabon	192,6	150,6	122	120,1							
+203_0101	GBR	GB	2	Tees Valley and Durham	261,5	244,5	222,5	179,3							
+203_0102	GBR	GB	2	Northumberland and Tyne and Wear	261,5	252,3	255,9	208,4							
+203_0201	GBR	GB	2	Cumbria	290,7	267,7	257,9	209,4							
+203_0202	GBR	GB	2	Greater Manchester	292,7	306,3	290,3	227,2							
+203_0203	GBR	GB	2	Lancashire	282,9	274,1	248,3	197,2							
+203_0204	GBR	GB	2	Cheshire	351,2	360,4	360	297,6							
+203_0205	GBR	GB	2	Merseyside	228,3	257,4	241,6	202,8							
+203_0301	GBR	GB	2	East Yorkshire and Northern Lincolnshire	290,7	263,8	264,5	201,9							
+203_0302	GBR	GB	2	North Yorkshire	277,1	302,5	285,6	225,3							
+203_0303	GBR	GB	2	South Yorkshire	236,1	238,1	247,4	187,8							
+203_0304	GBR	GB	2	West Yorkshire	302,4	315,3	297	234,7							
+203_0401	GBR	GB	2	Derbyshire and Nottinghamshire	288,8	279,3	257,9	213,1							
+203_0402	GBR	GB	2	Leicestershire, Rutland and Northamptonshire	314,1	323	295,1	232,8							
+203_0403	GBR	GB	2	Lincolnshire	271,2	238,1	221,6	185,9							
+203_0501	GBR	GB	2	Herefordshire, Worcestershire and Warwickshire	282,9	312,8	275	225,3							
+203_0502	GBR	GB	2	Shropshire and Staffordshire	259,5	270,3	244,5	194,3							
+203_0503	GBR	GB	2	West Midlands	316,1	330,8	280,8	218,8							
+203_0601	GBR	GB	2	East Anglia	306,3	312,8	291,3	236,6							
+203_0602	GBR	GB	2	Bedfordshire and Hertfordshire	335,6	400,3	344,8	269,4							
+203_0603	GBR	GB	2	Essex	263,4	289,6	272,2	215,9							
+203_0701	GBR	GB	2	Inner London	784,4	970,4	939,8	807,4							
+203_0702	GBR	GB	2	Outer London	298,5	351,4	292,2	226,3							
+203_0801	GBR	GB	2	Berkshire, Buckinghamshire and Oxfordshire	394,1	499,4	434,5	360,5							
+203_0802	GBR	GB	2	Surrey, East and West Sussex	325,8	391,3	335,2	269,4							
+203_0803	GBR	GB	2	Hampshire and Isle of Wight	288,8	342,4	317,1	257,2							
+203_0804	GBR	GB	2	Kent	267,3	289,6	261,7	213,1							
+203_0901	GBR	GB	2	Gloucestershire, Wiltshire and Bristol/Bath area	335,6	366,8	340,9	276							
+203_0902	GBR	GB	2	Dorset and Somerset	265,4	287	258,8	211,2							
+203_0903	GBR	GB	2	Cornwall and Isles of Scilly	193,2	199,5	207,2	162,4							
+203_0904	GBR	GB	2	Devon	269,3	263,8	255,9	202,8							
+203_1001	GBR	GB	2	West Wales and The Valleys	232,2	211,1	197,7	161,5							
+203_1002	GBR	GB	2	East Wales	321,9	317,9	295,1	230							
+203_1101	GBR	GB	2	Eastern Scotland	321,9	326,9	317,1	246							
+203_1102	GBR	GB	2	South Western Scotland	288,8	294,7	277,9	223,4							
+203_1103	GBR	GB	2	North Eastern Scotland	 	458,2	446	400,9							
+203_1104	GBR	GB	2	Highlands and Islands	0	253,5	241,6	201,9							
+203_1201	GBR	GB	2	Northern Ireland	249,8	280,6	264,5	197,2							
+76	GRD	GD	0	Grenade	83,4	92	92,8	78,3							
+71	GEO	GE	0	G�orgie	28,3	34,6	47,1	48,9							
+905	GGY	GG	0	Guernesey et Alderney				313,2							
+73_01	GHA	GH	1	Western			22,1	27,4							
+73_02	GHA	GH	1	Central			23,1	28,5							
+73_03	GHA	GH	1	Greater Accra			35,8	44,3							
+73_04	GHA	GH	1	Volta			16,7	20,7							
+73_05	GHA	GH	1	Eastern			20,9	25,9							
+73_06	GHA	GH	1	Ashanti			23,3	28,8							
+73_07	GHA	GH	1	Brong Ahafo			17,5	21,7							
+73_08	GHA	GH	1	Northern			12,3	15,3							
+73_09	GHA	GH	1	Upper East			7,8	9,7							
+73_10	GHA	GH	1	Upper West			5,7	7							
+906	GIB	GI	0	Gibraltar			355,9	355,9							
+75	GRL	GL	0	Groenland			328,7	328,7							
+70	GMB	GM	0	Gambie	17,7	13,1	10,6	9,8							
+79	GIN	GN	0	Guin�e	12,3	11,3	8,6	8,1							
+60	GNQ	GQ	0	Guin�e �quatoriale	18,4	77,6	248,3	162,3							
+74_01	GRC	GR	1	Anatoliki Makedonia, Thraki	202,5	184,3	178	126,7							
+74_02	GRC	GR	1	Kentriki Makedonia	243	229,3	198,8	139,3							
+74_03	GRC	GR	1	Dytiki Makedonia	251,1	225,4	222,1	178,9							
+74_04	GRC	GR	1	Thessalia	220,7	209,7	184,1	125,7							
+74_05	GRC	GR	1	Ipeiros	182,3	209,7	174,3	123,8							
+74_06	GRC	GR	1	Ionia Nisia	210,6	241,1	254	168,3							
+74_07	GRC	GR	1	Dytiki Ellada	206,6	194,1	189	132,5							
+74_08	GRC	GR	1	Sterea Ellada	372,6	296	224,6	160,5							
+74_09	GRC	GR	1	Peloponnisos	224,8	245	203,7	144,1							
+74_10	GRC	GR	1	Attiki	269,3	280,3	317,9	239,8							
+74_11	GRC	GR	1	Voreio Aigaio	206,6	199,9	198,8	140,2							
+74_12	GRC	GR	1	Notio Aigaio	269,3	301,9	276,1	199,2							
+74_13	GRC	GR	1	Kriti	192,4	245	217,2	154,7							
+78	GTM	GT	0	Guatemala	66,1	63,7	54,9	49,7							
+77	GUM	GU	0	Guam			253,3	226,5							
+80	GNB	GW	0	Guin�e-Bissau	17,7	13	10,6	9,7							
+81	GUY	GY	0	Guyane	40,3	48	41,1	46,1							
+952	HMD	HD	0	Heard I. and McDonald Is. 											
+84	HKG	HK	0	Chine, RAS de Hong Kong	371,5	349,9	386,3	378,4							
+83_01	HND	HN	1	Atl�ntida		36,9	38,6	33,9							
+83_02	HND	HN	1	Choluteca		24,4	21,7	19,1							
+83_03	HND	HN	1	Col�n		23,6	25,7	22,6							
+83_04	HND	HN	1	Comayagua		24,6	26,2	23							
+83_05	HND	HN	1	Cop�n		16	20	17,6							
+83_06	HND	HN	1	Cort�s		52,6	52,6	46,2							
+83_07	HND	HN	1	El Para�so		20,5	21,2	18,6							
+83_08	HND	HN	1	Francisco Moraz�n		55,9	50,5	44,4							
+83_09	HND	HN	1	Gracias a Dios		20,9	19,1	16,8							
+83_10	HND	HN	1	Intibuc�		15,1	15,9	14							
+83_11	HND	HN	1	Islas de la Bah�a		44,5	42,4	37,3							
+83_12	HND	HN	1	La Paz		17,6	20	17,5							
+83_13	HND	HN	1	Lempira		13,3	15,9	14							
+83_14	HND	HN	1	Ocotepeque		19,4	23,1	20,3							
+83_15	HND	HN	1	Olancho		22,3	21,9	19,3							
+83_16	HND	HN	1	Santa B�rbara		17,5	17,2	15,1							
+83_17	HND	HN	1	Valle		27,3	27,9	24,6							
+83_18	HND	HN	1	Yoro		28,3	26,2	23,1							
+48_01	HRV	HR	1	Jadranska Hrvatska		134,4	157	139,5							
+48_02	HRV	HR	1	Kontinentalna Hrvatska		139,6	160,3	147,9							
+82	HTI	HT	0	Ha�ti			13,1	12							
+85_01	HUN	HU	1	K�z�p-Magyarorsz�g		226,3	256,4	258,5							
+85_02	HUN	HU	1	K�z�p-Dun�nt�l		144,9	144,7	138,9							
+85_03	HUN	HU	1	Nyugat-Dun�nt�l		169	152,6	161,2							
+85_04	HUN	HU	1	D�l-Dun�nt�l		111,7	105,4	105,3							
+85_05	HUN	HU	1	�szak-Magyarorsz�g		96,6	99,1	94,2							
+85_06	HUN	HU	1	�szak-Alf�ld		99,6	97,5	100,5							
+85_07	HUN	HU	1	D�l-Alf�ld		111,7	102,2	103,7							
+88_01	IDN	ID	1	Aceh	84	74,3	58	51,1							
+88_02	IDN	ID	1	Bali	66,8	59,1	42,7	50,1							
+88_03	IDN	ID	1	Banten	50,5	43,5	45,6	46,9							
+88_04	IDN	ID	1	Bengkulu	34,2	29,5	29,5	31,4							
+88_05	IDN	ID	1	DI Yogyakarta	49,6	42,8	35,8	38,3							
+88_06	IDN	ID	1	DKI Jakarta	201	179,2	235,5	260,2							
+88_07	IDN	ID	1	Gorontalo	40,4	36,3	16,2	22,5							
+88_08	IDN	ID	1	Jambi	37,2	32	37,9	50,5							
+88_09	IDN	ID	1	Jawa Barat	50,5	43,5	43,9	52							
+88_10	IDN	ID	1	Jawa Tengah	39,7	35,2	32,3	39,8							
+88_11	IDN	ID	1	Jawa Timur	50,8	45,4	48	60,3							
+88_12	IDN	ID	1	Kalimantan Barat	51,4	47	39,1	40							
+88_13	IDN	ID	1	Kalimantan Selatan	55,8	46,8	44,7	47,8							
+88_14	IDN	ID	1	Kalimantan Tengah	70,2	60,4	49,8	55,8							
+88_15	IDN	ID	1	Kalimantan Timur	226	190,7	285,2	262,7							
+88_16	IDN	ID	1	Kepulauan Bangka Belitung	51,4	45,7	62,4	63,3							
+88_17	IDN	ID	1	Kepulauan Riau	133,8	113,3	142,5	123,7							
+88_18	IDN	ID	1	Lampung	30,8	26,8	26,7	41,3							
+88_19	IDN	ID	1	Maluku	38,5	32,2	15,7	15,3							
+88_20	IDN	ID	1	Maluku Utara	38,5	32,2	15,8	15,1							
+88_21	IDN	ID	1	Nusa Tenggara Barat	24,3	21,2	26,1	32							
+88_22	IDN	ID	1	Nusa Tenggara Timur	20,7	19,4	16,3	17,2							
+88_23	IDN	ID	1	Papua	93,1	80,3	77	89,8							
+88_24	IDN	ID	1	Papua Barat	93,1	80,3	87,9	102,5							
+88_25	IDN	ID	1	Riau	133,8	113,3	139,8	181,1							
+88_26	IDN	ID	1	Sulawesi Barat	34,8	30,5	21,1	27,5							
+88_27	IDN	ID	1	Sulawesi Selatan	34,8	30,5	32,2	42,5							
+88_28	IDN	ID	1	Sulawesi Tengah	34,4	30,2	33,4	41,1							
+88_29	IDN	ID	1	Sulawesi Tenggara	29	24,8	30,8	36,9							
+88_30	IDN	ID	1	Sulawesi Utara	40,4	36,3	40,5	47							
+88_31	IDN	ID	1	Sumatera Barat	49	42,4	45,1	52,2							
+88_32	IDN	ID	1	Sumatera Selatan	51,4	45,7	56,9	61,4							
+88_33	IDN	ID	1	Sumatera Utara	56,4	52,1	53,3	61,5							
+88_34	IDN	ID	1	Kalimantan Utera	226	190,7	285,2	262,7							
+91_01	IRL	IE	1	Border, Midland and Western	177,2	217,8	241,4	180,9							
+91_02	IRL	IE	1	Southern and Eastern	266,6	369	386,7	304,6							
+93	ISR	IL	0	Isra�l	254,4	291,6	234,9	221,6							
+92	IMY	IM	0	�le de Man			718,4	718,4							
+87	IND	IN	0	Inde	22	25,7	30,9	37,3							
+87_01	IND	IN	1	Jammu and Kashmir	17,9	21,5	26,7	30,4							
+87_0201	IND	IN	2	Chamba		23,6	28,1	35,2							
+87_0202	IND	IN	2	Kangra		27,6	35,8	44,9							
+87_0203	IND	IN	2	Lahul & Spiti		87,6	89,8	112,8							
+87_0204	IND	IN	2	Kullu		29,7	45,4	57							
+87_0205	IND	IN	2	Mandi		24,5	30,8	38,6							
+87_0206	IND	IN	2	Hamirpur		31,8	39,2	49,2							
+87_0207	IND	IN	2	Una		32,3	39,7	49,8							
+87_0208	IND	IN	2	Bilaspur		34,2	41,9	52,6							
+87_0209	IND	IN	2	Solan		64,8	73	91,7							
+87_0210	IND	IN	2	Sirmaur		34,8	38,9	48,9							
+87_0211	IND	IN	2	Shimla		36,2	50	62,7							
+87_0212	IND	IN	2	Kinnaur		44,6	65,4	82,1							
+87_0301	IND	IN	2	National Capital Territory of Delhi	57,6	67,5	76,1	94,1							
+87_0401	IND	IN	2	Ganganagar 	34,1	31,2	30,6	41,2							
+87_0402	IND	IN	2	Hanumangarh	34,1	24,1	27,4	32,6							
+87_0403	IND	IN	2	Bikaner	20,3	25	25,3	27,8							
+87_0404	IND	IN	2	Churu	14,6	12,6	15	20,7							
+87_0405	IND	IN	2	Jhunjhunun	16	16,5	19,9	25,5							
+87_0406	IND	IN	2	Alwar	24,3	25,4	28,5	38,3							
+87_0407	IND	IN	2	Bharatpur	18,3	17,4	19,4	23,9							
+87_0408	IND	IN	2	Dhaulpur	15,7	13,5	17,2	21,3							
+87_0409	IND	IN	2	Karauli	18,3	16,2	18,8	27							
+87_0410	IND	IN	2	Sawai Madhopur	20,9	18,8	20,9	27,4							
+87_0411	IND	IN	2	Dausa	19	15,7	17,2	22,6							
+87_0412	IND	IN	2	Jaipur	22,1	28	34,7	48,1							
+87_0413	IND	IN	2	Sikar	13,8	16,4	20,6	25,7							
+87_0414	IND	IN	2	Nagaur	19,1	15	19,3	22,8							
+87_0415	IND	IN	2	Jodhpur	18,4	20,6	25,6	30,7							
+87_0416	IND	IN	2	Jaisalmer	16,5	19,8	29,3	32,6							
+87_0417	IND	IN	2	Barmer	13	13,4	16,9	21,5							
+87_0418	IND	IN	2	Jalor	17,6	15,9	18	22,4							
+87_0419	IND	IN	2	Sirohi	21	24,7	28,4	34							
+87_0420	IND	IN	2	Pali	20,7	19,4	23,6	33							
+87_0421	IND	IN	2	Ajmer	20,3	23,4	26,6	37,3							
+87_0422	IND	IN	2	Tonk	21,7	21,4	22,3	25,4							
+87_0423	IND	IN	2	Bundi	25,4	23,5	26,5	33							
+87_0424	IND	IN	2	Bhilwara	20,3	28,8	33,5	42,2							
+87_0425	IND	IN	2	Rajsamand	23,6	19,5	28,8	32,6							
+87_0426	IND	IN	2	Dungarpur	12,6	15,3	17,7	19,2							
+87_0427	IND	IN	2	Banswara	17,2	14,7	17,5	17,5							
+87_0428	IND	IN	2	Chittaurgarh	26,8	21,6	23,9	31,8							
+87_0429	IND	IN	2	Kota	27,3	27,3	32,6	37,4							
+87_0430	IND	IN	2	Baran	29,6	20,1	27,3	34,4							
+87_0431	IND	IN	2	Jhalawar	19,3	20,2	21,9	28,1							
+87_0432	IND	IN	2	Udaipur	18,6	21,5	25,8	31,2							
+87_0433	IND	IN	2	Pratapgarh	18,6	21,5	25,8	28,6							
+87_0501	IND	IN	2	Saharanpur		25	24,5	24,7							
+87_0502	IND	IN	2	Muzaffarnagar		23,4	21,3	25,9							
+87_0503	IND	IN	2	Bijnor		22,1	21	23,6							
+87_0504	IND	IN	2	Moradabad		20,1	18,2	20,2							
+87_0505	IND	IN	2	Rampur		21,1	16,5	17,7							
+87_0506	IND	IN	2	Jyotiba Phule Nagar		23,5	25,7	28							
+87_0507	IND	IN	2	Meerut		27,9	26,3	31,1							
+87_0508	IND	IN	2	Baghpat		25,1	23,9	30							
+87_0509	IND	IN	2	Ghaziabad		29,6	27,5	29,2							
+87_0510	IND	IN	2	Gautam Buddha Nagar		62,4	65,2	84,6							
+87_0511	IND	IN	2	Bulandshahr 		24,5	22,5	27,2							
+87_0512	IND	IN	2	Aligarh		20,5	19,2	23,2							
+87_0513	IND	IN	2	Mahamaya Nagar		20,9	22,8	23,6							
+87_0514	IND	IN	2	Mathura		22,4	22,9	26,7							
+87_0515	IND	IN	2	Agra		20,5	22	25,2							
+87_0516	IND	IN	2	Firozabad		16,9	19,4	18							
+87_0517	IND	IN	2	Mainpuri		15,4	13,7	17,3							
+87_0518	IND	IN	2	Budaun		18,9	16,9	19,2							
+87_0519	IND	IN	2	Bareilly		20,2	18,5	24,9							
+87_0520	IND	IN	2	Pilibhit		17,4	17,8	21,4							
+87_0521	IND	IN	2	Shahjahanpur		17,8	15,6	19,9							
+87_0522	IND	IN	2	Kheri		17,5	15,9	19,2							
+87_0523	IND	IN	2	Sitapur		13	12,9	15,4							
+87_0524	IND	IN	2	Hardoi		12,4	12,6	13,7							
+87_0525	IND	IN	2	Unnao		13	14,9	17,6							
+87_0526	IND	IN	2	Lucknow		24,8	28,9	32							
+87_0527	IND	IN	2	Rae Bareli		12,1	11,3	13,6							
+87_0528	IND	IN	2	Farrukhabad		15,5	16,8	16							
+87_0529	IND	IN	2	Kannauj		15,5	16,3	15,9							
+87_0530	IND	IN	2	Etawah		15,1	15,9	17,4							
+87_0531	IND	IN	2	Auraiya		18,9	14,6	21							
+87_0532	IND	IN	2	Kanpur Dehat		17,5	14,5	17							
+87_0533	IND	IN	2	Kanpur Nagar		21,2	25,1	31,5							
+87_0534	IND	IN	2	Jalaun 		17,8	17,1	20,5							
+87_0535	IND	IN	2	Jhansi		22,3	21,6	28,9							
+87_0536	IND	IN	2	Lalitpur		14,8	15,7	19,9							
+87_0537	IND	IN	2	Hamirpur		17,2	15,1	21,1							
+87_0538	IND	IN	2	Mahoba		19,3	17,3	26,4							
+87_0539	IND	IN	2	Banda		13	13,1	17,7							
+87_0540	IND	IN	2	Chitrakoot		10,3	9,6	27,9							
+87_0541	IND	IN	2	Fatehpur		13,8	11,7	16,4							
+87_0542	IND	IN	2	Pratapgarh		9,3	8,6	10,9							
+87_0543	IND	IN	2	Kaushambi		11,7	13,7	16,7							
+87_0544	IND	IN	2	Allahabad 		17,3	15,8	19,1							
+87_0545	IND	IN	2	Bara Banki		14,9	15,7	14							
+87_0546	IND	IN	2	Faizabad		11,8	12,2	16,7							
+87_0547	IND	IN	2	Ambedkar Nagar		10,2	10,6	12,6							
+87_0548	IND	IN	2	Sultanpur		12,5	12,2	14,2							
+87_0549	IND	IN	2	Bahraich		9,5	9,8	10,2							
+87_0550	IND	IN	2	Shrawasti		9,2	7	11,9							
+87_0551	IND	IN	2	Balrampur		9,8	11,3	13,8							
+87_0552	IND	IN	2	Gonda		9,6	10,8	12,5							
+87_0553	IND	IN	2	Siddharthnagar		10,4	9,6	10,8							
+87_0554	IND	IN	2	Basti		10,8	9,9	11,9							
+87_0555	IND	IN	2	Sant Kabir Nagar		10,4	9,5	11,4							
+87_0556	IND	IN	2	Mahrajganj		12,1	9,6	11,2							
+87_0557	IND	IN	2	Gorakhpur		12,5	13	15,4							
+87_0558	IND	IN	2	Kushinagar		10,7	9,7	11,4							
+87_0559	IND	IN	2	Deoria		9,8	9,1	11,7							
+87_0560	IND	IN	2	Azamgarh		10,9	9,9	10,9							
+87_0561	IND	IN	2	Mau		14,2	12,6	14,3							
+87_0562	IND	IN	2	Ballia		11	10,3	13,3							
+87_0563	IND	IN	2	Jaunpur		10,5	9,3	11							
+87_0564	IND	IN	2	Ghazipur		11	10,3	12,7							
+87_0565	IND	IN	2	Chandauli		15	13,5	16,2							
+87_0566	IND	IN	2	Varanasi		14,2	15	17,3							
+87_0567	IND	IN	2	Sant Ravidas Nagar (Bhadohi)		20,2	13,7	16,4							
+87_0568	IND	IN	2	Mirzapur		14,1	11,2	14,5							
+87_0569	IND	IN	2	Sonbhadra		42,2	28,5	22,7							
+87_0570	IND	IN	2	Etah		15,4	16	20,1							
+87_0571	IND	IN	2	Kanshiram Nagar		20,5	19,2	23,6							
+87_0601	IND	IN	2	North District		24,5	27,8	48,5							
+87_0602	IND	IN	2	West District		22,4	25,7	44,9							
+87_0603	IND	IN	2	South District		25,7	34,5	60,3							
+87_0604	IND	IN	2	East District		30,5	39,6	69,1							
+87_0701	IND	IN	2	Tawang		42	45,9	60,9							
+87_0702	IND	IN	2	West Kameng		36,7	45,6	60,5							
+87_0703	IND	IN	2	East Kameng		20,1	28,1	37,2							
+87_0704	IND	IN	2	Papum Pare		43,2	42,3	56,1							
+87_0705	IND	IN	2	Upper Subansiri		19,7	26,5	35,1							
+87_0706	IND	IN	2	West Siang		22,4	29,1	38,6							
+87_0707	IND	IN	2	East Siang		24,3	29,5	39,1							
+87_0708	IND	IN	2	Upper Siang		26,8	36,1	47,9							
+87_0709	IND	IN	2	Changlang		22,5	30,7	40,8							
+87_0710	IND	IN	2	Tirap		22,2	26,7	35,5							
+87_0711	IND	IN	2	Lower Subansiri		19,6	28,1	37,2							
+87_0712	IND	IN	2	Kurung Kumey		 	 	 							
+87_0713	IND	IN	2	Dibang Valley		27,6	34,2	45,4							
+87_0714	IND	IN	2	Lower Dibang Valley		 	 	 							
+87_0715	IND	IN	2	Lohit		20,4	28,8	38,2							
+87_0716	IND	IN	2	Anjaw				 							
+87_08	IND	IN	1	Nagaland	24,6	23	30,1	32,1							
+87_0901	IND	IN	2	West Garo Hills			23,1	27,9							
+87_0902	IND	IN	2	East Garo Hills			21,8	26,2							
+87_0903	IND	IN	2	South Garo Hills			40,7	49							
+87_0904	IND	IN	2	West Khasi Hills			17,6	21,2							
+87_0905	IND	IN	2	Ribhoi			27,1	32,7							
+87_0906	IND	IN	2	East Khasi Hills			43,7	52,7							
+87_0907	IND	IN	2	Jaintia Hills			37,7	45,4							
+87_1001	IND	IN	2	Kokrajhar		10,7	18,7	24,8							
+87_1002	IND	IN	2	Dhubri		10,8	10,6	10,4							
+87_1003	IND	IN	2	Goalpara		12,2	14,8	16,4							
+87_1004	IND	IN	2	Barpeta		19,1	13,2	14							
+87_1005	IND	IN	2	Morigaon		12,7	17,1	16,6							
+87_1006	IND	IN	2	Nagaon		11,5	12,1	13,3							
+87_1007	IND	IN	2	Sonitpur		13,4	15,2	16,7							
+87_1008	IND	IN	2	Lakhimpur		14,2	15,7	18,1							
+87_1009	IND	IN	2	Dhemaji		13	13,5	15,2							
+87_1010	IND	IN	2	Tinsukia		24	30	34,2							
+87_1011	IND	IN	2	Dibrugarh		23,8	32,2	36,5							
+87_1012	IND	IN	2	Sivasagar		28,7	36,7	43,6							
+87_1013	IND	IN	2	Jorhat		22,7	25,5	32,3							
+87_1014	IND	IN	2	Golaghat		18	19,6	23,5							
+87_1015	IND	IN	2	Karbi Anglong		16,9	20,9	23,2							
+87_1016	IND	IN	2	Dima Hasao		34,7	32,4	38,5							
+87_1017	IND	IN	2	Cachar		16,2	17,4	19,8							
+87_1018	IND	IN	2	Karimganj		12,5	18	19,9							
+87_1019	IND	IN	2	Hailakandi		11,7	17,3	19,3							
+87_1020	IND	IN	2	Bongaigaon		23,8	24,5	26,5							
+87_1021	IND	IN	2	Chirang		23,8	13,7	16,1							
+87_1022	IND	IN	2	Kamrup		36,3	20,3	27,5							
+87_1023	IND	IN	2	Kamrup Metropolitan		36,3	37,2	40,8							
+87_1024	IND	IN	2	Nalbari		11,7	19,2	21,8							
+87_1025	IND	IN	2	Baksa		 	13,3	16,1							
+87_1026	IND	IN	2	Darrang		11,4	18,7	19,5							
+87_1027	IND	IN	2	Udalguri		11,4	15,4	19,2							
+87_1101	IND	IN	2	Darjiling 		32,8	30,1	46,9							
+87_1102	IND	IN	2	Jalpaiguri 		27,8	23,6	30,6							
+87_1103	IND	IN	2	Koch Bihar 		22	25,5	26							
+87_1104	IND	IN	2	Uttar Dinajpur		19,1	15,8	21,4							
+87_1105	IND	IN	2	Dakshin Dinajpur		23,7	19,4	27,3							
+87_1106	IND	IN	2	Maldah 		25,2	21	26,3							
+87_1107	IND	IN	2	Murshidabad 		23,7	21,9	26,8							
+87_1108	IND	IN	2	Birbhum		23,1	20,4	24,7							
+87_1109	IND	IN	2	Barddhaman 		32,9	34,3	40,3							
+87_1110	IND	IN	2	Nadia 		27,8	23,4	31,3							
+87_1111	IND	IN	2	North Twenty Four Parganas		29	30,1	39,2							
+87_1112	IND	IN	2	Hugli 		29,7	29	38,7							
+87_1113	IND	IN	2	Bankura 		24,9	21,3	26,2							
+87_1114	IND	IN	2	Puruliya		22,7	18,9	22,3							
+87_1115	IND	IN	2	Haora 		27,5	30,8	36,6							
+87_1116	IND	IN	2	Kolkata		45,2	54,1	60,9							
+87_1117	IND	IN	2	South Twenty Four Parganas		26,1	25,7	30,8							
+87_1118	IND	IN	2	Paschim Medinipur		26,7	21,6	28,9							
+87_1119	IND	IN	2	Purba Medinipur		26,7	40,3	49,2							
+87_1201	IND	IN	2	Kachchh		78,6	110,7	132,9							
+87_1202	IND	IN	2	Banas Kantha		17,7	24,9	29,9							
+87_1203	IND	IN	2	Patan 		22,4	31,6	37,9							
+87_1204	IND	IN	2	Mahesana		23,4	33	39,6							
+87_1205	IND	IN	2	Sabar Kantha		11,5	16,1	19,4							
+87_1206	IND	IN	2	Gandhinagar		55,2	77,8	93,4							
+87_1207	IND	IN	2	Ahmadabad		46,7	65,8	79							
+87_1208	IND	IN	2	Surendranagar		36,9	51,9	62,3							
+87_1209	IND	IN	2	Rajkot		56,6	79,8	95,7							
+87_1210	IND	IN	2	Jamnagar		52,1	73,4	88,1							
+87_1211	IND	IN	2	Porbandar 		67,5	95,1	114,1							
+87_1212	IND	IN	2	Junagadh		67,4	95	114							
+87_1213	IND	IN	2	Amreli		40,2	56,6	67,9							
+87_1214	IND	IN	2	Bhavnagar		39,3	55,4	66,5							
+87_1215	IND	IN	2	Anand 		36,5	51,4	61,7							
+87_1216	IND	IN	2	Kheda		36,4	51,3	61,6							
+87_1217	IND	IN	2	Panch Mahals		13,8	19,5	23,4							
+87_1218	IND	IN	2	Dohad 		13,7	19,3	23,1							
+87_1219	IND	IN	2	Vadodara		17,3	24,4	29,3							
+87_1220	IND	IN	2	Narmada		12,4	17,5	21							
+87_1221	IND	IN	2	Bharuch		11,3	15,9	19,1							
+87_1222	IND	IN	2	The Dangs		13,1	18,5	22,2							
+87_1223	IND	IN	2	Navsari 		40,7	57,3	68,8							
+87_1224	IND	IN	2	Valsad		40,7	57,3	68,8							
+87_1225	IND	IN	2	Surat		22,6	31,9	38,3							
+87_1226	IND	IN	2	Tapi		22,6	31,9	38,3							
+87_1301	IND	IN	2	Dadra & Nagar Haveli				39,9							
+87_1401	IND	IN	2	Nandurbar		21,2	28	24,7							
+87_1402	IND	IN	2	Dhule		24,8	31,2	38,4							
+87_1403	IND	IN	2	Jalgaon		31,2	42,1	41,9							
+87_1404	IND	IN	2	Buldana		20,2	28,3	31,1							
+87_1405	IND	IN	2	Akola		29,8	35	42,1							
+87_1406	IND	IN	2	Washim		19,1	21,6	38,7							
+87_1407	IND	IN	2	Amravati		30,5	31,7	41,5							
+87_1408	IND	IN	2	Wardha		31,9	38	45,9							
+87_1409	IND	IN	2	Nagpur		43,9	55,2	67,5							
+87_1410	IND	IN	2	Bhandara		30,3	37,4	39,9							
+87_1411	IND	IN	2	Gondiya		28,7	33,6	34,2							
+87_1412	IND	IN	2	Gadchiroli		22,1	21,7	32							
+87_1413	IND	IN	2	Chandrapur		36,6	41,8	52,9							
+87_1414	IND	IN	2	Yavatmal		25,5	35,1	35,5							
+87_1415	IND	IN	2	Nanded		20,8	26,4	31,9							
+87_1416	IND	IN	2	Hingoli		21,1	26,6	27,4							
+87_1417	IND	IN	2	Parbhani		24,4	33,7	33,9							
+87_1418	IND	IN	2	Jalna		21,6	29,9	30,3							
+87_1419	IND	IN	2	Aurangabad		36,8	44,6	49,6							
+87_1420	IND	IN	2	Nashik		41,3	51,7	52,9							
+87_1421	IND	IN	2	Thane		58,4	73,3	81,9							
+87_1422	IND	IN	2	Mumbai Urban + Suburban (Gretaer Bombay)	 	69,5	85,5	117,9							
+87_1424	IND	IN	2	Raigarh		61,5	50	74,1							
+87_1425	IND	IN	2	Pune		59,6	72,9	80							
+87_1426	IND	IN	2	Ahmadnagar		30,7	39,8	43							
+87_1427	IND	IN	2	Bid		27,1	30,6	28,7							
+87_1428	IND	IN	2	Latur		22,2	26,1	36,6							
+87_1429	IND	IN	2	Osmanabad		24,5	25,9	31,4							
+87_1430	IND	IN	2	Solapur		31,8	41,9	43,3							
+87_1431	IND	IN	2	Satara		36,9	43,5	47,6							
+87_1432	IND	IN	2	Ratnagiri		30,9	40,3	52,9							
+87_1433	IND	IN	2	Sindhudurg		37,3	45,9	62,1							
+87_1434	IND	IN	2	Kolhapur		43,4	52,6	59,3							
+87_1435	IND	IN	2	Sangli		39,8	44,7	50,9							
+87_1501	IND	IN	2	Diu				31,1							
+87_1502	IND	IN	2	Daman				31,1							
+87_1601	IND	IN	2	Lakshadweep				39,9							
+87_1701	IND	IN	2	Kasaragod		29,2	34,5	43,7							
+87_1702	IND	IN	2	Kannur		31,7	40,9	49,8							
+87_1703	IND	IN	2	Wayanad		33,6	37,2	42							
+87_1704	IND	IN	2	Kozhikode		33,1	40,2	48,7							
+87_1705	IND	IN	2	Malappuram		24,3	27,8	32,8							
+87_1706	IND	IN	2	Palakkad		31,2	38,3	47,6							
+87_1707	IND	IN	2	Thrissur		34,9	43,1	53,4							
+87_1708	IND	IN	2	Ernakulam		48	60,8	74,7							
+87_1709	IND	IN	2	Idukki 		40,5	46,2	57,1							
+87_1710	IND	IN	2	Kottayam		35,2	47,8	60,9							
+87_1711	IND	IN	2	Alappuzha		33,3	40,5	52							
+87_1712	IND	IN	2	Pathanamthitta		34	44,2	59,1							
+87_1713	IND	IN	2	Kollam		30,9	39	49,8							
+87_1714	IND	IN	2	Thiruvananthapuram		35,4	44,3	57,2							
+87_1801	IND	IN	2	Gurdaspur		36,4	37,3	45,3							
+87_1802	IND	IN	2	Kapurthala 		45,3	49,5	61,2							
+87_1803	IND	IN	2	Jalandhar		49,1	50	58,3							
+87_1804	IND	IN	2	Hoshiarpur		37	42,1	55,6							
+87_1805	IND	IN	2	Shahid Bhagat Singh Nagar (Nawanshahr)		47,1	57,6	74,4							
+87_1806	IND	IN	2	Fatehgarh Sahib		55,2	53,2	60,4							
+87_1807	IND	IN	2	Ludhiana		46,6	55,9	64,3							
+87_1808	IND	IN	2	Moga		42	53,2	66,4							
+87_1809	IND	IN	2	Firozpur		42,7	41,7	46,8							
+87_1810	IND	IN	2	Muktsar		38,1	42,4	49,6							
+87_1811	IND	IN	2	Faridkot		45,3	45,7	53,1							
+87_1812	IND	IN	2	Bathinda		40,2	42,3	48,1							
+87_1813	IND	IN	2	Mansa		38,7	39,2	49,2							
+87_1814	IND	IN	2	Patiala		46,7	54,1	52,7							
+87_1815	IND	IN	2	Amritsar 		42,4	41,4	44,1							
+87_1816	IND	IN	2	Tarn Taran		 	 	48,1							
+87_1817	IND	IN	2	Rupnagar		44,6	36,3	54,5							
+87_1818	IND	IN	2	Sahibzada Ajit Singh Nagar		 	 	47,4							
+87_1819	IND	IN	2	Sangrur		45,1	46,9	55,2							
+87_1820	IND	IN	2	Barnala		 	 	54,6							
+87_19	IND	IN	2	Chandigarh	 	103,6	92,8	95,8							
+87_2001	IND	IN	2	Panchkula		45,9	58,3	77,4							
+87_2002	IND	IN	2	Ambala		44,6	55	73,1							
+87_2003	IND	IN	2	Yamunanagar		40,5	41,3	54,8							
+87_2004	IND	IN	2	Kurukshetra		33,8	36,6	48,6							
+87_2005	IND	IN	2	Kaithal		32,1	34,9	46,3							
+87_2006	IND	IN	2	Karnal		39,1	44	58,4							
+87_2007	IND	IN	2	Panipat		48,5	75,2	100							
+87_2008	IND	IN	2	Sonipat		34,2	41,2	54,7							
+87_2009	IND	IN	2	Jind		33,7	31,4	41,8							
+87_2010	IND	IN	2	Fatehabad		40,7	35,9	47,6							
+87_2011	IND	IN	2	Sirsa		38,8	38	50,5							
+87_2012	IND	IN	2	Hisar		40,2	40,9	54,3							
+87_2013	IND	IN	2	Bhiwani		29,5	31	41,2							
+87_2014	IND	IN	2	Rohtak		31,9	36,2	48,2							
+87_2015	IND	IN	2	Jhajjar		30,1	37,7	50,1							
+87_2016	IND	IN	2	Mahendragarh		23,1	26,6	35,4							
+87_2017	IND	IN	2	Rewari		42,2	58	77,1							
+87_2018	IND	IN	2	Gurgaon		80,3	230,8	306,7							
+87_2019	IND	IN	2	Mewat 		 	22,2	29,5							
+87_2020	IND	IN	2	Faridabad		48,3	66,1	87,8							
+87_2021	IND	IN	2	Palwal 											
+87_2101	IND	IN	2	Uttarkashi				33,6							
+87_2102	IND	IN	2	Chamoli				42,5							
+87_2103	IND	IN	2	Rudraprayag				32,4							
+87_2104	IND	IN	2	Tehri Garhwal				45							
+87_2105	IND	IN	2	Dehradun				57,7							
+87_2106	IND	IN	2	Garhwal				37,3							
+87_2107	IND	IN	2	Pithoragarh				37,9							
+87_2108	IND	IN	2	Bageshwar				30,1							
+87_2109	IND	IN	2	Almora 				38,3							
+87_2110	IND	IN	2	Champawat				36,3							
+87_2111	IND	IN	2	Nainital				54,6							
+87_2112	IND	IN	2	Udham Singh Nagar				44,8							
+87_2113	IND	IN	2	Hardwar				66,6							
+87_2201	IND	IN	2	Pashchim Champaran		8	8,3	12,4							
+87_2202	IND	IN	2	Purba Champaran		6,6	7	9,6							
+87_2203	IND	IN	2	Sheohar		4,8	4,9	7,3							
+87_2204	IND	IN	2	Sitamarhi		6,2	5,9	9,2							
+87_2205	IND	IN	2	Madhubani		6,4	8,4	12							
+87_2206	IND	IN	2	Supaul		6,7	7,4	9							
+87_2207	IND	IN	2	Araria		6,1	6,3	9,6							
+87_2208	IND	IN	2	Kishanganj		6,9	7,7	9,8							
+87_2209	IND	IN	2	Purnia		7,1	7,8	10,3							
+87_2210	IND	IN	2	Katihar		7,3	9	11,5							
+87_2211	IND	IN	2	Madhepura		6,6	7,2	9							
+87_2212	IND	IN	2	Saharsa		8,1	8,9	12,8							
+87_2213	IND	IN	2	Darbhanga		6,8	7,6	12,3							
+87_2214	IND	IN	2	Muzaffarpur		9,4	10,5	14,2							
+87_2215	IND	IN	2	Gopalganj		6,9	7	12,2							
+87_2216	IND	IN	2	Siwan		6,6	6,9	9,7							
+87_2217	IND	IN	2	Saran		6,6	7,3	10,1							
+87_2218	IND	IN	2	Vaishali		7,4	8,2	11,7							
+87_2219	IND	IN	2	Samastipur		7,2	7,8	11,3							
+87_2220	IND	IN	2	Begusarai		10,9	13,4	19,5							
+87_2221	IND	IN	2	Khagaria		7,3	8,3	9,9							
+87_2222	IND	IN	2	Bhagalpur		9,4	11,7	16,4							
+87_2223	IND	IN	2	Banka		6,2	7,1	8,2							
+87_2224	IND	IN	2	Munger		12,3	14,4	21,3							
+87_2225	IND	IN	2	Lakhisarai		7,4	8,6	11,7							
+87_2226	IND	IN	2	Sheikhpura		7	6,7	9,7							
+87_2227	IND	IN	2	Nalanda		7,8	8	11,1							
+87_2228	IND	IN	2	Patna		32,3	45	64,5							
+87_2229	IND	IN	2	Bhojpur		8,1	8,1	12,4							
+87_2230	IND	IN	2	Buxar		8	7,3	10,9							
+87_2231	IND	IN	2	Kaimur (Bhabua)		7,8	7,6	10,7							
+87_2232	IND	IN	2	Rohtas		8,9	10,1	13,6							
+87_2233	IND	IN	2	Aurangabad		7,3	7,4	10,1							
+87_2234	IND	IN	2	Gaya		7,9	8,4	11							
+87_2235	IND	IN	2	Nawada		6,6	6,3	8,8							
+87_2236	IND	IN	2	Jamui		6,6	6,8	11							
+87_2237	IND	IN	2	Jehanabad 		7,3	7,2	10							
+87_2238	IND	IN	2	Arwal		6,6	6,5	8,9							
+87_2301	IND	IN	2	Garhwa 			12	11,7							
+87_2302	IND	IN	2	Chatra			14,5	14,2							
+87_2303	IND	IN	2	Kodarma			21,4	21							
+87_2304	IND	IN	2	Giridih			15,2	14,9							
+87_2305	IND	IN	2	Deoghar			22	21,6							
+87_2306	IND	IN	2	Godda			14,1	13,8							
+87_2307	IND	IN	2	Sahibganj			26,4	25,9							
+87_2308	IND	IN	2	Pakur			29	28,4							
+87_2309	IND	IN	2	Dhanbad			36,4	35,6							
+87_2310	IND	IN	2	Bokaro			26	25,5							
+87_2311	IND	IN	2	Lohardaga			15,8	15,5							
+87_2312	IND	IN	2	Purbi Singhbhum			31,1	30,4							
+87_2313	IND	IN	2	Palamu			14,6	14,3							
+87_2314	IND	IN	2	Latehar			15,9	15,5							
+87_2315	IND	IN	2	Hazaribagh			24,1	23,6							
+87_2316	IND	IN	2	Ramgarh			 	 							
+87_2317	IND	IN	2	Dumka			16,8	16,4							
+87_2318	IND	IN	2	Jamtara			16,2	15,8							
+87_2319	IND	IN	2	Ranchi			25,7	25,1							
+87_2320	IND	IN	2	Khunti			 	 							
+87_2321	IND	IN	2	Gumla			16,3	16							
+87_2322	IND	IN	2	Simdega			15,5	15,1							
+87_2323	IND	IN	2	Pashchimi Singhbhum			23,1	22,6							
+87_2324	IND	IN	2	Saraikela-Kharsawan			23,7	23,2							
+87_2401	IND	IN	2	Senapati		14,8	16,2	17							
+87_2402	IND	IN	2	Tamenglong 		20,7	21,8	23							
+87_2403	IND	IN	2	Churachandpur		17,7	18,3	19,2							
+87_2404	IND	IN	2	Bishnupur		23,5	25,5	26,8							
+87_2405	IND	IN	2	Thoubal		18,6	19,8	20,9							
+87_2406	IND	IN	2	Imphal West		37,2	38,3	40,3							
+87_2407	IND	IN	2	Imphal East		18,1	19,8	20,9							
+87_2408	IND	IN	2	Ukhrul		20,2	20,6	21,7							
+87_2409	IND	IN	2	Chandel		19	17,8	18,7							
+87_2501	IND	IN	2	Mamit		27,6	35,4	43,5							
+87_2502	IND	IN	2	Kolasib		26,3	28	34,4							
+87_2503	IND	IN	2	Aizawl		31,8	36,8	45,3							
+87_2504	IND	IN	2	Champhai		21,2	24,4	30,1							
+87_2505	IND	IN	2	Serchhip		26,7	33,7	41,5							
+87_2506	IND	IN	2	Lunglei		24	28,3	34,9							
+87_2507	IND	IN	2	Lawngtlai		23,2	26,9	33,1							
+87_2508	IND	IN	2	Saiha		26,5	30,4	37,5							
+87_26	IND	IN	1	Tripura	18,2	24,9	27,3	31,2							
+87_2701	IND	IN	2	Bargarh			19,4	22,8							
+87_2702	IND	IN	2	Jharsuguda			52,5	58,2							
+87_2703	IND	IN	2	Sambalpur			31,9	38,1							
+87_2704	IND	IN	2	Debagarh			21,2	22,2							
+87_2705	IND	IN	2	Sundargarh			34,9	55							
+87_2706	IND	IN	2	Kendujhar			31,5	63,9							
+87_2707	IND	IN	2	Mayurbhanj			18,7	22							
+87_2708	IND	IN	2	Baleshwar			20,8	23,7							
+87_2709	IND	IN	2	Bhadrak			17,7	19,4							
+87_2710	IND	IN	2	Kendrapara 			17,2	18,6							
+87_2711	IND	IN	2	Jagatsinghapur 			32,9	34,5							
+87_2712	IND	IN	2	Cuttack			29,3	33							
+87_2713	IND	IN	2	Jajapur 			23,1	35,5							
+87_2714	IND	IN	2	Dhenkanal			22,8	26,9							
+87_2715	IND	IN	2	Anugul 			74,7	56,8							
+87_2716	IND	IN	2	Nayagarh 			16,6	17,9							
+87_2717	IND	IN	2	Khordha 			36,3	39,9							
+87_2718	IND	IN	2	Puri			21,9	21							
+87_2719	IND	IN	2	Ganjam			21,2	25,7							
+87_2720	IND	IN	2	Gajapati			21,8	25,3							
+87_2721	IND	IN	2	Kandhamal			27,7	43,3							
+87_2722	IND	IN	2	Baudh			20,8	24,5							
+87_2723	IND	IN	2	Subarnapur = Sonapur			17,8	21,6							
+87_2724	IND	IN	2	Balangir			22,4	26,9							
+87_2725	IND	IN	2	Nuapada			19,3	21,8							
+87_2726	IND	IN	2	Kalahandi			19,7	23,1							
+87_2727	IND	IN	2	Rayagada 			26,8	25,8							
+87_2728	IND	IN	2	Nabarangapur 			16,4	16,9							
+87_2729	IND	IN	2	Koraput			35,5	30,2							
+87_2730	IND	IN	2	Malkangiri 			18,2	18							
+87_2801	IND	IN	2	Sheopur 		13,4	13,6	17							
+87_2802	IND	IN	2	Morena		13,8	13,5	16,5							
+87_2803	IND	IN	2	Bhind		12,7	12,3	16,4							
+87_2804	IND	IN	2	Gwalior		26,7	26,3	32,7							
+87_2805	IND	IN	2	Datia		16,6	16,2	22,5							
+87_2806	IND	IN	2	Shivpuri		13,7	13,1	16,7							
+87_2807	IND	IN	2	Tikamgarh		13,7	11,8	15,5							
+87_2808	IND	IN	2	Chhatarpur		14,5	13,2	16,6							
+87_2809	IND	IN	2	Panna		12,8	13,2	16,4							
+87_2810	IND	IN	2	Sagar		15,2	16,7	20,8							
+87_2811	IND	IN	2	Damoh		15,3	17,2	19,5							
+87_2812	IND	IN	2	Satna		16,4	15,8	18,6							
+87_2813	IND	IN	2	Rewa		13,5	13	15,6							
+87_2814	IND	IN	2	Umaria		13,3	13,3	16,3							
+87_2815	IND	IN	2	Neemuch 		21,4	20,9	25,2							
+87_2816	IND	IN	2	Mandsaur		23,5	20,6	25							
+87_2817	IND	IN	2	Ratlam		24,6	22,4	26,3							
+87_2818	IND	IN	2	Ujjain		26,9	25,5	30,1							
+87_2819	IND	IN	2	Shajapur		17,9	16,6	19,6							
+87_2820	IND	IN	2	Dewas		17,9	18,3	22,7							
+87_2821	IND	IN	2	Dhar		16,3	16,6	20,5							
+87_2822	IND	IN	2	Indore		42,7	43,3	51,8							
+87_2823	IND	IN	2	Khargone (West Nimar)		13,7	13,8	16,8							
+87_2824	IND	IN	2	Barwani 		10,7	11,3	17,1							
+87_2825	IND	IN	2	Rajgarh		15,7	15,1	18,8							
+87_2826	IND	IN	2	Vidisha		17,2	17,1	20							
+87_2827	IND	IN	2	Bhopal		33,6	36,4	42,1							
+87_2828	IND	IN	2	Sehore		16,3	15,9	19							
+87_2829	IND	IN	2	Raisen		16,4	16,5	20,2							
+87_2830	IND	IN	2	Betul		17,2	17,4	20,8							
+87_2831	IND	IN	2	Harda 		17,5	21,2	26,3							
+87_2832	IND	IN	2	Hoshangabad		22,8	24,5	28,2							
+87_2833	IND	IN	2	Katni 		19,8	19,4	22,9							
+87_2834	IND	IN	2	Jabalpur		24	27,4	37,5							
+87_2835	IND	IN	2	Narsimhapur		17	16,9	19,1							
+87_2836	IND	IN	2	Dindori 		10,2	11,2	18,3							
+87_2837	IND	IN	2	Mandla		12,4	11,5	13,4							
+87_2838	IND	IN	2	Chhindwara		19,9	21,6	28,5							
+87_2839	IND	IN	2	Seoni		14	15	20,6							
+87_2840	IND	IN	2	Balaghat		15,4	16,4	20,8							
+87_2841	IND	IN	2	Guna		14,9	15,8	21,2							
+87_2842	IND	IN	2	Ashoknagar		14,9	15,8	21,2							
+87_2843	IND	IN	2	Shahdol		18,9	19,7	22,3							
+87_2844	IND	IN	2	Anuppur		18,9	19,7	22,3							
+87_2845	IND	IN	2	Sidhi		25,2	23,9	24							
+87_2846	IND	IN	2	Singrauli		25,2	23,9	24							
+87_2847	IND	IN	2	Jhabua		10,7	11,1	16,3							
+87_2848	IND	IN	2	Alirajpur		10,7	11,1	16,3							
+87_2849	IND	IN	2	Khandwa (East Nimar)		15,9	16,1	20,7							
+87_2850	IND	IN	2	Burhanpur		15,9	16,1	20,7							
+87_2901	IND	IN	2	Koriya			27,1	30,6							
+87_2902	IND	IN	2	Surguja			15,9	17,9							
+87_2903	IND	IN	2	Jashpur 			19,3	21,8							
+87_2904	IND	IN	2	Raigarh			29,5	33,3							
+87_2905	IND	IN	2	Korba 			69,9	78,9							
+87_2906	IND	IN	2	Janjgir - Champa			19,8	22,4							
+87_2907	IND	IN	2	Bilaspur			25,5	28,8							
+87_2908	IND	IN	2	Kabeerdham			16	18,1							
+87_2909	IND	IN	2	Rajnandgaon			23,6	26,6							
+87_2910	IND	IN	2	Durg			34,1	38,5							
+87_2911	IND	IN	2	Raipur			35,1	39,6							
+87_2912	IND	IN	2	Mahasamund			20	22,5							
+87_2913	IND	IN	2	Dhamtari 			24,7	27,9							
+87_2914	IND	IN	2	Uttar Bastar Kanker			19,9	22,5							
+87_2915	IND	IN	2	Bastar			18,5	20,9							
+87_2916	IND	IN	2	Narayanpur			18,5	20,9							
+87_2917	IND	IN	2	Dakshin Bastar Dantewada			29,4	33,1							
+87_2918	IND	IN	2	Bijapur			29,4	33,1							
+87_2919	IND	IN	2	Sukma			29,4	33,1							
+87_2920	IND	IN	2	Kondagaon			18,5	20,9							
+87_3101	IND	IN	2	Belgaum		28,1	28,9	31							
+87_3102	IND	IN	2	Bagalkot 		26,5	28,1	28,7							
+87_3103	IND	IN	2	Bijapur		25,5	22,2	27							
+87_3104	IND	IN	2	Bidar		21,2	19,4	23,4							
+87_3105	IND	IN	2	Raichur		20,7	23,4	25,1							
+87_3106	IND	IN	2	Koppal		23,3	33,5	28							
+87_3107	IND	IN	2	Gadag		23,7	28,1	29,4							
+87_3108	IND	IN	2	Dharwad		33,2	38,3	50,1							
+87_3109	IND	IN	2	Uttara Kannada		30,9	30,2	36,9							
+87_3110	IND	IN	2	Haveri		24,5	25,2	24,3							
+87_3111	IND	IN	2	Bellary		29,5	51,6	52,9							
+87_3112	IND	IN	2	Chitradurga		23,1	25,6	33,5							
+87_3113	IND	IN	2	Davanagere		25,6	29,5	32,4							
+87_3114	IND	IN	2	Shimoga		32	31	38							
+87_3115	IND	IN	2	Udupi		34,4	38	52,8							
+87_3116	IND	IN	2	Chikmagalur		37,2	40,1	43							
+87_3117	IND	IN	2	Tumkur		23,6	24,8	34							
+87_3118	IND	IN	2	Bangalore		57	87,9	88,6							
+87_3119	IND	IN	2	Mandya		23,8	23,4	27,6							
+87_3120	IND	IN	2	Hassan		25,7	25,6	36,7							
+87_3121	IND	IN	2	Dakshina Kannada		43,6	56,2	62,6							
+87_3122	IND	IN	2	Kodagu		49,8	53,1	68,4							
+87_3123	IND	IN	2	Mysore		30,8	35,5	42,4							
+87_3124	IND	IN	2	Chamarajanagar		26,1	20,1	24,5							
+87_3125	IND	IN	2	Gulbarga		23,3	25,3	26,2							
+87_3126	IND	IN	2	Yadgir		 	 	19,2							
+87_3127	IND	IN	2	Kolar		24,3	24,6	34,1							
+87_3128	IND	IN	2	Chikkaballapura		 	 	24,6							
+87_3129	IND	IN	2	Bangalore Rural		29,5	40,2	69							
+87_3130	IND	IN	2	Ramanagara				48,1							
+87_32	IND	IN	1	Goa	61,6	78,4	100,9	133,5							
+87_3301	IND	IN	2	Thiruvallur		38,8	51,5	63,3							
+87_3302	IND	IN	2	Chennai		49	52,5	64,5							
+87_3303	IND	IN	2	Kancheepuram		38,5	47,8	58,7							
+87_3304	IND	IN	2	Vellore		32,9	40,4	49,5							
+87_3305	IND	IN	2	Tiruvannamalai		21,8	27,8	34,1							
+87_3306	IND	IN	2	Viluppuram		21,2	25	30,6							
+87_3307	IND	IN	2	Salem		36,3	43,3	53,1							
+87_3308	IND	IN	2	Namakkal 		44,7	48	58,9							
+87_3309	IND	IN	2	Erode		38,8	48,3	59,3							
+87_3310	IND	IN	2	The Nilgiris		31,9	43,9	53,9							
+87_3311	IND	IN	2	Dindigul		33,8	40,5	49,7							
+87_3312	IND	IN	2	Karur 		34,1	44,7	54,9							
+87_3313	IND	IN	2	Tiruchirappalli		35,1	46,7	57,3							
+87_3314	IND	IN	2	Perambalur 		21,5	18,7	23							
+87_3315	IND	IN	2	Ariyalur 		21,5	18,7	23							
+87_3316	IND	IN	2	Cuddalore		28,6	37,9	46,6							
+87_3317	IND	IN	2	Nagapattinam 		30	32,9	40,4							
+87_3318	IND	IN	2	Thiruvarur		25,7	25,8	31,7							
+87_3319	IND	IN	2	Thanjavur		28,3	34,3	42,1							
+87_3320	IND	IN	2	Pudukkottai		26,4	32,7	40,2							
+87_3321	IND	IN	2	Sivaganga		26	32,7	40,1							
+87_3322	IND	IN	2	Madurai		35	44,5	54,7							
+87_3323	IND	IN	2	Theni 		29,9	33,7	41,3							
+87_3324	IND	IN	2	Virudhunagar		47,4	61,6	75,6							
+87_3325	IND	IN	2	Ramanathapuram		29,5	35,2	43,2							
+87_3326	IND	IN	2	Thoothukkudi		40,9	54,2	66,6							
+87_3327	IND	IN	2	Tirunelveli 		33,5	42,4	52,1							
+87_3328	IND	IN	2	Kanniyakumari		37,7	55,3	67,9							
+87_3329	IND	IN	2	Dharmapuri		28,9	36,7	45							
+87_3330	IND	IN	2	Krishnagiri		25	34,4	42,2							
+87_3331	IND	IN	2	Coimbatore		43,8	56,3	69,1							
+87_3332	IND	IN	2	Tiruppur											
+87_34	IND	IN	1	Puducherry	48,7	54,5	63,9	61,6							
+87_3501	IND	IN	2	Nicobars		63,8	67,1	66,6							
+87_3502	IND	IN	2	North & Middle and South Andaman	 	48,8	53,1	52,7							
+87_3611	IND	IN	2	Srikakulam		19	24	29,6							
+87_3612	IND	IN	2	Vizianagaram		19,5	25,5	33,8							
+87_3613	IND	IN	2	Visakhapatnam		34,9	52,9	65,9							
+87_3614	IND	IN	2	East Godavari		32,4	38,2	42,9							
+87_3615	IND	IN	2	West Godavari		32,5	37,1	45							
+87_3616	IND	IN	2	Krishna		34,6	42	51,2							
+87_3617	IND	IN	2	Guntur		29,6	34,4	42,5							
+87_3618	IND	IN	2	Prakasam		24,7	34,9	44,8							
+87_3619	IND	IN	2	Sri Potti Sriramulu Nellore		28,7	33,6	43,1							
+87_3620	IND	IN	2	Y.S.R.		24,7	27,3	37,1							
+87_3621	IND	IN	2	Kurnool		21,8	30,1	32							
+87_3622	IND	IN	2	Anantapur		21,9	27,7	35,6							
+87_3623	IND	IN	2	Chittoor		24,3	28,5	36,6							
+87_3701	IND	IN	2	Adilabad		23,6	29,3	35,9							
+87_3702	IND	IN	2	Nizamabad		22,8	28,1	34,2							
+87_3703	IND	IN	2	Karimnagar		31,2	37,4	42,7							
+87_3704	IND	IN	2	Medak		42,3	43,7	66,2							
+87_3705	IND	IN	2	Hyderabad		40,9	53,5	79,9							
+87_3706	IND	IN	2	Rangareddy		36,2	45,9	57,9							
+87_3707	IND	IN	2	Mahbubnagar		18,2	28,9	31,9							
+87_3708	IND	IN	2	Nalgonda		25,4	33,3	40,4							
+87_3709	IND	IN	2	Warangal		22	28,4	33,1							
+87_3710	IND	IN	2	Khammam		32,4	39,6	43,7							
+913	IOT	IO	0	Territoire britannique de l'Oc�an Indien (Chagos)											
+953	IOA	IP	0	Christmas Island											
+90	IRQ	IQ	0	Iraq			92,4	104,1							
+89_01	IRN	IR	1	?lborz	181,2	175,7		90,7							
+89_02	IRN	IR	1	Ardab?l	97,9	94,9		71,1							
+89_03	IRN	IR	1	?z?rb?yj?n-e Gharb? [West Azerbaijan]	85,3	82,7		58,1							
+89_04	IRN	IR	1	?z?rb?yj?n-e Sharq? [East Azerbaijan]	97,9	94,9		82,1							
+89_05	IRN	IR	1	B?shehr	88,5	85,8		287,8							
+89_06	IRN	IR	1	Chah?rmah?l va Bakht??r?	85,2	82,6		69,5							
+89_07	IRN	IR	1	E?fah?n [Isfahan]	104,2	101		120,7							
+89_08	IRN	IR	1	F?rs	114,1	110,6		87,2							
+89_09	IRN	IR	1	G?l?n	99	96		74,6							
+89_10	IRN	IR	1	Gorg?n (Golestan)	92,3	89,5		57,3							
+89_11	IRN	IR	1	Hamad?n	70	67,9		72,4							
+89_12	IRN	IR	1	Hormozg?n	93,9	91,1		129,7							
+89_13	IRN	IR	1	?l?m	83,5	81		113,3							
+89_14	IRN	IR	1	Kerm?n	101,6	98,5		88,4							
+89_15	IRN	IR	1	Kerm?nsh?h (B?khtar?n)	110,2	106,9		78,7							
+89_16	IRN	IR	1	Khor?s?n-e Junoubi (incl. ?abas Distr.) [South Khorasan]	89	86,3		61,1							
+89_17	IRN	IR	1	Khor?s?n-e Razavi [Razavi Khorasan]	89	86,3		76,3							
+89_18	IRN	IR	1	Khor?s?n-e Shomali [North Khorasan]	89	86,3		58,3							
+89_19	IRN	IR	1	Kh?zest?n [Khoozestan]	105,5	102,4		192,1							
+89_20	IRN	IR	1	Kohk?l?yeh va Boyer Ahmad? [Kohgiluyeh and Boyer-Ahmad]	68,7	66,7		188							
+89_21	IRN	IR	1	Kordest?n [Kurdistan]	82,3	79,8		58,1							
+89_22	IRN	IR	1	Lorest?n	87,5	84,8		60,4							
+89_23	IRN	IR	1	Markaz?	103,7	100,6		132,6							
+89_24	IRN	IR	1	M?zandar?n	92,3	89,5		95,9							
+89_25	IRN	IR	1	Qazv?n	76,5	74,2		104,8							
+89_26	IRN	IR	1	Qom	181,2	175,7		76,9							
+89_27	IRN	IR	1	Semn?n	94	91,2		121,1							
+89_28	IRN	IR	1	S?st?n va Bal?chest?n [Sistan & Baluchestan]	66,4	64,4		44,9							
+89_29	IRN	IR	1	Tehr?n	181,2	175,7		169,3							
+89_30	IRN	IR	1	Yazd	105	101,8		171,4							
+89_31	IRN	IR	1	Zanj?n	76,5	74,2		77,8							
+916	ISL	IS	0	Islande	370	369,9	320,3	286,5							
+94_01	ITA	IT	1	Piemonte	386,9	385,6	321,8	266,4							
+94_02	ITA	IT	1	Valle d'Aosta	427,3	413,3	359,7	318,3							
+94_03	ITA	IT	1	Liguria	391,9	351,5	307,4	256,9							
+94_04	ITA	IT	1	Lombardia	435,5	447,5	370,9	320,2							
+94_05	ITA	IT	1	Bolzano/Bozen	414,8	478,4	399,8	356,1							
+94_06	ITA	IT	1	Trento	414,8	424,7	345,2	294,7							
+94_07	ITA	IT	1	Veneto	405,1	411,7	343	285,2							
+94_08	ITA	IT	1	Friuli-Venezia Giulia	415,6	397	338,6	279,6							
+94_09	ITA	IT	1	Emilia-Romagna	432,6	437,7	365,3	303,2							
+94_10	ITA	IT	1	Toscana	362,4	369,4	314,1	266,4							
+94_11	ITA	IT	1	Umbria	324,2	336,8	277,3	223,9							
+94_12	ITA	IT	1	Marche	344,6	345	299,6	246,5							
+94_13	ITA	IT	1	Lazio	371,2	393,8	340,8	282,4							
+94_14	ITA	IT	1	Abruzzo	295,9	294,5	241,7	211,6							
+94_15	ITA	IT	1	Molise	252,9	265,2	236,1	189,9							
+94_16	ITA	IT	1	Campania	217,2	211,5	186	151,1							
+94_17	ITA	IT	1	Puglia	232,6	229,4	191,6	161,5							
+94_18	ITA	IT	1	Basilicata	224,3	240,8	208,3	172,9							
+94_19	ITA	IT	1	Calabria	196,7	209,9	184,9	154,9							
+94_20	ITA	IT	1	Sicilia	218	218	189,3	156,8							
+94_21	ITA	IT	1	Sardegna	243,1	250,6	218,3	186,1							
+908	JEY	JE	0	Jersey			600	600							
+95	JAM	JM	0	Jama�que	97	79,8	69,9	59,2							
+957	JMA	JN	0	Jan Mayen											
+97	JOR	JO	0	Jordanie	81,6	79,4	88	81,3							
+96	JPN	JP	0	Japon	370	338,1	297,7	261,8							
+96_0101	JPN	JP	2	Hokkaido	326,7	311,4	245,6	218,9							
+96_0201	JPN	JP	2	Aomori	283,8	274,6		208,6							
+96_0202	JPN	JP	2	Iwate	305,7	291,4		210,1							
+96_0203	JPN	JP	2	Miyagi	343,7	301,9		219,8							
+96_0204	JPN	JP	2	Akita	299,2	264,3		208,1							
+96_0205	JPN	JP	2	Yamagata	302,4	292,7		216,3							
+96_0206	JPN	JP	2	Fukushima	340,9	305,4		208,9							
+96_0301	JPN	JP	2	Ibaraki	337,7	327,6		273,3							
+96_0302	JPN	JP	2	Tochigi	380,1	350,3		265,4							
+96_0303	JPN	JP	2	Gunma	359,8	327,4		255,6							
+96_0304	JPN	JP	2	Yamanashi	336,5	315,9		254,8							
+96_0305	JPN	JP	2	Nagano	347,4	327,6		234,5							
+96_0401	JPN	JP	2	Saitama	270,4	355,3		249,2							
+96_0402	JPN	JP	2	Chiba	292,2	349,4		255,4							
+96_0403	JPN	JP	2	Tokyo	664,9	475,9		393,6							
+96_0404	JPN	JP	2	Kanagawa	338,2	355,7		263,4							
+96_0501	JPN	JP	2	Niigata	360,9	315,3		240,5							
+96_0502	JPN	JP	2	Toyama	372,3	319,6		275,8							
+96_0503	JPN	JP	2	Ishikawa	356,8	323,8		244,7							
+96_0504	JPN	JP	2	Fukui	351,5	330,4		252,2							
+96_0601	JPN	JP	2	Aichi	456,1	381,4		285,4							
+96_0602	JPN	JP	2	Gifu	314,4	314,7		236,8							
+96_0603	JPN	JP	2	Shizuoka	369,9	348,2		283,5							
+96_0604	JPN	JP	2	Mie	323,9	324		246,9							
+96_0701	JPN	JP	2	Shiga	415,1	356,5		279,9							
+96_0702	JPN	JP	2	Kyoto	350	330,3		261,4							
+96_0703	JPN	JP	2	Osaka	419,8	360,1		262,3							
+96_0704	JPN	JP	2	Hyogo	354,6	310,2		229,5							
+96_0705	JPN	JP	2	Nara	239,4	314,9		215,6							
+96_0706	JPN	JP	2	Wakayama	288,5	268,4		238,4							
+96_0801	JPN	JP	2	Tottori	318,6	286		197,7							
+96_0802	JPN	JP	2	Shimane	291,9	277		210,9							
+96_0803	JPN	JP	2	Okayama	355,5	288,8		242							
+96_0804	JPN	JP	2	Hiroshima	358,4	322,8		273,7							
+96_0805	JPN	JP	2	Yamaguchi	340,9	310,1		258,1							
+96_0901	JPN	JP	2	Tokushima	290,9	294,9		243,5							
+96_0902	JPN	JP	2	Kagama	338,9	304		252,4							
+96_0903	JPN	JP	2	Ehime	310,2	272		235,8							
+96_0904	JPN	JP	2	Kochi	268,4	262,1		196,8							
+96_1001	JPN	JP	2	Fukuoka	331,7	290		249,7							
+96_1002	JPN	JP	2	Saga	296,6	281,3		215,2							
+96_1003	JPN	JP	2	Nagasaki	286	255,7		209,6							
+96_1004	JPN	JP	2	Kumamoto	291,3	288,5		214,2							
+96_1005	JPN	JP	2	Oita	318,2	301,5		219,2							
+96_1006	JPN	JP	2	Miyazaki	260,8	266		200							
+96_1007	JPN	JP	2	Kagoshima	256,2	253,5		213,4							
+96_1008	JPN	JP	2	Okinawa	239,7	231,7		179,6							
+99_01	KEN	KE	1	Central			19,7	19,5							
+99_02	KEN	KE	1	Coast			20	19,7							
+99_03	KEN	KE	1	Eastern			14,6	14,4							
+99_04	KEN	KE	1	Nairobi			50,2	49,6							
+99_05	KEN	KE	1	North Eastern			8,8	8,7							
+99_06	KEN	KE	1	Nyanza			14,9	14,8							
+99_07	KEN	KE	1	Rift Valley			16,8	16,6							
+99_08	KEN	KE	1	Western			12,3	12,2							
+105_01	KGZ	KG	1	Bishek city		27,2	48,6	47,7							
+105_02	KGZ	KG	1	Batken		8,9	8	11,2							
+105_03	KGZ	KG	1	Chuy		25	21,8	19							
+105_04	KGZ	KG	1	Jalal-Abad		19,1	12	13,2							
+105_05	KGZ	KG	1	Naryn		17,2	17,1	14,1							
+105_06	KGZ	KG	1	Osh		10,4	11,4	10,3							
+105_07	KGZ	KG	1	Talas		17,7	18,4	15,4							
+105_08	KGZ	KG	1	Issyk Kul		38,6	26,3	40							
+105_09	KGZ	KG	1	Osh city		10,4	12,5	12							
+33_01	KHM	KH	1	B�nt�ay M�anchey			14,1	15,7							
+33_02	KHM	KH	1	B?td�mb�ng			15,4	17,3							
+33_03	KHM	KH	1	K�mp�ng Cham (dont Tbong Khmum)			16,8	18,7							
+33_04	KHM	KH	1	K�mp�ng Chhn?ng			13,2	15							
+33_05	KHM	KH	1	K�mp�ng Sp�			13,5	17,1							
+33_06	KHM	KH	1	K�mp�ng Thum			12,5	13,9							
+33_07	KHM	KH	1	K�mp�t			16,8	18,5							
+33_08	KHM	KH	1	K�ndal			24,3	28,3							
+33_09	KHM	KH	1	Ka�h K?ng			13,9	15,9							
+33_10	KHM	KH	1	Kr�ch�h			11,6	13							
+33_11	KHM	KH	1	Krong Keb			14	16,9							
+33_12	KHM	KH	1	Krong Pailin			14,6	21,4							
+33_13	KHM	KH	1	Kr?ng Pre?h Sihanouk			20,2	23							
+33_14	KHM	KH	1	M�nd�l Kiri			11,4	12,1							
+33_15	KHM	KH	1	?td�r M�anchey			10,4	12,1							
+33_16	KHM	KH	1	Phnom Penh			68,5	66,9							
+33_17	KHM	KH	1	Po?th?s?t			12,2	14,4							
+33_18	KHM	KH	1	Pre?h Vih�ar			9	9,8							
+33_19	KHM	KH	1	Prey V�ng			15,5	17,4							
+33_20	KHM	KH	1	R�t�n�kiri			8,6	9,3							
+33_21	KHM	KH	1	Si?mr�ab			13,9	15,1							
+33_22	KHM	KH	1	St�?ng Tr�ng			9,8	10,3							
+33_23	KHM	KH	1	Svay Ri?ng			17,4	21,2							
+33_24	KHM	KH	1	Tak�v			16,3	18,4							
+100	KIR	KI	0	Kiribati	25,2	29,9	21,4	19,4							
+43	COM	KM	0	Comores	18,2	13,8	11,6	10,4							
+178	KNA	KN	0	Saint-Kitts-et-Nevis	172,5	180,7	173,6	146,4							
+101	PRK	KP	0	Cor�e, R�publique d�mocratique de				12,6							
+102_0101	KOR	KR	2	Seoul city			277	261,7							
+102_0102	KOR	KR	2	Incheon city			207,1	189							
+102_0103	KOR	KR	2	Gyeonggi			211,8	212							
+102_0201	KOR	KR	2	Gwangju city			180,2	161,6							
+102_0202	KOR	KR	2	North Jeolla			194,3	196,2							
+102_0203	KOR	KR	2	South Jeolla			297,8	283,5							
+102_0301	KOR	KR	2	Busan city			192,2	170,8							
+102_0302	KOR	KR	2	Ulsan city			461,8	482,8							
+102_0303	KOR	KR	2	South Gyeongsang			270,7	247,4							
+102_0401	KOR	KR	2	Daegu city			144,3	149,6							
+102_0402	KOR	KR	2	North Gyeongsang			297,7	274,2							
+102_0501	KOR	KR	2	Daejeon City			188	167,3							
+102_0502	KOR	KR	2	Sejong city			 	 							
+102_0503	KOR	KR	2	North Chungcheong			240	248							
+102_0504	KOR	KR	2	South Chungcheong			323,4	371,5							
+102_0601	KOR	KR	2	Gangwon		201,4	209,2	194,2							
+102_0701	KOR	KR	2	Jeju autonomous		183,7	191,2	188,9							
+104	KWT	KW	0	Kowe�t		898,9	852,3	485,6							
+36	CYM	KY	0	�les Ca�mans				370							
+98_01	KAZ	KZ	1	Akmola		74,9	84	92,1							
+98_02	KAZ	KZ	1	Aktobe		104,9	175	191,9							
+98_03	KAZ	KZ	1	Almaty city		239,5	297,8	326,6							
+98_04	KAZ	KZ	1	Almaty region		49,5	60,9	66,7							
+98_05	KAZ	KZ	1	Astana		185,8	277,2	304							
+98_06	KAZ	KZ	1	Atyrau		243,8	610,5	669,5							
+98_07	KAZ	KZ	1	Baikonour		 	 	 							
+98_08	KAZ	KZ	1	East Kazakhstan		106	107	117,4							
+98_09	KAZ	KZ	1	Jambyl		37,1	50,5	55,4							
+98_10	KAZ	KZ	1	Karaganda		127,7	151,3	165,9							
+98_11	KAZ	KZ	1	Kostanay		103,9	116,5	127,8							
+98_12	KAZ	KZ	1	Kyzylorda		49,8	117,2	128,5							
+98_13	KAZ	KZ	1	Mangystau		210,5	350,3	384,1							
+98_14	KAZ	KZ	1	North Kazakhstan		77,3	84,6	92,7							
+98_15	KAZ	KZ	1	Pavlodar		115,4	177,6	194,8							
+98_16	KAZ	KZ	1	South Kazakhstan		46,4	55,7	61,1							
+98_17	KAZ	KZ	1	West Kazakhstan		98	185,8	203,8							
+106_01	LAO	LA	1	Attapeu			11	13,4							
+106_02	LAO	LA	1	Bokeo			28	34,2							
+106_03	LAO	LA	1	Bolikhamsai			10,4	12,8							
+106_04	LAO	LA	1	Champasak			19,8	24,2							
+106_05	LAO	LA	1	Hua Phan			8	9,8							
+106_06	LAO	LA	1	Khammouane			36,1	44,1							
+106_07	LAO	LA	1	Luang Namtha			15,2	18,6							
+106_08	LAO	LA	1	Luang Prabang			20,4	25							
+106_09	LAO	LA	1	Oudomxay			20,8	25,5							
+106_10	LAO	LA	1	Phongsali			10	12,2							
+106_11	LAO	LA	1	Sayabouly			25,4	31,1							
+106_12	LAO	LA	1	Salavan			31,3	38,3							
+106_13	LAO	LA	1	Savannakhet			24,4	29,8							
+106_14	LAO	LA	1	Sekong			11,5	14							
+106_15	LAO	LA	1	Vientiane city			30,4	37,2							
+106_16	LAO	LA	1	Vientiane province			51,2	62,6							
+106_17	LAO	LA	1	Xieng Khouang			22	26,9							
+108	LBN	LB	0	Liban	136,9	128,2	110,1	121,3							
+179	LCA	LC	0	Sainte-Lucie	95,9	96	81,5	71,7							
+112	LIE	LI	0	Liechtenstein			741,7	741,7							
+177	LKA	LK	0	Sri Lanka	44,8	49,4	53,1	66							
+110	LBR	LR	0	Lib�ria		4,6	3,5	5,5							
+109	LSO	LS	0	Lesotho	24,7	22	20,2	22							
+113	LTU	LT	0	Lituanie	107,4	109	158,7	171							
+114	LUX	LU	0	Luxembourg	518,8	539,1	568,4	403,2							
+107	LVA	LV	0	Lettonie	84,8	103,5	147,8	157							
+111	LBY	LY	0	Libye			238,7	113,5							
+132_01	MAR	MA	1	Oued Ed-Dahab-Lagouira			56,3	68,8							
+132_02	MAR	MA	1	La�youne-Boujdour-Sakia el Hamra			56,3	68,8							
+132_03	MAR	MA	1	Guelmim-Es Smara			56,3	68,8							
+132_04	MAR	MA	1	Oriental			38	38							
+132_05	MAR	MA	1	Mekn�s-Tafilalet			34,5	39,2							
+132_06	MAR	MA	1	Sous-Massa-Dr�a			35,5	33,5							
+132_07	MAR	MA	1	Marrakech-Tensift-Al Haouz			40,3	39,7							
+132_08	MAR	MA	1	Taza-Al Hoceima-Taounate			23,9	25,7							
+132_09	MAR	MA	1	F�s-Boulemane			40	37,5							
+132_10	MAR	MA	1	Tadla-Azilal			25,8	28,7							
+132_11	MAR	MA	1	Doukhala-Abda			45,6	46,6							
+132_12	MAR	MA	1	Tanger-T�touan			49,1	41,7							
+132_13	MAR	MA	1	Rabat-Sal�-Zemmour-Za�r			78,4	73,3							
+132_14	MAR	MA	1	Gharb-Chrarda-Beni Hssen			29,4	36,1							
+132_15	MAR	MA	1	Chaouia-Ouardigha			42,7	75,2							
+132_16	MAR	MA	1	Grand Casablance			82,8	83,4							
+132_17	MAR	MA	1	Tanger-Tetouan-Al Hoceima											
+132_18	MAR	MA	1	Oriental											
+132_19	MAR	MA	1	F�s-Mekn�s											
+132_20	MAR	MA	1	Rabat-Sal�-K�nitra											
+132_21	MAR	MA	1	B�ni Mellal-Kh�nifra											
+132_22	MAR	MA	1	Grand Casablanca-Settat											
+132_23	MAR	MA	1	Marrakech-Safi											
+132_24	MAR	MA	1	Dr�a-Tafilalet											
+132_25	MAR	MA	1	Souss-Massa											
+132_26	MAR	MA	1	Guelmim-Oued Noun											
+132_27	MAR	MA	1	Laayoune-Sakia El Hamra											
+132_28	MAR	MA	1	Eddakhla-Oued Eddahab											
+129	MCO	MC	0	Monaco				548,8							
+128	MDA	MD	0	Moldova	44,9	24,1	32	36,1							
+131	MNE	ME	0	Mont�n�gro		88,5	108,8	100,5							
+180	MAF	MF	0	Saint-Martin (fr)			192	192							
+117_0101	MDG	MG	2	Diana			14,5	11,7							
+117_0102	MDG	MG	2	Sava			11,2	9							
+117_0201	MDG	MG	2	Analamanga			15,6	12,5							
+117_0202	MDG	MG	2	Vakinankaratra			11	8,9							
+117_0203	MDG	MG	2	Itasy			12	9,7							
+117_0204	MDG	MG	2	Bongolava			12,7	10,2							
+117_0301	MDG	MG	2	Sofia			9,3	7,5							
+117_0302	MDG	MG	2	Boeny			14,4	11,6							
+117_0303	MDG	MG	2	Betsiboka			10,6	8,6							
+117_0304	MDG	MG	2	Melaky			11,4	9,2							
+117_0401	MDG	MG	2	Alaotra-Mangoro			12,9	10,4							
+117_0402	MDG	MG	2	Atsinanana			9,8	7,9							
+117_0403	MDG	MG	2	Analanjirofo	 		9,7	7,8							
+117_0501	MDG	MG	2	Amoron'i Mania			9,5	7,7							
+117_0502	MDG	MG	2	Haute Matsiatra			10,2	8,2							
+117_0503	MDG	MG	2	Vatovavy-Fitovinany			8,1	6,5							
+117_0504	MDG	MG	2	Atsimo-Atsinanana			7,8	6,3							
+117_0505	MDG	MG	2	Ihorombe			8,5	6,9							
+117_0601	MDG	MG	2	Menabe			12,1	9,7							
+117_0602	MDG	MG	2	Atsimo-Andrefana			9,1	7,3							
+117_0603	MDG	MG	2	Androy			7,6	6,1							
+117_0604	MDG	MG	2	Anosy			9,9	7,9							
+123	MHL	MH	0	�les Marshall		39,8	36,1	32,3							
+116	MKD	MK	0	Mac�doine, ex-R�publique yougoslave de	78,5	73,5	76,3	80,3							
+121	MLI	ML	0	Mali	13,1	12,7	12,3	10,7							
+134_01	MMR	MM	1	Ayeryarwady				20,9							
+134_02	MMR	MM	1	Bago				25,6							
+134_03	MMR	MM	1	Chin state				13,5							
+134_04	MMR	MM	1	Kachin state				41,2							
+134_05	MMR	MM	1	Kayah state				49,2							
+134_06	MMR	MM	1	Kayin state				18,9							
+134_07	MMR	MM	1	Magway				42,6							
+134_08	MMR	MM	1	Mandalay				44,4							
+134_09	MMR	MM	1	Mon state				30,2							
+134_10	MMR	MM	1	Rakhine state				13,2							
+134_11	MMR	MM	1	Shan state				33,5							
+134_12	MMR	MM	1	Sagaing				29,7							
+134_13	MMR	MM	1	Tanintharyi				30,9							
+134_14	MMR	MM	1	Yangoon				54,1							
+134_15	MMR	MM	1	Naypyidaw territory				 							
+130	MNG	MN	0	Mongolie	38,3	39,8	47,1	61,4							
+115	MAC	MO	0	R�gion administrative sp�ciale de Macao, Chine	546,7	415,5	649,3	808,7							
+143	MNP	MP	0	Mariannes du Nord			120	107,3							
+124	MRT	MR	0	Mauritanie	27,9	25,2	22,4	19,9							
+909	MSR	MS	0	Montserrat			78,1	78,1							
+122	MLT	MT	0	Malte	236,1	239	196,1	188,4							
+125	MUS	MU	0	Maurice	101,8	115,1	115,8	123,6							
+120	MDV	MV	0	Maldives		62	67,1	69							
+118	MWI	MW	0	Malawi	6,6	6,3	5,2	5,2							
+126_01	MEX	MX	1	Aguascalientes		137,1	118,6	114,4							
+126_02	MEX	MX	1	Baja California Norte		145,7	121	110,6							
+126_03	MEX	MX	1	Baja California Sur		146,1	124,8	139							
+126_04	MEX	MX	1	Campeche		872,2	989,2	760,8							
+126_05	MEX	MX	1	Coahuila		175,8	148	155,2							
+126_06	MEX	MX	1	Colima		130,9	107,9	108,3							
+126_07	MEX	MX	1	Chiapas		62	48,4	46,9							
+126_08	MEX	MX	1	Chihuahua		136,1	120,4	99,8							
+126_09	MEX	MX	1	Federal District (MX)		276,7	244,5	240,6							
+126_10	MEX	MX	1	Durango		115,4	94	94,1							
+126_11	MEX	MX	1	Guanajuato		109,4	89,7	90,1							
+126_12	MEX	MX	1	Guerrero		68	58,3	53,5							
+126_13	MEX	MX	1	Hidalgo		80,2	77,2	78,6							
+126_14	MEX	MX	1	Jalisco		132,4	111,5	106,9							
+126_15	MEX	MX	1	Mexico		85,8	75,8	74,6							
+126_16	MEX	MX	1	Michoacan		81,5	71,9	67,9							
+126_17	MEX	MX	1	Morelos		102,9	80,9	82,7							
+126_18	MEX	MX	1	Nayarit		80,4	71,5	72,7							
+126_19	MEX	MX	1	Nuevo Leon		233,1	216,2	192,2							
+126_20	MEX	MX	1	Oaxaca		59,2	52,7	54,6							
+126_21	MEX	MX	1	Puebla		84,4	74,2	70,7							
+126_22	MEX	MX	1	Queretaro		141	130,3	137,2							
+126_23	MEX	MX	1	Quintana Roo		174,4	148,3	136							
+126_24	MEX	MX	1	San Luis Potosi		98,3	90,9	95,6							
+126_25	MEX	MX	1	Sinaloa		102,5	93,1	93,3							
+126_26	MEX	MX	1	Sonora		132,2	125,5	136,4							
+126_27	MEX	MX	1	Tabasco		158,2	192,9	197,3							
+126_28	MEX	MX	1	Tamaulipas		151,9	133,3	113,8							
+126_29	MEX	MX	1	Tlaxcala		74,1	58,4	59,6							
+126_30	MEX	MX	1	Veracruz		80,8	78	89,7							
+126_31	MEX	MX	1	Yucatan		99,1	89,8	94,4							
+126_32	MEX	MX	1	Zacatecas		71	65	102,7							
+119_01	MYS	MY	1	Kuala Lumpur			312,5	379,8							
+119_02	MYS	MY	1	Labuan			211,9	208,8							
+119_03	MYS	MY	1	Putrajaya			312,5	379,8							
+119_04	MYS	MY	1	Johor Darul Takzim			118	120,5							
+119_05	MYS	MY	1	Kedah Darul Aman			76,5	77,7							
+119_06	MYS	MY	1	Kelantan Darul Naim			48,2	50,9							
+119_07	MYS	MY	1	Malacca			147,3	162,5							
+119_08	MYS	MY	1	Negeri Sembilan Darul Khusus			154,8	157,3							
+119_09	MYS	MY	1	Pahang Darul Makmur			126,8	127,4							
+119_10	MYS	MY	1	Perak Darul Ridzuan			93,3	100,7							
+119_11	MYS	MY	1	Perlis Indera Kayangan			91,2	88,2							
+119_12	MYS	MY	1	Penang			197,4	182,7							
+119_13	MYS	MY	1	Sabah			88,7	88,6							
+119_14	MYS	MY	1	Sarawak			193,7	195,8							
+119_15	MYS	MY	1	Selangor Darul Ehsan			165,8	180,3							
+119_16	MYS	MY	1	Terengganu Darul Iman			122,5	110,9							
+133_01	MOZ	MZ	1	Cabo Delgado		3,1	3,5	4,2							
+133_02	MOZ	MZ	1	Gaza		4	4,5	5,4							
+133_03	MOZ	MZ	1	Inhambane		4,2	4,8	5,8							
+133_04	MOZ	MZ	1	Manica		4	4,5	5,4							
+133_05	MOZ	MZ	1	Maputo city		17,5	19,7	23,6							
+133_06	MOZ	MZ	1	Maputo		15,6	17,6	21,1							
+133_07	MOZ	MZ	1	Nampula		4	4,5	5,4							
+133_08	MOZ	MZ	1	Niassa		3,3	3,7	4,5							
+133_09	MOZ	MZ	1	Sofala		7,6	8,5	10,2							
+133_10	MOZ	MZ	1	Tete		4,5	5,1	6,1							
+133_11	MOZ	MZ	1	Zambezia		3,3	3,7	4,5							
+135	NAM	NA	0	Namibie	71,8	62,8	64,8	66,2							
+138	NCL	NC	0	Nouvelle-Cal�donie				279,6							
+141	NER	NE	0	Niger	9,5	7,9	6,5	6,2							
+141_01	NER	NE	1	Agadez		12		9,5							
+141_02	NER	NE	1	Diffa		9		7,1							
+141_03	NER	NE	1	Dosso		7,8		6,1							
+141_04	NER	NE	1	Maradi		5,7		4,5							
+141_05	NER	NE	1	Tahoua		6,3		5							
+141_06	NER	NE	1	Tillab�ri		11,6		9,2							
+141_07	NER	NE	1	Zinder		5,2		4,1							
+141_08	NER	NE	1	C.U.Niamey		17		13,4							
+912	NFK	NF	0	Norfolk											
+142_01	NGA	NG	1	Abia			49,7	54,2							
+142_02	NGA	NG	1	Federal Capital Territory (Abuja)			132,1	144,2							
+142_03	NGA	NG	1	Adamawa			23,3	25,4							
+142_04	NGA	NG	1	Akwa Ibom			46	50,2							
+142_05	NGA	NG	1	Anambra			26,7	29,2							
+142_06	NGA	NG	1	Bauchi			16,3	17,8							
+142_07	NGA	NG	1	Bayelsa			41,1	44,9							
+142_08	NGA	NG	1	Benue			26,3	28,8							
+142_09	NGA	NG	1	Borno			20,1	21,9							
+142_10	NGA	NG	1	Cross River			52,1	56,9							
+142_11	NGA	NG	1	Delta			66	72,1							
+142_12	NGA	NG	1	Ebonyi			20,4	22,2							
+142_13	NGA	NG	1	Edo			59,9	65,4							
+142_14	NGA	NG	1	Ekiti			19,3	21,1							
+142_15	NGA	NG	1	Enugu			19,3	21,1							
+142_16	NGA	NG	1	Gombe			17,1	18,7							
+142_17	NGA	NG	1	Imo			58,3	63,7							
+142_18	NGA	NG	1	Jigawa			11,1	12,2							
+142_19	NGA	NG	1	Kaduna			27,6	30,1							
+142_20	NGA	NG	1	Kano			21,3	23,3							
+142_21	NGA	NG	1	Katsina			16,8	18,4							
+142_22	NGA	NG	1	Kebbi			16,4	17,9							
+142_23	NGA	NG	1	Kogi			22,9	25							
+142_24	NGA	NG	1	Kwara			26,2	28,6							
+142_25	NGA	NG	1	Lagos			60,4	65,9							
+142_26	NGA	NG	1	Nasarawa			26,3	28,7							
+142_27	NGA	NG	1	Niger			24,5	26,7							
+142_28	NGA	NG	1	Ogun			45,3	49,5							
+142_29	NGA	NG	1	Ondo			39,6	43,2							
+142_30	NGA	NG	1	Osun			34,3	37,5							
+142_31	NGA	NG	1	Oyo			44,1	48,1							
+142_32	NGA	NG	1	Plateau			26,1	28,4							
+142_33	NGA	NG	1	Rivers			65,6	71,6							
+142_34	NGA	NG	1	Sokoto			21,1	23							
+142_35	NGA	NG	1	Taraba			23,9	26,1							
+142_36	NGA	NG	1	Yobe			13,9	15,2							
+142_37	NGA	NG	1	Zamfara			20,5	22,3							
+140	NIC	NI	0	Nicaragua	25,7	34,2	32,2	31,4							
+137_01	NLD	NL	1	Groningen	438,4	460	463,4	452,8							
+137_02	NLD	NL	1	Friesland	299,5	337,1	302,5	261,5							
+137_03	NLD	NL	1	Drenthe	309,5	329,2	293,8	247,1							
+137_04	NLD	NL	1	Overijssel	313,4	359,2	321,9	282,1							
+137_05	NLD	NL	1	Gelderland	305,5	349,7	317,6	270,4							
+137_06	NLD	NL	1	Flevoland	267,8	296,2	290,6	234,5							
+137_07	NLD	NL	1	Utrecht	422,5	512	441,8	380,1							
+137_08	NLD	NL	1	Noord-Holland	408,7	472,6	426,7	363,9							
+137_09	NLD	NL	1	Zuid-Holland	363	419	386,7	318,1							
+137_10	NLD	NL	1	Zeeland	345,2	356	344,6	308,2							
+137_11	NLD	NL	1	Noord-Brabant	355,1	419	373,8	327,1							
+137_12	NLD	NL	1	Limburg	315,4	367	337,1	288,4							
+144_01	NOR	NO	1	Oslo og Akershus				464,7							
+144_02	NOR	NO	1	Hedmark og Oppland				253,5							
+144_03	NOR	NO	1	S�r-�stlandet				269,5							
+144_04	NOR	NO	1	Agder og Rogaland				357,8							
+144_05	NOR	NO	1	Vestlandet				347,6							
+144_06	NOR	NO	1	Tr�ndelag				301,5							
+144_07	NOR	NO	1	Nord-Norge				290,6							
+136_01	NPL	NP	1	Eastern development region			13,7	14,8							
+136_02	NPL	NP	1	Central development region			18	19,4							
+136_03	NPL	NP	1	Western development region			13,9	15							
+136_04	NPL	NP	1	Mid-Western development region			11,4	12,3							
+136_05	NPL	NP	1	Far-Western development region			9,7	10,4							
+910	NRU	NR	0	Nauru				93,7							
+911	NIU	NU	0	Niu�		65,9	65,9	65,9							
+139_01	NZL	NZ	1	Northern Island		269,7	236,7	224,4							
+139_02	NZL	NZ	1	Southern Island		223,5	214,5	219,2							
+145	OMN	OM	0	Oman	438,9	447,5	322,7	380,3							
+148	PAN	PA	0	Panama	100,1	96,1	113,6	134,6							
+151_01	PER	PE	1	Amazonas		28,4	25	33,8							
+151_02	PER	PE	1	Ancash		33,8	81,5	84,7							
+151_03	PER	PE	1	Apurimac		18,4	23,7	26,9							
+151_04	PER	PE	1	Arequipa		92,1	82,1	93,7							
+151_05	PER	PE	1	Ayacucho		27,6	27,1	38,6							
+151_06	PER	PE	1	Cajamarca		26,9	31,5	38,8							
+151_07	PER	PE	1	Lima Metro (Callao + Lima dept + Lima municp)		96,1	80,8	99,7							
+151_08	PER	PE	1	Cusco		39	49,9	82,8							
+151_09	PER	PE	1	Huancavelica		31,9	30,5	34,4							
+151_10	PER	PE	1	Huanuco		34,6	22,7	28,6							
+151_11	PER	PE	1	Ica		61,7	69,5	97,6							
+151_12	PER	PE	1	Junin		60,8	41,4	43,7							
+151_13	PER	PE	1	La Libertad		55,1	49,6	55,8							
+151_14	PER	PE	1	Lambayeque		68,5	33,4	43,1							
+151_15	PER	PE	1	Loreto		79,7	41,8	43							
+151_16	PER	PE	1	Madre de Dios		63,5	95,4	87,5							
+151_17	PER	PE	1	Moquega		193,4	258,9	261,1							
+151_18	PER	PE	1	Pasco		72,5	109,8	86,6							
+151_19	PER	PE	1	Piura		51,9	41,8	50,7							
+151_20	PER	PE	1	Puno		27,3	25,5	31,1							
+151_21	PER	PE	1	San Martin		35	25	30,4							
+151_22	PER	PE	1	Tacna		69,4	95,8	92							
+151_23	PER	PE	1	Tumbes		48,3	44,3	56,4							
+151_24	PER	PE	1	Ucayali		34,8	39,3	42,5							
+68	PYF	PF	0	Polyn�sie fran�aise				188,1							
+954	PFA	PF	0	Paracel Is. (Sansha Shi)	 	 	 	 							
+149	PNG	PG	0	Papouasie-Nouvelle-Guin�e	23,8	17,8	15,3	17,5							
+152_01	PHL	PH	1	NCRNationalCapitalRegion		120,2	149,5	158,8							
+152_02	PHL	PH	1	CARCordilleraAdministrativeRegion		65,5	64,7	59,1							
+152_03	PHL	PH	1	I-Ilocos		28,7	28,9	33,6							
+152_04	PHL	PH	1	II-Cagayan valley		29	26,1	28,5							
+152_05	PHL	PH	1	III-Central Luzon		44	37,8	43,7							
+152_06	PHL	PH	1	IVA-Calabarzon		51	46,9	63,1							
+152_07	PHL	PH	1	IVB-Mimaropa		51	37,8	30,4							
+152_08	PHL	PH	1	V-Bicol		23,2	22,5	19,9							
+152_09	PHL	PH	1	VI-W.Visayas		43,7	43,8	28,7							
+152_10	PHL	PH	1	VII-C. Visayas		45,6	50,2	47,6							
+152_11	PHL	PH	1	VIII-E.Visayas		25,8	26,8	27,2							
+152_12	PHL	PH	1	IX-W.Mindanao		34	31,9	30,3							
+152_13	PHL	PH	1	X-N.Mindanao		59,1	53,3	44,3							
+152_14	PHL	PH	1	XI-S.Mindanao		41,2	49,1	45							
+152_15	PHL	PH	1	XII-C.Mindanao		40,2	39,4	33,7							
+152_16	PHL	PH	1	XIII-Caraga		24,6	24,4	24,3							
+152_17	PHL	PH	1	ARMM-Auton.MuslimMindanao		16,9	13,1	13,8							
+146_0101	PAK	PK	2	Quetta		33,4		33,3							
+146_0102	PAK	PK	2	Zhob		40,8		40,6							
+146_0103	PAK	PK	2	Sibi		29,6		29,5							
+146_0104	PAK	PK	2	Nasirabad		38,8		38,7							
+146_0105	PAK	PK	2	Kalat		35,5		35,4							
+146_0106	PAK	PK	2	Makran		34,1		34							
+146_0201	PAK	PK	2	Islamabad Capital Territory��		34,4		34,3							
+146_03	PAK	PK	1	Azad Kashmir��				25							
+146_04	PAK	PK	1	Gilgit-Baltistan��				25							
+146_0501	PAK	PK	2	Bannu		24,9		24,8							
+146_0508	PAK	PK	2	Bannu (nouveau avec pie FATA)											
+146_0502	PAK	PK	2	D.I. Khan		16,4		16,3							
+146_0509	PAK	PK	2	D.I. Khan (nouveau avec pie FATA)											
+146_0503	PAK	PK	2	Hazara		30,9		30,8							
+146_0504	PAK	PK	2	Kohat		25,8		25,7							
+146_0510	PAK	PK	2	Kohat (nouveau avec pie FATA)											
+146_0505	PAK	PK	2	Malakand		14,5		14,5							
+146_0511	PAK	PK	2	Malakand (nouveau avec pie FATA)											
+146_0506	PAK	PK	2	Mardan		35,2		35,1							
+146_0507	PAK	PK	2	Peshawar		32,9		32,8							
+146_0512	PAK	PK	2	Peshawar (nouveau pie avec FATA)											
+146_0601	PAK	PK	2	Rawalpindi		21,8		21,7							
+146_0602	PAK	PK	2	Gujranwala		27,4		27,3							
+146_0603	PAK	PK	2	Sargodha		42,2		42,1							
+146_0604	PAK	PK	2	Faisalabad		36,3		36,1							
+146_0605	PAK	PK	2	Lahore		41,9		41,7							
+146_0606	PAK	PK	2	Multan		29,4		29,3							
+146_0607	PAK	PK	2	Bahawalpur		42		41,9							
+146_0608	PAK	PK	2	D.G. Khan		32,8		32,7							
+146_0609	PAK	PK	2	Sahiwal		36,5		36,4							
+146_0701	PAK	PK	2	Larkana		15,6		15,6							
+146_0702	PAK	PK	2	Sukkur		31,6		31,5							
+146_0706	PAK	PK	2	Sukkur (nouveau)											
+146_0707	PAK	PK	2	Shaheed Benazir Abad											
+146_0703	PAK	PK	2	Mirpur Khas		30,5		30,4							
+146_0704	PAK	PK	2	Hyderabad		44,6		44,4							
+146_0708	PAK	PK	2	Hyderabad (nouveau)											
+146_0709	PAK	PK	2	Banbhore											
+146_0705	PAK	PK	2	Karachi City		42,3		42,2							
+146_08	PAK	PK	1	Federally Administered Tribal Areas��				20							
+153_01	POL	PL	1	?�dzkie	95,3	120,9	129,7	147,6							
+153_02	POL	PL	1	Mazowieckie	133,8	208	224,8	260,3							
+153_03	POL	PL	1	Ma?opolskie	92	118	121	137,6							
+153_04	POL	PL	1	?l?skie	125,5	146,1	150,4	172,5							
+153_05	POL	PL	1	Lubelskie	82	95,6	95,1	107,8							
+153_06	POL	PL	1	Podkarpackie	80,3	95,6	95,1	107,8							
+153_07	POL	PL	1	?wi?tokrzyskie	82	104	108,9	119,4							
+153_08	POL	PL	1	Podlaskie	80,3	101,2	103,7	114,4							
+153_09	POL	PL	1	Wielkopolskie	103,7	146,1	147	165,8							
+153_10	POL	PL	1	Zachodniopomorskie	108,7	137,7	126,2	134,3							
+153_11	POL	PL	1	Lubuskie	103,7	120,9	124,5	132,7							
+153_12	POL	PL	1	Dolno?l?skie	110,4	140,5	152,2	180,7							
+153_13	POL	PL	1	Opolskie	102	112,4	115,8	127,7							
+153_14	POL	PL	1	Kujawsko-Pomorskie	105,4	123,7	122,8	131							
+153_15	POL	PL	1	Warmi?sko-Mazurskie	83,6	106,8	105,5	114,4							
+153_16	POL	PL	1	Pomorskie	107,1	134,9	138,3	152,6							
+918	SPM	PM	0	Saint-Pierre-et-Miquelon			320,7	320,7							
+914	PCN	PN	0	Pitcairn											
+155	PRI	PR	0	Porto Rico	218,6	222,4	200,3	166,2							
+211	PSE	PS	0	Cisjordanie et Gaza	35,9	47,9	36	38,2							
+154_01	PRT	PT	1	Norte	180,9	180,3	167,6	153,1							
+154_02	PRT	PT	1	Algarve	236,1	243,4	234,9	193,1							
+154_03	PRT	PT	1	Centro (PT)	182,8	191,1	175,5	156,6							
+154_04	PRT	PT	1	Lisboa	299	315,5	295,6	265							
+154_05	PRT	PT	1	Alentejo	200	205,5	195,3	173,1							
+154_06	PRT	PT	1	A�ores	173,3	187,5	192,6	177,8							
+154_07	PRT	PT	1	Madeira	182,8	250,6	270,5	244,9							
+147	PLW	PW	0	Palaos	155,6	134,5	118,8	101,4							
+150_01	PRY	PY	1	Distrito Capital				347,6							
+150_02	PRY	PY	1	Concepcion				11							
+150_03	PRY	PY	1	San Pedro				6							
+150_04	PRY	PY	1	Cordillera				6,8							
+150_05	PRY	PY	1	Guair�				13,3							
+150_06	PRY	PY	1	Caaguaz�				17,5							
+150_07	PRY	PY	1	Caazap�				3,5							
+150_08	PRY	PY	1	Itap�a				25,2							
+150_09	PRY	PY	1	Misiones				8,5							
+150_10	PRY	PY	1	Paraguar�				4,6							
+150_11	PRY	PY	1	Alto Paran�				61,5							
+150_12	PRY	PY	1	Central				35,7							
+150_13	PRY	PY	1	Neembuc�				16,6							
+150_14	PRY	PY	1	Amambay				39,8							
+150_15	PRY	PY	1	Canindey�				23,9							
+150_16	PRY	PY	1	Presidente Hayes				16,4							
+150_17	PRY	PY	1	Alto Paraguay				3,1							
+150_18	PRY	PY	1	Boquer�n				95,8							
+156	QAT	QA	0	Qatar	932,5		984	896,2							
+157_01	ROM	RO	1	Nord-Vest	71,8	64,8	106,3	109,6							
+157_02	ROM	RO	1	Centru	81	76,9	110,1	120							
+157_03	ROM	RO	1	Nord-Est	59,7	52,6	68,4	74,5							
+157_04	ROM	RO	1	Sud-Est	74,2	64,8	89,3	103,4							
+157_05	ROM	RO	1	Sud - Muntenia	76,4	60,7	89,3	105,5							
+157_06	ROM	RO	1	Bucure?ti - Ilfov	116	161,9	254,5	320,6							
+157_07	ROM	RO	1	Sud-Vest Oltenia	77,5	60,7	85,5	97,2							
+157_08	ROM	RO	1	Vest	83,7	76,9	121,5	140,6							
+165_01	SRB	RS	1	Vojvodina			85,7	84,2							
+165_02	SRB	RS	1	Belgrade			157,4	154,7							
+165_03	SRB	RS	1	Sumadija and Western Serbia			61,9	60,8							
+165_04	SRB	RS	1	Southern and Eastern Serbia			56,6	55,6							
+158_0101	RUS	RU	2	Karelia	117,3	77,7	106,1	121,9							
+158_0102	RUS	RU	2	Komi	184	113,9	172,2	254,5							
+158_0103	RUS	RU	2	Arkhangelsk (sans Nenets A.D.)	105,8	72,4	92,1	123,8							
+158_0104	RUS	RU	2	Nenets A. D.	105,8	586,6	1576,7	2273,1							
+158_0105	RUS	RU	2	Vologda	163,7	107,9	133,9	142,5							
+158_0106	RUS	RU	2	Murmansk	153,6	118,7	156,8	191,5							
+158_0201	RUS	RU	2	Saint Petersburg (city)	110,7	80,4	159,1	230,7							
+158_0202	RUS	RU	2	Leningrad	84,7	67,3	123,3	188,7							
+158_0203	RUS	RU	2	Novgorod	67,4	59,1	88,9	130,7							
+158_0204	RUS	RU	2	Pskov	62,5	41,3	58,6	83,8							
+158_0205	RUS	RU	2	Kaliningrad	0	49,2	103,9	136,8							
+158_0301	RUS	RU	2	Bryansk	60,1	35,1	52,8	75							
+158_0302	RUS	RU	2	Vladimir	73,5	42,4	67	101,7							
+158_0303	RUS	RU	2	Ivanovo	57,9	28,7	46,3	67,5							
+158_0304	RUS	RU	2	Kaluga	84,6	45,2	74	121,9							
+158_0305	RUS	RU	2	Kostroma	83,5	44,3	64,2	95,7							
+158_0306	RUS	RU	2	Moscow (city)	188,2	236,4	407,2	482,8							
+158_0307	RUS	RU	2	Moscow (Region)	81,3	54	127,6	171,2							
+158_0308	RUS	RU	2	Oryol	74,6	50,8	64,1	87,8							
+158_0309	RUS	RU	2	Ryazan	89,1	44,4	69,2	101,1							
+158_0310	RUS	RU	2	Smolensk	75,7	51,8	63,4	102,2							
+158_0311	RUS	RU	2	Tver	80,2	46,4	75,2	105,2							
+158_0312	RUS	RU	2	Tula	77,9	48,9	73,4	99,6							
+158_0313	RUS	RU	2	Yaroslavl	114,7	60,2	96,8	122,8							
+158_0401	RUS	RU	2	Mari El	58,1	30,5	52,4	77,3							
+158_0402	RUS	RU	2	Mordovia	59,8	38,7	60,6	82,4							
+158_0403	RUS	RU	2	Chuvashia	63,2	34,9	65,6	82,4							
+158_0404	RUS	RU	2	Kirov	81,1	46,7	57,1	83,6							
+158_0405	RUS	RU	2	Nizhny Novgorod	107,6	58,7	94,3	128,7							
+158_0501	RUS	RU	2	Belgorod	98,2	56,8	105,6	170,6							
+158_0502	RUS	RU	2	Voronezh Region	75,2	41,1	63,9	97,4							
+158_0503	RUS	RU	2	Kursk Region	81,1	47,7	74,8	111,9							
+158_0504	RUS	RU	2	Lipetsk Region	125,5	78,9	118,9	138,5							
+158_0505	RUS	RU	2	Tambov Region	56,4	38,5	63,5	85,8							
+158_0601	RUS	RU	2	Kalmykia	31,8	40,8	39,7	55,3							
+158_0602	RUS	RU	2	Tatarstan	114,4	99,5	135,8	173,6							
+158_0603	RUS	RU	2	Astrakhan Region	63,7	56,3	67,6	94							
+158_0604	RUS	RU	2	Volgograd Region	82,6	47,2	85,1	108,8							
+158_0605	RUS	RU	2	Penza	54,7	34	56,9	81,1							
+158_0606	RUS	RU	2	Samara	155,2	86,4	122,4	141,7							
+158_0607	RUS	RU	2	Saratov	84,5	47,1	66,3	97,3							
+158_0608	RUS	RU	2	Ulianov	81,6	43,2	63,4	89,8							
+158_0701	RUS	RU	2	Adygea	46,4	24,9	44,7	70,4							
+158_0702	RUS	RU	2	Dagestan	23,5	17,4	38,7	62,7							
+158_0703	RUS	RU	2	Chechenia	0		27,7	37,1							
+158_0704	RUS	RU	2	Ingushetia	22,9	15,6	27,9	31,8							
+158_0705	RUS	RU	2	Kabardino-Balkar Republic	37,8	32,5	38,4	58,8							
+158_0706	RUS	RU	2	Karachay-Cherkhess Republic	44,7	25,1	40,1	60,4							
+158_0707	RUS	RU	2	North Ossetia-Alania	40,1	24,4	50,2	69,4							
+158_0708	RUS	RU	2	Krasnodar	79,2	54,1	85	129,4							
+158_0709	RUS	RU	2	Stavropol	77,9	39,7	54,6	78,1							
+158_0710	RUS	RU	2	Rostov	67,6	40,5	70,4	101							
+158_0801	RUS	RU	2	Bashkorstostan	110,1	71,4	98,2	122,4							
+158_0802	RUS	RU	2	Udmurtia	86,3	67,7	90,2	118,1							
+158_0803	RUS	RU	2	Kurgan Region	64,7	35,8	57,8	84,2							
+158_0804	RUS	RU	2	Orenburg	93,1	69,9	121	147,2							
+158_0805	RUS	RU	2	Perm (y compris Komi-Permyak A.D.)	139,6	87,3	119,7	154,3							
+158_0806	RUS	RU	2	Sverdlovsk	140,8	69,1	127,8	159,4							
+158_0807	RUS	RU	2	Chelyabinsk	102,2	66,7	111	123							
+158_0901	RUS	RU	2	Altai (R�publique)	52,6	27,4	50,5	71,5							
+158_0902	RUS	RU	2	Altai (Krai)	62,4	35,7	61	81,8							
+158_0903	RUS	RU	2	Kemerovo	134,7	60,7	106	148,1							
+158_0904	RUS	RU	2	Novosibirsk	95,3	53,5	93,1	119,3							
+158_0905	RUS	RU	2	Omsk	108,5	43,7	99,7	126,5							
+158_0906	RUS	RU	2	Tomsk	136,4	77,6	141,4	179,5							
+158_0907	RUS	RU	2	Tyumen (sans Khanty-Mansiisk et Yamal-Nenets)	394,4	35,1	221,3	268,7							
+158_0908	RUS	RU	2	Khanty-Mansi - Yugra	394,9	601,7	790,2	846,3							
+158_0909	RUS	RU	2	Yamalo-Nenets	394,4	478	768,9	979							
+158_1001	RUS	RU	2	Buryat	84,2	43,5	75,1	90,3							
+158_1002	RUS	RU	2	Tyva	40,8	23,8	43,2	65,7							
+158_1003	RUS	RU	2	Khakassia	99,5	63,3	80,9	118,3							
+158_1004	RUS	RU	2	Krasnoyarsk (y compris Evenk et Dolgano-Nenets)	162	143,9	174	244,4							
+158_1005	RUS	RU	2	Irkutsk	140,3	78,9	110,1	146,8							
+158_1006	RUS	RU	2	Zabaykalsky	87,2	51	67	98,6							
+158_1101	RUS	RU	2	Sakha (Yakutia)	224,4	172,5	171,2	264,8							
+158_1102	RUS	RU	2	Jewish A. R.	63,6	39,3	89,2	116,6							
+158_1103	RUS	RU	2	Chukotka	138,8	129,3	267,5	499,6							
+158_1104	RUS	RU	2	Primorsky	97,3	58,7	87,9	157,1							
+158_1105	RUS	RU	2	Khabarovsk	109	89	114,7	171,9							
+158_1106	RUS	RU	2	Amur	92,1	57	88,6	140,4							
+158_1107	RUS	RU	2	Kamchatka	146,6	98,7	134,7	209,3							
+158_1108	RUS	RU	2	Magadan	138,8	130,5	142,7	246							
+158_1109	RUS	RU	2	Sakhalin	118,1	123,8	376,1	638,2							
+159	RWA	RW	0	Rwanda	11,4	7,7	8,8	10,1							
+163	SAU	SA	0	Arabie saoudite	450,5	379	338,6	374							
+172	SLB	SB	0	�les Salomon	15	17,5	13,1	12,6							
+166	SYC	SC	0	Seychelles	183,9	177,5	159,1	165,5							
+182	SDN	SD	0	Soudan	22	23	24,9	22,5							
+185_01	SWE	SE	1	Stockholm	441,9	526,1	497	443,4							
+185_02	SWE	SE	1	�stra Mellansverige	297,1	323,2	312	277							
+185_03	SWE	SE	1	Sm�land med �arna	308,1	340,7	326,8	283,3							
+185_04	SWE	SE	1	Sydsverige	309,9	345,7	330,7	274,6							
+185_05	SWE	SE	1	V�stsverige	320,9	362	348,4	303							
+185_06	SWE	SE	1	Norra Mellansverige	309,9	325,7	310	271,4							
+185_07	SWE	SE	1	Mellersta Norrland	333,7	343,2	315,9	297,5							
+185_08	SWE	SE	1	�vre Norrland	315,4	326,9	334,6	322,7							
+956	SVA	SF	0	Svalbard											
+168	SGP	SG	0	Singapour	467,5	522	537,6	535,9							
+920	SHN	SH	0	Sainte-H�l�ne, Ascencion et Tristan da Cunha			64,7								
+171	SVN	SI	0	Slov�nie	211	230,6	235	199,8							
+958	SGE	SJ	0	South Georgia and South Sandwich Islands											
+170_01	SVK	SK	1	Bratislavsk� kraj	286	310,1	423,5	445,6							
+170_02	SVK	SK	1	Z�padn� Slovensko	126,7	135,9	174,7	172,6							
+170_03	SVK	SK	1	Stredn� Slovensko	109,4	118,5	141,2	141,5							
+170_04	SVK	SK	1	V�chodn� Slovensko	101,7	108	121,8	123,1							
+167	SLE	SL	0	Sierra Leone	12,8	9,9	10,6	11,8							
+161	SMR	SM	0	Saint-Marin				383,5							
+164_01	SEN	SN	1	Dakar		22,1		17,8							
+164_02	SEN	SN	1	Ziguinchor		17,5		14,1							
+164_03	SEN	SN	1	Diourbel		13,9		11,1							
+164_04	SEN	SN	1	Saint-Louis		20,6		16,5							
+164_05	SEN	SN	1	Tambacounda		18,9		15,2							
+164_06	SEN	SN	1	Kaolack		15,1		12,1							
+164_07	SEN	SN	1	Thi�s		22,4		18							
+164_08	SEN	SN	1	Louga		20,8		16,7							
+164_09	SEN	SN	1	Fatick		16,2		13							
+164_10	SEN	SN	1	Kolda		17,2		13,8							
+164_11	SEN	SN	1	Matam		20,6		16,5							
+164_12	SEN	SN	1	Kaffrine		15,1		12,1							
+164_13	SEN	SN	1	K�dougou		18,9		15,2							
+164_14	SEN	SN	1	S�dhiou		17,2		13,8							
+173	SOM	SO	0	Somalie				2,7							
+959	SPR	SP	0	Spratly Islands											
+183	SUR	SR	0	Suriname	119,6	100,9	106,3	111,3							
+175	SSD	SS	0	Soudan du Sud			21,2	13							
+162	STP	ST	0	Sao Tom�-et-Principe		21,1	21,2	20,6							
+59_01	SLV	SV	1	Ahuachap�n		33,9	36,6	32,5							
+59_02	SLV	SV	1	Caba�as		33,2	38,2	33,9							
+59_03	SLV	SV	1	Chalatenango		39	43,5	38,6							
+59_04	SLV	SV	1	Cuscatl�n		50,5	42	37,3							
+59_05	SLV	SV	1	La Libertad		77,5	74,5	66,1							
+59_06	SLV	SV	1	La Paz		45,7	46	40,8							
+59_07	SLV	SV	1	La Uni�n		42,4	47,2	41,9							
+59_08	SLV	SV	1	Moraz�n		37,5	37,5	33,2							
+59_09	SLV	SV	1	San Miguel		53,4	54,2	48,1							
+59_10	SLV	SV	1	San Salvador		90,1	79,1	70,2							
+59_11	SLV	SV	1	San Vicente		40,4	44,1	39,1							
+59_12	SLV	SV	1	Santa Ana		50,8	56	49,7							
+59_13	SLV	SV	1	Sonsonate		49,2	46,4	41,2							
+59_14	SLV	SV	1	Usulut�n		42,2	43,9	38,9							
+169	SXM	SX	0	Sint Maarten (Dutch part)				456,8							
+187	SYR	SY	0	R�publique arabe syrienne				37,8							
+184	SWZ	SZ	0	Swaziland	66,9	60,7	53,5	42,3							
+198	TCA	TC	0	�les Turques-et-Ca�ques			249,8	249,8							
+38	TCD	TD	0	Tchad	11,6	10	12,3	14							
+956	TAF	TF	0	Terres australes et antarctiques fran�aises											
+192	TGO	TG	0	Togo	11,7	13	9,9	8,2							
+190_0101	THA	TH	2	Bangkok			256	222,4							
+190_0102	THA	TH	2	Nakhon Pathom			112,1	112,7							
+190_0103	THA	TH	2	Nonthaburi			89,5	65,5							
+190_0104	THA	TH	2	Pathum Thani			170,9	112,5							
+190_0105	THA	TH	2	Samut Prakarn			341,1	185,8							
+190_0106	THA	TH	2	Samut Sakhon			399,7	179,1							
+190_0201	THA	TH	2	Ang Thong			56,4	52,4							
+190_0202	THA	TH	2	Chainat			51,9	60,9							
+190_0203	THA	TH	2	Lopburi			72,4	57,1							
+190_0204	THA	TH	2	Phra Nakhon Si Ayudhya			302,7	192,2							
+190_0205	THA	TH	2	Saraburi			165,3	143,1							
+190_0206	THA	TH	2	Singburi			67,7	72							
+190_0301	THA	TH	2	Chachoengsao			195,1	224,6							
+190_0302	THA	TH	2	Chanthaburi			50,6	102,3							
+190_0303	THA	TH	2	Chonburi			280,9	212,2							
+190_0304	THA	TH	2	Nakhon Nayok			50,6	44,2							
+190_0305	THA	TH	2	Prachinburi			81,7	188							
+190_0306	THA	TH	2	Rayong			681,6	494,2							
+190_0307	THA	TH	2	Sa Kaeo			38,1	28,6							
+190_0308	THA	TH	2	Trad			67,9	74,2							
+190_0401	THA	TH	2	Amnat Charoen			20,6	25							
+190_0402	THA	TH	2	Bueng Kan (d�tach� de Nong Khai en 2011)			 	24,8							
+190_0403	THA	TH	2	Buriram			22,2	28,2							
+190_0404	THA	TH	2	Chaiyaphum			23	28,1							
+190_0405	THA	TH	2	Kalasin			61,2	26,6							
+190_0406	THA	TH	2	Khon Kaen			46,3	54,3							
+190_0407	THA	TH	2	Loei			36,3	38							
+190_0408	THA	TH	2	Maha Sarakham			23	29,6							
+190_0409	THA	TH	2	Mukdahan			26	27,2							
+190_0410	THA	TH	2	Nakhon Phanom			21,4	32							
+190_0411	THA	TH	2	Nakhon Ratchasima			38,5	48,5							
+190_0412	THA	TH	2	Nong Bua Lamphu			19,3	21,1							
+190_0413	THA	TH	2	Nong Khai			24,2	40,9							
+190_0414	THA	TH	2	Roi Et			25,1	30,3							
+190_0415	THA	TH	2	Sakon Nakhon			24,4	28,6							
+190_0416	THA	TH	2	Si Saket			20,6	30							
+190_0417	THA	TH	2	Surin			21,9	28,9							
+190_0418	THA	TH	2	Ubon Ratchathani			26,7	28,5							
+190_0419	THA	TH	2	Udon Thani			28	38							
+190_0420	THA	TH	2	Yasothon			22,1	25,4							
+190_0501	THA	TH	2	Chiang Mai			54,1	53,4							
+190_0502	THA	TH	2	Chiang Rai			33,7	36,4							
+190_0503	THA	TH	2	Kampaeng Phet			25,4	71,4							
+190_0504	THA	TH	2	Lampang			42,3	42,2							
+190_0505	THA	TH	2	Lamphun			99,2	90,3							
+190_0506	THA	TH	2	Mae Hong Son			30,4	22,4							
+190_0507	THA	TH	2	Nakhon Sawan			47,4	56,6							
+190_0508	THA	TH	2	Nan			29,9	27,9							
+190_0509	THA	TH	2	Phayao			32,3	37,3							
+190_0510	THA	TH	2	Phetchabun			37,9	38,6							
+190_0511	THA	TH	2	Phichit			37,4	49,8							
+190_0512	THA	TH	2	Phitsanulok			45,8	48,1							
+190_0513	THA	TH	2	Phrae			30,6	29,3							
+190_0514	THA	TH	2	Sukhothai			32,9	36,1							
+190_0515	THA	TH	2	Tak			43,7	37,4							
+190_0516	THA	TH	2	Uthai Thani			38,1	47,8							
+190_0517	THA	TH	2	Uttaradit			39	43,2							
+190_0601	THA	TH	2	Chumphon			65,5	65,9							
+190_0602	THA	TH	2	Krabi			77,9	94,3							
+190_0603	THA	TH	2	Nakhon Si Thammarat			56,9	53,8							
+190_0604	THA	TH	2	Narathiwat			42,1	38,4							
+190_0605	THA	TH	2	Pattani			43,6	38,1							
+190_0606	THA	TH	2	Phangnga			83,1	81,8							
+190_0607	THA	TH	2	Phatthalung			42,7	36,1							
+190_0608	THA	TH	2	Phuket			154,7	114,3							
+190_0609	THA	TH	2	Ranong			71	43,3							
+190_0610	THA	TH	2	Satun			69,3	58,9							
+190_0611	THA	TH	2	Songkhla			87	68,7							
+190_0612	THA	TH	2	Surat Thani			90,7	82,1							
+190_0613	THA	TH	2	Trang			62,1	63,1							
+190_0614	THA	TH	2	Yala			58,1	57,2							
+190_0701	THA	TH	2	Kanchanaburi			69,1	52,7							
+190_0702	THA	TH	2	Phetchaburi			81,8	60,7							
+190_0703	THA	TH	2	Prachuap Khilikhan			134,5	73,6							
+190_0704	THA	TH	2	Ratchaburi			97,6	82,7							
+190_0705	THA	TH	2	Samut Songkham			54,1	48,6							
+190_0706	THA	TH	2	Suphanburi			47,2	48,5							
+188_01	TJK	TJ	1	Sughd			12,1	13,9							
+188_02	TJK	TJ	1	Nohiyahoi tobei Jumhurii			17,7	20,4							
+188_03	TJK	TJ	1	Khatlon			12,5	14,5							
+188_04	TJK	TJ	1	Haut-Badakhchan			10	11,6							
+188_05	TJK	TJ	1	Douchanb�			30,2	34,8							
+922	TKL	TK	0	Tokelau	17	17	17	17							
+191	TMP	TL	0	Timor-Leste		21,6	37,1	55,3							
+197	TKM	TM	0	Turkm�nistan	75,8	51,2	62	90,1							
+195_01	TUN	TN	1	Ariana		90,4	78,6	78,7							
+195_02	TUN	TN	1	B�ja		35,7	36,9	37							
+195_03	TUN	TN	1	Ben Arous		104,7	89,9	90,1							
+195_04	TUN	TN	1	Bizerte		63,9	63,5	63,7							
+195_05	TUN	TN	1	Gab�s		63,9	71,1	71,3							
+195_06	TUN	TN	1	Gafsa		108,7	88,5	88,7							
+195_07	TUN	TN	1	Jendouba		30,3	27	27							
+195_08	TUN	TN	1	Kairouan		25,8	28,9	29							
+195_09	TUN	TN	1	Kasserine		22	22,7	22,7							
+195_10	TUN	TN	1	K�bili		37,9	35,8	35,9							
+195_11	TUN	TN	1	Le Kef		37,3	19,5	19,5							
+195_12	TUN	TN	1	Mahdia		29,5	46,1	46,2							
+195_13	TUN	TN	1	La Manouba		45,6	63,3	63,4							
+195_14	TUN	TN	1	M�denine		85,1	84,2	84,3							
+195_15	TUN	TN	1	Monastir		144,5	142,2	142,5							
+195_16	TUN	TN	1	Nabeul		130,1	131,2	131,5							
+195_17	TUN	TN	1	Sfax		91,9	89,1	89,3							
+195_18	TUN	TN	1	Sidi Bouzid		14,1	17,8	17,8							
+195_19	TUN	TN	1	Siliana		10,6	11,2	11,2							
+195_20	TUN	TN	1	Sousse		139,2	119,9	120,2							
+195_21	TUN	TN	1	Tataouine		24,5	35,4	35,5							
+195_22	TUN	TN	1	Tozeur		35,5	32,7	32,8							
+195_23	TUN	TN	1	Tunis		92,3	91,1	91,3							
+195_24	TUN	TN	1	Zaghouan		59,8	52,3	52,4							
+193	TON	TO	0	Tonga	47,3	47,6	39,2	38							
+196_01	TUR	TR	1	Istanbul		184,5	183,4	195,6							
+196_02	TUR	TR	1	Thrace (Tekirdag, Edirne, Kirklareli)		146,3	149,3	170							
+196_03	TUR	TR	1	Southern Marmara West (Balikesir, �anakkale)		118,4	117	124,5							
+196_04	TUR	TR	1	Izmir		170,7	145,2	159,5							
+196_05	TUR	TR	1	Southern Aegean (Aydin, Denizli, Mugla)		128,1	115,7	121,5							
+196_06	TUR	TR	1	Northern Aegean (Manisa, Afyonkarahisar, K�tahya, Usak)		99	107,7	114							
+196_07	TUR	TR	1	Eastern Marmara South (Bursa, Eskisehir, Bilecik)		135,8	159,8	169,7							
+196_08	TUR	TR	1	Eastern Marmara North (Kocaeli, Sakarya, D�zce, Bolu, Yalova)		203,3	164,8	184,7							
+196_09	TUR	TR	1	Ankara		178,3	166	172,7							
+196_10	TUR	TR	1	Central Anatolia West and South (Konya, Karaman)		90,7	94,5	99,6							
+196_11	TUR	TR	1	Mediterranean region West (Antalya, Isparta, Burdur)		106,8	135,1	141,4							
+196_12	TUR	TR	1	Mediterranean region Middle (Adana, Mersin)		130,3	94,9	101,2							
+196_13	TUR	TR	1	Mediterranean region East (Hatay, Kahramanmaras, Osmaniye)		82	75,9	82,3							
+196_14	TUR	TR	1	Central Anatolia Middle (Kirikkale, Aksaray, Nigde, Nevsehir, Kirsehir)		96	88,4	98,6							
+196_15	TUR	TR	1	Central Anatolia East (Kayseri, Sivas, Yozgat)		72,2	88,7	92,8							
+196_16	TUR	TR	1	Western Black Sea West (Zonguldak, Karab�k, Bartin)		118,7	110,1	117,9							
+196_17	TUR	TR	1	Western Black Sea Middle and East (Kastamonu, �ankiri, Sinop)		80	87,5	91,6							
+196_18	TUR	TR	1	Middle Black Sea (Samsun, Tokat, �orum, Amasya)		83,8	86,2	93,7							
+196_19	TUR	TR	1	Eastern Black Sea (Trabzon, Ordu, Giresun, Rize, Artvin, G�m�shane)		73,4	89,6	92,5							
+196_20	TUR	TR	1	NorthEastern Anatolia West (Erzurum, Erzincan, Bayburt)		57,7	76,6	82,3							
+196_21	TUR	TR	1	NorthEastern Anatolia East (Agri, Kars, Igdir, Ardahan)		38,9	49,8	56,2							
+196_22	TUR	TR	1	Eastern Anatolia West (Malatya, Elazig, Bing�l, Tunceli)		73,8	75,4	81,9							
+196_23	TUR	TR	1	Eastern Anatolia East (Van, Mus, Bitlis, Hakkari)		38,1	48,4	49,2							
+196_24	TUR	TR	1	SouthEastern Anatolia West (Gaziantep, Adiyaman, Kilis)		72,9	60,8	69,7							
+196_25	TUR	TR	1	SouthEastern Anatolia Middle (Sanliurfa, Diyarbakir)		58,1	52,4	60,4							
+196_26	TUR	TR	1	SouthEastern Anatolia East (Mardin, Batman, Sirnak, Siirt)		47,6	54,5	66,4							
+194	TTO	TT	0	Trinit�-et-Tobago	145,7	166,8	233,5	182,8							
+199	TUV	TV	0	Tuvalu			46,9	36,7							
+921	TWN	TW	0	Taiwan, province de Chine				304							
+189_06	TZA	TZ	1	Zanzibar				17,1							
+189_0101	TZA	TZ	2	Dodoma				11							
+189_0102	TZA	TZ	2	Singida				10,4							
+189_0103	TZA	TZ	2	Tabora				12,8							
+189_0201	TZA	TZ	2	Dar es Salaam				28,7							
+189_0202	TZA	TZ	2	Lindi				16,2							
+189_0203	TZA	TZ	2	Morogoro				16,3							
+189_0204	TZA	TZ	2	Mtwara				15,4							
+189_0205	TZA	TZ	2	Pwani				12,5							
+189_0301	TZA	TZ	2	Geita				14,1							
+189_0302	TZA	TZ	2	Kagera				11,9							
+189_0303	TZA	TZ	2	Kigoma				10,1							
+189_0304	TZA	TZ	2	Mara				15,7							
+189_0305	TZA	TZ	2	Mwanza				15,1							
+189_0306	TZA	TZ	2	Shinyanga				14,2							
+189_0307	TZA	TZ	2	Simiyu				14,1							
+189_0401	TZA	TZ	2	Arusha				20,8							
+189_0402	TZA	TZ	2	Kilimanjaro				20,5							
+189_0403	TZA	TZ	2	Manyara				17,4							
+189_0404	TZA	TZ	2	Tanga				17							
+189_0501	TZA	TZ	2	Iringa				23,7							
+189_0502	TZA	TZ	2	Katavi				16,2							
+189_0503	TZA	TZ	2	Mbeya				20							
+189_0504	TZA	TZ	2	Njombe				23,7							
+189_0505	TZA	TZ	2	Rukwa				16,1							
+189_0506	TZA	TZ	2	Ruvuma				20,5							
+201_01	UKR	UA	1	Cherkasy		31,8	45,7	48,9							
+201_02	UKR	UA	1	Chernihiv		33,8	44,5	42,2							
+201_03	UKR	UA	1	Chernivtsi		23,5	32,6	28,3							
+201_04	UKR	UA	1	Dnipropetrovsk		56,4	92,2	86,6							
+201_05	UKR	UA	1	Donetsk		63,6	89,2	70,7							
+201_06	UKR	UA	1	Ivano-Frankivsk		34,3	44,4	44,9							
+201_07	UKR	UA	1	Kharkiv		47	69,1	58,2							
+201_08	UKR	UA	1	Kherson		29,7	35,9	36,1							
+201_09	UKR	UA	1	Khmelnytskyin		29,8	40,2	37,7							
+201_10	UKR	UA	1	Kiev (city)		151,5	220,1	204,4							
+201_11	UKR	UA	1	Kiev (oblast)		43,5	66,4	74,7							
+201_12	UKR	UA	1	Kirovohrad		33,5	42,2	47,7							
+201_13	UKR	UA	1	Luhansk		39,1	60,2	45,8							
+201_14	UKR	UA	1	Lviv		35,3	48,2	46,6							
+201_15	UKR	UA	1	Mykolaiv		42,1	54	51,1							
+201_16	UKR	UA	1	Odessa		46	61,1	54,4							
+201_17	UKR	UA	1	Poltava		57,9	81,8	74,7							
+201_18	UKR	UA	1	Rivne		31,5	42,9	35,5							
+201_19	UKR	UA	1	Sumy		32,8	45,3	43,9							
+201_20	UKR	UA	1	Ternopil		23	33,2	31,4							
+201_21	UKR	UA	1	Vinnytsia		30,8	40,5	41,7							
+201_22	UKR	UA	1	Volyn		31,2	42,9	37							
+201_23	UKR	UA	1	Zakarpattia		27,8	37,3	31,8							
+201_24	UKR	UA	1	Zaporizhia		53	79,7	57							
+201_25	UKR	UA	1	Zhytomyr		28,8	37,5	37,9							
+201_26	UKR	UA	1	Crim�e		32,4	46,7	44,1							
+201_27	UKR	UA	1	Sebastopol		38,3	57,3	53,7							
+200_01	UGA	UG	1	Central			12,3	12,8							
+200_02	UGA	UG	1	Eastern			10,4	10,8							
+200_03	UGA	UG	1	Northern			8,7	9,1							
+200_04	UGA	UG	1	Western			11,2	11,7							
+204_01	USA	US	1	Alabama	363,4	350,2	321,2	287,7							
+204_02	USA	US	1	Alaska	654,3	554,5	593,1	535,9							
+204_03	USA	US	1	Arizona	395,4	421,4	380,7	307,8							
+204_04	USA	US	1	Arkansas	351,8	342,9	310	280,8							
+204_0501	USA	US	2	California North				428,2							
+204_0502	USA	US	2	California Sacramento				385,9							
+204_0503	USA	US	2	California San Francisco Silicon Valley				510,2							
+204_0504	USA	US	2	California Central				294,1							
+204_0505	USA	US	2	California Los Angeles San Diego				371,5							
+204_06	USA	US	1	Colorado	475,4	534,4	457,6	399,3							
+204_07	USA	US	1	Connecticut	593,5	643,9	568	482,7							
+204_08	USA	US	1	Delaware	619,9	694,1	619,3	543,8							
+204_09	USA	US	1	District of Columbia	1426,9	1368,9	1449,4	1312,4							
+204_1001	USA	US	2	Florida Jacksonville				307,6							
+204_1002	USA	US	2	Florida Orlando				291,3							
+204_1003	USA	US	2	Florida Miami Palm Beach				311							
+204_1004	USA	US	2	Florida South West				323,2							
+204_1005	USA	US	2	Florida Tampa				310,8							
+204_1006	USA	US	2	Florida Central North				255,7							
+204_1007	USA	US	2	Florida North West				283,8							
+204_11	USA	US	1	Georgia	459	480,2	387,2	330,3							
+204_12	USA	US	1	Hawaii	512,6	459,1	441,2	393,2							
+204_13	USA	US	1	Idaho	377,8	373,9	326,7	275,9							
+204_1401	USA	US	2	Chicago metro				435,2							
+204_1402	USA	US	2	Rest of Illinois				351							
+204_15	USA	US	1	Indiana	418	437,3	371,7	345,3							
+204_16	USA	US	1	Iowa	413,3	428,1	404,9	374,8							
+204_17	USA	US	1	Kansas	404,4	427,7	392,5	363,9							
+204_18	USA	US	1	Kentucky	385,9	375,9	320,3	299,3							
+204_19	USA	US	1	Louisiana	429	394,6	429,2	399,5							
+204_20	USA	US	1	Maine	370,7	383,5	335	305,1							
+204_21	USA	US	1	Maryland	452,7	462,9	435,8	408							
+204_22	USA	US	1	Massachusetts	529,5	576,8	496,4	459,2							
+204_23	USA	US	1	Michigan	427,7	455,7	350,2	306,3							
+204_24	USA	US	1	Minnesota	465,9	514,3	440,8	414,1							
+204_25	USA	US	1	Mississippi	329,1	309,6	285	257							
+204_26	USA	US	1	Missouri	426,1	433,7	358,5	324,9							
+204_27	USA	US	1	Montana (US)	331,2	321,7	329,5	304							
+204_28	USA	US	1	Nebraska	441	449,6	417,2	405,5							
+204_29	USA	US	1	Nevada	522,9	505,3	463,9	366							
+204_30	USA	US	1	New Hampshire	459,7	478,7	399,4	370,2							
+204_31	USA	US	1	New Jersey	554,5	558,1	492,1	433,1							
+204_32	USA	US	1	New Mexico	406	371,2	338,5	292,1							
+204_3301	USA	US	2	New York Metro Mid-Hudson				499,9							
+204_3302	USA	US	2	New York Albany				440,1							
+204_3303	USA	US	2	New York Southern Tier				357,3							
+204_3304	USA	US	2	New York Western				388,2							
+204_3305	USA	US	2	New York Finger Lakes				395,8							
+204_3306	USA	US	2	New York Central				383,1							
+204_3307	USA	US	2	New York North				335,8							
+204_3308	USA	US	2	New York Mohawk Valley				356,3							
+204_34	USA	US	1	North Carolina	440,5	468,2	394,2	353,4							
+204_35	USA	US	1	North Dakota	374,4	382,4	396,2	497,1							
+204_3601	USA	US	2	Ohio North West				305,3							
+204_3602	USA	US	2	Ohio North				343,1							
+204_3603	USA	US	2	Ohio East				284,1							
+204_3604	USA	US	2	Ohio Columbus Central				354,3							
+204_3605	USA	US	2	Ohio South-West				368,7							
+204_37	USA	US	1	Oklahoma	345,1	355,1	349,9	318,9							
+204_38	USA	US	1	Oregon	421,2	443,5	406,6	385,1							
+204_3901	USA	US	2	Pennsylvania Philadelphia				404,3							
+204_3902	USA	US	2	Pennsylvania Appalachian East				322,7							
+204_3903	USA	US	2	Pennsylvania Appalachian South				351							
+204_3904	USA	US	2	Pennsylvania Central				291							
+204_3905	USA	US	2	Pennsylvania South West				367,5							
+204_40	USA	US	1	Rhode Island	420,5	429,8	405,2	366,7							
+204_41	USA	US	1	South Carolina	380,5	385,5	321,5	282							
+204_42	USA	US	1	South Dakota	406,6	427,4	399,2	385,1							
+204_43	USA	US	1	Tennessee	424,7	418,3	355,3	324,3							
+204_4401	USA	US	2	Texas North				356,8							
+204_4402	USA	US	2	Texas Dallas-Fort Worth				447,5							
+204_4403	USA	US	2	Texas East				343,9							
+204_4404	USA	US	2	Texas Houston-Galveston				453,5							
+204_4405	USA	US	2	Texas Austin				486,7							
+204_4406	USA	US	2	Texas San Antonio				374,2							
+204_4407	USA	US	2	Texas South East				266,2							
+204_4408	USA	US	2	Texas South West				322,2							
+204_45	USA	US	1	Utah	379,5	416,1	378,3	345,4							
+204_46	USA	US	1	Vermont	390,9	397,7	349,4	329,6							
+204_47	USA	US	1	Virginia	465,9	495,1	455,3	411,7							
+204_4801	USA	US	2	Seattle metro				458,8							
+204_4802	USA	US	2	Rest of Washington				323,5							
+204_49	USA	US	1	West Virginia	324,2	307,8	280,9	282,6							
+204_50	USA	US	1	Wisconsin	423,4	443,5	381,9	345,2							
+204_51	USA	US	1	Wyoming	534,4	463,6	570,9	503,8							
+205	URY	UY	0	Uruguay	126,5	128,1	111,6	132,1							
+206_01	UZB	UZ	1	Andijan		20,8	22,1	27,5							
+206_02	UZB	UZ	1	Bukhara		27,5	31,7	39,6							
+206_03	UZB	UZ	1	Fergana		26,4	22,6	28,2							
+206_04	UZB	UZ	1	Jizzakh		16	22,2	27,7							
+206_05	UZB	UZ	1	Xorazm		20,3	19,9	24,8							
+206_06	UZB	UZ	1	Namangan		16,8	15,8	19,7							
+206_07	UZB	UZ	1	Navoiy		35,3	50,5	63							
+206_08	UZB	UZ	1	Qashqadaryo		20,4	22,3	27,8							
+206_09	UZB	UZ	1	Karakalpakstan		13,7	13,2	16,5							
+206_10	UZB	UZ	1	Samarqand		18,6	18	22,5							
+206_11	UZB	UZ	1	Sirdaryo		24,9	21,7	27,1							
+206_12	UZB	UZ	1	Surxondaryo		17,9	18,7	23,3							
+206_13	UZB	UZ	1	Tashkent (Region)		28,1	31	38,7							
+206_14	UZB	UZ	1	Tashkent (City)		35	47,2	58,9							
+919	VAT	VA	0	Vatican											
+181	VCT	VC	0	Saint-Vincent-et-les Grenadines	70,8	73,4	81,6	72,8							
+208	VEN	VE	0	Venezuela	183	145,8	142,6	124,8							
+907	VGB	VG	0	Iles Vierges britanniques			330,6	330,6							
+210	VIR	VI	0	�les Vierges (EU)				248,5							
+209_0101	VNM	VN	2	H� Nam			21,2	24,2							
+209_0102	VNM	VN	2	H?i D??ng			25,6	29,2							
+209_0103	VNM	VN	2	H?ng Y�n			30,9	35,3							
+209_0104	VNM	VN	2	Nam ??nh			17,7	20,3							
+209_0105	VNM	VN	2	Ninh B�nh			16,8	19,2							
+209_0106	VNM	VN	2	Th�i B�nh			23,2	26,6							
+209_0107	VNM	VN	2	V?nh Ph�c			37,5	42,8							
+209_0108	VNM	VN	2	Ha Noi ( municipalit�) (y compris ancienne pve. De Ha Tay)			32,7	37,4							
+209_0109	VNM	VN	2	Hai Phong ( municipalit�)			32,6	37,3							
+209_0110	VNM	VN	2	Bac Ninh			19,1	21,8							
+209_0201	VNM	VN	2	H� T?nh			12,8	14,6							
+209_0202	VNM	VN	2	Ngh? An			11,8	13,4							
+209_0203	VNM	VN	2	Qu?ng B�nh			9,6	10,9							
+209_0204	VNM	VN	2	Qu?ng Tr?			13,7	15,6							
+209_0205	VNM	VN	2	Thanh H�a			13,5	15,4							
+209_0206	VNM	VN	2	Th?a Thi�n-Hu?			15,2	17,4							
+209_0301	VNM	VN	2	B?c Giang (d�fusionn� d'avec Bac Ninh)			19,1	21,8							
+209_0302	VNM	VN	2	B?c K?n			9,8	11,1							
+209_0303	VNM	VN	2	Cao B?ng			14,5	16,5							
+209_0304	VNM	VN	2	H� Giang			9,2	10,5							
+209_0305	VNM	VN	2	L?ng S?n			11,2	12,8							
+209_0306	VNM	VN	2	L�o Cai			10,5	11,9							
+209_0307	VNM	VN	2	Ph� Th?			24,1	27,5							
+209_0308	VNM	VN	2	Qu?ng Ninh			36,2	41,4							
+209_0309	VNM	VN	2	Th�i Nguy�n			18,9	21,6							
+209_0310	VNM	VN	2	Tuy�n Quang			11,7	13,4							
+209_0311	VNM	VN	2	Y�n B�i			11,9	13,6							
+209_0401	VNM	VN	2	Di?n Bi�n (s�par�e de Lai Chau en 2004)			10,1	 							
+209_0402	VNM	VN	2	H�a B�nh			10,3	11,8							
+209_0403	VNM	VN	2	Lai Ch�u 			10,1	11,6							
+209_0404	VNM	VN	2	S?n La			10,6	12,1							
+209_0501	VNM	VN	2	D?k L?k			19,4	22,2							
+209_0502	VNM	VN	2	D?k N�ng (anciennement partie de Dak Lak)			19,4	 							
+209_0503	VNM	VN	2	Gia Lai			18,8	21,5							
+209_0504	VNM	VN	2	Kon Tum			14,1	16,1							
+209_0505	VNM	VN	2	L�m ??ng			34,1	38,9							
+209_0601	VNM	VN	2	B�nh ??nh			19,8	22,6							
+209_0602	VNM	VN	2	Kh�nh H�a			27,3	31,2							
+209_0603	VNM	VN	2	Ph� Y�n			16,4	18,7							
+209_0604	VNM	VN	2	Qu?ng Nam			13,5	15,4							
+209_0605	VNM	VN	2	Qu?ng Ng�i			14,9	17,1							
+209_0606	VNM	VN	2	B�nh Thu?n			13,8	15,8							
+209_0607	VNM	VN	2	Ninh Thu?n			13,6	15,5							
+209_0608	VNM	VN	2	Da Nang (municipalit�)			31,2	35,7							
+209_0701	VNM	VN	2	B� R?a�V?ng T�u			144,4	164,9							
+209_0702	VNM	VN	2	B�nh D??ng			97,7	111,6							
+209_0703	VNM	VN	2	B�nh Ph??c			9	10,2							
+209_0704	VNM	VN	2	D?ng Nai			86,6	98,9							
+209_0705	VNM	VN	2	T�y Ninh			22,9	26,2							
+209_0706	VNM	VN	2	Ho Chi Minh (municipalit�)			81,5	93,1							
+209_0801	VNM	VN	2	An Giang			36,8	42,1							
+209_0802	VNM	VN	2	B?c Li�u			26,6	30,4							
+209_0803	VNM	VN	2	B?n Tre			20,8	23,8							
+209_0804	VNM	VN	2	C� Mau			40,8	46,6							
+209_0805	VNM	VN	2	D?ng Th�p			34,1	38,9							
+209_0806	VNM	VN	2	H?u Giang			39,3	 							
+209_0807	VNM	VN	2	Ki�n Giang			27,3	31,2							
+209_0808	VNM	VN	2	Long An			37,8	43,2							
+209_0809	VNM	VN	2	S�c Tr?ng			44,2	50,5							
+209_0810	VNM	VN	2	Ti?n Giang			30,6	34,9							
+209_0811	VNM	VN	2	Tr� Vinh			33,9	38,8							
+209_0812	VNM	VN	2	V?nh Long			37,6	43							
+209_0813	VNM	VN	2	C?n Th? ( municipalit�) (partie de H�u Giang jusque 1975)			39,3	44,9							
+207	VUT	VU	0	Vanuatu	28,6	27,4	21,9	20							
+923	WLF	WF	0	Wallis et Futuna		40,4	40,4	40,4							
+160	WSM	WS	0	Samoa		44,3	43,4	38,8							
+999	XCA	XC	0	Caspian sea											
+103	KSV	XK	0	Kosovo			63,5	63,4							
+212	YEM	YE	0	Y�men, R�p. du	41,4	37,7	33,7	26,6							
+174_01	ZAF	ZA	1	Eastern Cape	53,2	55,3	52,5	49,3							
+174_02	ZAF	ZA	1	Free State	103,2	85,3	86,1	81,2							
+174_03	ZAF	ZA	1	Gauteng	246,8	170,4	151,5	138,7							
+174_04	ZAF	ZA	1	KwaZulu-Natal	78,9	75,9	73,5	66,3							
+174_05	ZAF	ZA	1	Limpopo (Ancien nom�: Northern Province)	32,9	57,1	59,6	58							
+174_06	ZAF	ZA	1	Mpumalanga	125,5	90,6	88,6	84,8							
+174_07	ZAF	ZA	1	Northern Cape	127,7	94,5	92,1	86,1							
+174_08	ZAF	ZA	1	North West	74,5	90	86,9	81,5							
+174_09	ZAF	ZA	1	Western Cape	172,8	140,3	128,5	112,9							
+213_01	ZMB	ZM	1	Central			18,5	23,4							
+213_02	ZMB	ZM	1	Copperbelt			25,9	32,8							
+213_03	ZMB	ZM	1	Eastern			15,4	19,4							
+213_04	ZMB	ZM	1	Luapula			16	20,2							
+213_05	ZMB	ZM	1	Lusaka			28	35,4							
+213_06	ZMB	ZM	1	Northern			16,2	20,5							
+213_10	ZMB	ZM	1	Northern (nouveau)											
+213_11	ZMB	ZM	1	Muchinga											
+213_07	ZMB	ZM	1	North-Western			16,4	20,8							
+213_08	ZMB	ZM	1	Southern			20,1	25,4							
+213_09	ZMB	ZM	1	Western			13,5	17							
+214_01	ZWE	ZW	1	Bulawayao	39,4	36,5		17,7							
+214_02	ZWE	ZW	1	Harare	55,9	39		18,9							
+214_03	ZWE	ZW	1	Manicaland	14,6	20,3		9,8							
+214_04	ZWE	ZW	1	Mashonaland Central	22,3	22,1		10,7							
+214_05	ZWE	ZW	1	Mashonaland East	16,4	17,9		8,7							
+214_06	ZWE	ZW	1	Mashonaland West	19,9	16,2		7,9							
+214_07	ZWE	ZW	1	Masvingo	18,6	20,6		10							
+214_08	ZWE	ZW	1	Matabeleland North	18,3	28,8		13,9							
+214_09	ZWE	ZW	1	Matabeland South	21,2	31,8		15,4							
+214_10	ZWE	ZW	1	Midlands	24,4	20,8		10,1							
+999	ZZZ	ZZ	0	Eau											
