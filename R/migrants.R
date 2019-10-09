@@ -177,45 +177,55 @@ lay("USA-Mexico border")
 plot(st_geometry(deathsdor2), pch=20, col= "#eb3850", border ="#ede6bb", cex = 0.1, add=T)
 plot(st_geometry(fences), col= "#3d3c3c", lwd = 3 ,add= T)
 
-# --- MAP 4 : Dorling (disintegrated) by year ----
+# --- MAP 5 : LEAFLET ----
 
-all <- iom_sf[,c("id","deads","year","geometry")]
+library(leaflet)
 
-iom_unique <- all[all$deads == 1,]
-iom_multi <-  all[all$deads > 1,]
+# Data import and shaping
+iom <- read.csv("../data/iom/MissingMigrants-Global-2019-09-04T11-59-55.csv", stringsAsFactors = F)
+iom <- iom[(iom$Location.Coordinates)!="",]
+iom <- iom[iom$Region.of.Incident =="US-Mexico Border",]
+latlon <- matrix(as.numeric(unlist(strsplit(iom$Location.Coordinates, split = ", "))), ncol = 2, byrow = T)
+colnames(latlon) <- c("lat", 'lon')
+iom <- cbind(iom, latlon)
+iom <- iom[,c("Reported.Year","Total.Dead.and.Missing","lat","lon","Location.Description","Cause.of.Death","Information.Source")]
+colnames(iom) <- c("year","deads","lat","lon","location","cause","source")
 
-dorlingyear <- function(year){
+fences <- geojson_sf("../data/data.world/border-fence.geojson")
 
-  iom_unique_y <- iom_unique[iom_unique$year == year,]
-  iom_multi_y <- iom_multi[iom_multi$year == year,]
-  
-  for (i in 1:dim(iom_multi_y)[1]){
-    nb <- as.numeric(iom_multi_y[i,"deads"])[1]
-    tmp <- iom_multi_y[i,]
-    tmp$deads <- 1
-    for (j in 1:nb){ iom_unique_y <- rbind(iom_unique_y,tmp)}
-  }
+# Disaggregation
 
-  dorling <- cartogram_dorling(x = st_jitter(iom_unique_y),weight = "deads", k = .02)
-  lay(paste0(year))
-  plot(st_geometry(dorling), pch=20, col= "#eb3850", border ="#ede6bb", cex = 0.1, add=T)
-  plot(st_geometry(fences), col= "#3d3c3c", lwd = 3 ,add= T)
-  
+iom_unique <- iom[iom$deads == 1,]
+iom_multi <-  iom[iom$deads > 1,]
+for (i in 1:dim(iom_multi)[1]){
+  nb <- as.numeric(iom_multi[i,"deads"])[1]
+  tmp <- iom_multi[i,]
+  tmp$deads <- 1
+  for (j in 1:nb){ iom_unique <- rbind(iom_unique,tmp)}
 }
 
-par(mfrow=c(2,2))
-dorlingyear(2015)
-dorlingyear(2016)
-dorlingyear(2017)
-dorlingyear(2018)
+iom <- iom_unique
 
+pins <- makeIcon(
+  iconUrl = "../data/pin.svg",
+  iconWidth = 30, iconHeight = 30,
+  iconAnchorX = 15, iconAnchorY = 15
+)
 
+iom$label <- paste0(
+                    "<h1>",iom$cause,"</h1>
+                     <h3>year: </b>",iom$year,"<br/>
+                     location: ",iom$location,"</h3>                      
+                     <i>Source: ",iom$source,"</i>"
+                    )
 
+m <- leaflet(iom) %>%
+  addProviderTiles(providers$Esri.WorldStreetMap) %>%
+  setView(lng = -104, lat = 30, zoom = 06) %>%
+  addMarkers(~lon, ~lat, popup = ~label, clusterOptions = markerClusterOptions(), icon = pins ) %>%
+  addScaleBar(position = "bottomleft") %>%
+addPolylines(data = fences, color = "black", weight = 7, opacity = 1)
+m
 
-
-
-
-
-# LEAFLET
 
 
