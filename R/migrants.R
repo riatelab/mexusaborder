@@ -193,6 +193,7 @@ colnames(iom) <- c("year","deads","lat","lon","location","cause","source")
 
 fences <- geojson_sf("../data/data.world/border-fence.geojson")
 
+
 # Disaggregation
 
 iom_unique <- iom[iom$deads == 1,]
@@ -226,6 +227,3 @@ m <- leaflet(iom) %>%
   addScaleBar(position = "bottomleft") %>%
 addPolylines(data = fences, color = "black", weight = 7, opacity = 1)
 m
-
-
-
