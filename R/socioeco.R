@@ -313,3 +313,5 @@ choroLayer(x = subregions_cont, var = "PIB100_2017",
            legend.title.txt = "PIB par habitant 2017\n(100 = moyenne mondiale)",
            border = "white")
 
+
+
