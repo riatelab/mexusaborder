@@ -9,7 +9,7 @@ library("geojsonsf")
 library("cartography")
 library("cartogram")
 library("SpatialPosition")
-library(units)
+library("units")
 
 # ********************************
 # ********** GEOMETRIES **********
@@ -65,10 +65,10 @@ as.data.frame(search_dataset("GDP", data = get_datasets()))
 dstruc <- get_data_structure("PDB_LV")
 str(dstruc, max.level = 2)
 
-dstruc$VAR
-dstruc$INDICATOR
-dstruc$MEASURE
-dstruc$POWERCODE
+# dstruc$VAR
+# dstruc$INDICATOR
+# dstruc$MEASURE
+# dstruc$POWERCODE
 
 df <- get_dataset(dataset = "PDB_LV", filter = list(c("MEX", "USA","OECD"), 
                                                     "T_GDPPOP",
@@ -110,10 +110,11 @@ subregions <- st_read(dsn = "../data/regions/mex_us_admin_1.shp",options = "ENCO
 
 subregions <- st_transform(subregions,crs = prj) 
 
-
+getw
 #  DATA -- PIB & demo (level 1-2)
-pib <- read.csv("../data/regions/PIB.csv", sep = "\t", encoding = "UTF-8", dec = ",",
+pib <- read.csv("../data/regions/PIB.csv", sep = "\t",encoding = "UTF-8", dec = ",",
                 stringsAsFactors=FALSE)
+
 
 pop <- read.csv("../data/regions/POP.csv", sep = "\t", encoding = "UTF-8", dec = ",",
                 stringsAsFactors=FALSE)
@@ -194,11 +195,12 @@ choroLayer(x = subregions1, var = "PIB100_2017",
                       75,90,100,125,150,200,
                       max(subregions1$PIB100_2017, na.rm = T)),
            col = carto.pal(pal1 = "red.pal", n1 = 3,
-                           pal2 = "green.pal", n2 = 5),
+                           pal2 = "green.pal", n2 = 4),
            legend.pos = "topleft",
            legend.title.txt = "PIB par habitant 2017\n(100 = moyenne mondiale)",
            border = NA,
            add = TRUE)
+
 
 # Get borders
 discLayer(x = subregions.borders, df = subregions1,
