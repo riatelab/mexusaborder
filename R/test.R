@@ -1,15 +1,103 @@
-# --------------------------------- #
-#         DISCONTINUITIES           #
-#         ALONG THE BORDER          #
-# --------------------------------- #
-
 library("sf")
 library("rnaturalearth")
 library("geojsonsf")
 library("cartography")
 library("cartogram")
+library("leaflet")
 library("SpatialPosition")
 library("units")
+library("OECD")
+library("ggplot2")
+
+countries <- ne_countries(scale = 50, type = "countries", continent = NULL,
+                          country = NULL, geounit = NULL, sovereignty = NULL,
+                          returnclass = "sf")
+countries <- countries[countries$adm0_a3 %in% c("MEX","USA"),]
+
+# Mur de séparation (source : https://data.world/carlvlewis/border-fence-boundaries-u-s-mexico)
+fences <- geojson_sf("data/data.world/border-fence.geojson")
+
+# Rivières (source : natural earth)
+rivers <- ne_download(scale = 50, type = "rivers_lake_centerlines", category = "physical", returnclass = "sf")
+
+# Trait de côte (source : natural earth)
+coastline <- ne_download(scale = 50, type = "coastline", category = "physical", returnclass = "sf")
+
+# Océans (source : natural earth)
+ocean <- ne_download(scale = 50, type = "ocean", category = "physical", returnclass = "sf")
+
+
+# choix de la projection
+prj <- "+proj=aea +lat_1=14.5 +lat_2=32.5 +lat_0=24 +lon_0=-105 +x_0=0 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs"
+
+countries <- st_transform(countries,crs = prj) 
+fences <- st_transform(fences,crs = prj) 
+rivers <- st_transform(rivers,crs = prj) 
+coastline <- st_transform(coastline,crs = prj) 
+ocean <- st_transform(ocean,crs = prj) 
+
+# Choix de l'emprise
+
+bb <- c(-1342784.0, -739750.5, 793341.2, 1317849.8)
+bbox <- st_as_sfc(st_bbox(c(xmin = bb[1] , xmax = bb[3], ymax = bb[2], ymin = bb[4]), crs = prj))
+
+lay <- function(title = ""){
+  authors <- "N. Lambert & R. Ysebaert, 2019\nData source: IOM, 2019"
+  par(mar = c(0,0,1.2,0))
+  plot(st_geometry(ocean), col= "#b8d5e3", border = NA, xlim = bb[c(1,3)], ylim = bb[c(2,4)])
+  plot(st_geometry(countries) + c(-10000, -10000), col ="#827e6c50", border = NA, add= T)
+  plot(st_geometry(countries), col= "#ede6bb", border = "white", cex = 0.5, add=T)
+  plot(st_geometry(coastline), col= "#6d9cb3",lwd = 1 ,add= T)
+  plot(st_geometry(rivers), col= "#6d9cb3",lwd = 1 ,add= T)
+  plot(st_geometry(fences), col= "#3d3c3c",lwd = 3 ,add= T)
+  layoutLayer(title = title,
+              author =  authors,
+              scale = 300, south = TRUE, frame = TRUE,
+              col = "#6d9cb3", coltitle = "white")
+}
+
+
+# --------------------------------------------------------------------------
+
+
+
+as.data.frame(search_dataset("GDP", data = get_datasets()))
+
+dstruc <- get_data_structure("PDB_LV")
+str(dstruc, max.level = 2)
+
+df <- get_dataset(dataset = "PDB_LV", filter = list(c("MEX", "USA","OECD"), 
+                                                    "T_GDPPOP",
+                                                    "CPC"))
+
+df$obsTime <- as.numeric(df$obsTime)
+
+qplot(data = df, x = obsTime, y = obsValue, color = LOCATION, geom = "line") +
+  labs(x = NULL, y = "USD, current prices, current PPPs", color = NULL,
+       title = "GDP per head of population")
+```
+
+- Evolution des moins de 20 ans dans le temps
+
+```{r eval = TRUE}
+as.data.frame(search_dataset("population", data = get_datasets()))
+dstruc <- get_data_structure("POP_PROJ")
+
+dstruc$VAR_DESC
+dstruc$AGE
+
+filter_list <- list(c("MEX","USA","OECD"),"TT","D1TTR5Y4")
+df <- as.data.frame(get_dataset(dataset = "POP_PROJ", filter = filter_list))
+
+df$obsTime <- as.numeric(df$obsTime)
+
+qplot(data = df, x = obsTime, y = obsValue, color = LOCATION, geom = "line") +
+  labs(x = NULL, y = "%", color = NULL,
+       title = "Part de la population âgée de moins de 20 ans")
+
+
+# --------------------------------------------------------------------------
+
 
 # ********************************
 # ********** GEOMETRIES **********
@@ -136,12 +224,7 @@ bbox <- st_as_sfc(st_bbox(c(xmin = -1832288 , xmax = 1500000, ymax = 1450000, ym
                           crs = prj))
 bboxocean <- st_as_sfc(st_bbox(c(xmin = -1342784, xmax = 93341.2, ymin = -739750.5, ymax = 1317850)))
 
-# Intersect with bounding box (pas optimal)
-#bbox <- st_as_sfc(st_bbox(c(xmin = -1832288 , xmax = 1500000, ymax = 1450000, ymin = -830000), crs = prj))
-#bboxocean <- st_as_sfc(st_bbox(c(xmin = -1342784, xmax = 93341.2, ymin = -739750.5, ymax = 1317850)))
-
 subregions1 <- st_intersection(x = subregions, st_geometry(bbox))
-
 
 
 
@@ -170,7 +253,6 @@ choroLayer(x = subregions1, var = "POP65_POP15",
 
 # Get borders
 subregions.borders <- getBorders(subregions1)
-
 
 discLayer(x = subregions.borders, df = subregions1,
           var = "POP65_POP15", col="black", nclass=3,
