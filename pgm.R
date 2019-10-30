@@ -1,28 +1,9 @@
----
-title: "CARTOGRAPHIE AVEC R"
-date: "Paris, 20 nov. 2019"
-author: N. Lambert, R. Ysebaert
-output:
-  rmdformats::material:
-    self_contained: false
-    thumbnails: false
-    lightbox: true
-    gallery: true
-    cards: false
-    highlight: tango
----
 
-<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+################
+# 0 - Import des librairies
+################
 
-# Objectifs
 
-Cartographier la frontière USA - Mexique
-
-# Import des données et mise en fome
-
-- Installation des packages utiles
-
-```{r eval = TRUE, warning = FALSE, echo = FALSE }
 library("sf")
 library("rnaturalearth")
 library("geojsonsf")
@@ -34,13 +15,14 @@ library("units")
 library("OECD")
 library("ggplot2")
 library("ggthemes")
-```
+library("osmdata")
 
-- Import des géométries
 
-```{r eval = TRUE, warning = FALSE, cache = TRUE, echo = FALSE}
 
-# -- Source : Natural Earth -- 
+################
+# 1 - Import des géométries
+################
+
 # Pays
 countries <- ne_countries(scale = 50, type = "countries", continent = NULL,
                           country = NULL, geounit = NULL, sovereignty = NULL,
@@ -57,10 +39,10 @@ coastline <- ne_download(scale = 50, type = "coastline", category = "physical", 
 ocean <- ne_download(scale = 50, type = "ocean", category = "physical", returnclass = "sf")
 
 
-
 # -- Source : Cartographier le monde à l'échelle infranationale (CIST) -- 
 subregions <- st_read(dsn = "data/regions/mex_us_admin_1.shp",options = "ENCODING=UTF-8",
                       stringsAsFactors = FALSE)
+# [TO DO - Régler pb topologiques]
 
 
 # -- Source : data.world (https://data.world/carlvlewis/border-fence-boundaries-u-s-mexico)
@@ -68,11 +50,10 @@ subregions <- st_read(dsn = "data/regions/mex_us_admin_1.shp",options = "ENCODIN
 fences <- geojson_sf("data/data.world/border-fence.geojson")
 
 
-```
 
-- Mise en forme des géométries (emprise, projection)
-
-```{r eval = TRUE, warning = FALSE, cache = TRUE, echo = FALSE}
+################
+# 2 - Mise en forme des géométries (emprise, projection)
+################
 
 # choix de la projection
 prj <- "+proj=aea +lat_1=14.5 +lat_2=32.5 +lat_0=24 +lon_0=-105 +x_0=0 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs"
@@ -97,12 +78,11 @@ bbox <- st_as_sfc(st_bbox(c(xmin = bb[1]-2*d , xmax = bb[3]+2*d, ymax = bb[2]-d,
 subregions <- st_intersection(x = subregions, st_geometry(bbox))
 
 
-```
 
+################
+# 3 - Import des données et jointures
+################
 
-- Import des données et jointures
-
-```{r eval = TRUE}
 
 #  DATA -- PIB & demo (level 1-2)
 pib <- read.csv("data/regions/PIB.csv", sep = "\t",encoding = "UTF-8", dec = ",",
@@ -123,14 +103,12 @@ subregions <- merge (x = subregions, y = pop,
                      by.y = "ID_ADMIN",
                      all.x = TRUE)
 
-```
 
 
+################
+# 4 - Création d'un template cartographique
+################
 
-
-- Création d'un template cartographique
-
-```{r eval = TRUE, warning = FALSE, cache = TRUE}
 lay <- function(title = ""){
   authors <- "N. Lambert & R. Ysebaert, 2019\nData source: IOM, Didelon, Vandermotten, Dessouroux, (c) OpenStreetMap contributors, 2019"
   par(mar = c(0,0,1.2,0))
@@ -146,19 +124,14 @@ lay <- function(title = ""){
               col = "#6d9cb3", coltitle = "white")
 }
 lay("Template cartographique")
-```
 
-# Radiographie de la frontière
 
-- Evolution du PIB dans le temps
 
-```{r eval = TRUE, warning = FALSE, cache = TRUE}
 
-# Options de recherche du package OECD
-# as.data.frame(search_dataset("GDP", data = get_datasets()))
-# dstruc <- get_data_structure("PDB_LV")
-# str(dstruc, max.level = 2)
 
+################
+# 5 - Evolution du PIB par habitant dans le temps
+################
 
 # Télécharger les données de la table PDB_LV pour USA, Mexique, pays de l'OCDE
 df <- get_dataset(dataset = "PDB_LV", filter = list(c("MEX", "USA","OECD"), 
@@ -175,17 +148,12 @@ ggplot(data = df, aes(x = obsTime, y = obsValue, color = LOCATION)) +
        title =  "Évolution comparée du PIB par habitant (Mexique - USA - OCDE)") +
   theme_hc() +
   scale_color_manual(values=c("#999999", "#E69F00", "#56B4E9"))
-```
 
-- Evolution des moins de 20 ans dans le temps
 
-```{r eval = TRUE}
 
-# Options de recherche du package OECD
-# as.data.frame(search_dataset("population", data = get_datasets()))
-# dstruc <- get_data_structure("POP_PROJ")
-# dstruc$VAR_DESC
-# dstruc$AGE
+################
+# 6 - Evolution des moins de 20 ans dans le temps
+################
 
 df <- as.data.frame(get_dataset(dataset = "POP_PROJ", 
                                 filter = list(c("MEX","USA","OECD"),"TT","D1TTR5Y4")))
@@ -201,15 +169,12 @@ ggplot(data = df, aes(x = obsTime, y = obsValue, color = LOCATION)) +
   theme_hc() +
   scale_color_manual(values=c("#999999", "#E69F00", "#56B4E9"))
 
-```
-
-- Cartographie des ruptures spatiales
 
 
 
-- Indice de vieillessement
-
-```{r eval = TRUE, cache = TRUE, warning = FALSE}
+############### 
+# 7 - Cartographie des ruptures spatiales : Vieillissement démographique
+###############
 
 par(mar = c(0,0,1.2,0))
 
@@ -237,10 +202,12 @@ discLayer(x = subregions.borders, df = subregions,
           legend.pos = "left", legend.title.cex = 0.7, legend.values.cex = 0.5,
           add = TRUE)
 
-```
 
-- Produit intérieur brut
-```{r eval = TRUE}
+
+
+############### 
+# 8 -  Cartographie des ruptures spatiales : PIB par habitant
+###############
 
 lay("Doublé d'un mur de richesse... Mais quelles conséquences ?")
 
@@ -265,12 +232,11 @@ discLayer(x = subregions.borders, df = subregions,
           legend.pos = "left", legend.title.cex = 0.7, legend.values.cex = 0.5,
           add = TRUE)
 
-```
 
-- Anamorphose
 
-```{r eval = TRUE, warning = FALSE, cache = TRUE}
-library(cartogram)
+############
+# 9 - Anamorphose population / richesse
+#############
 
 # Gestion des multipolygones
 subregions <- st_cast(subregions, "MULTIPOLYGON")
@@ -303,14 +269,12 @@ discLayer(x = subregions_anamBor, df = subregions,
 layoutLayer(title = "Et si on déformait sur la population ?",
             scale = FALSE, frame = TRUE,
             col = "#6d9cb3", coltitle = "white")
-```
 
-- Border Control 
 
-Récupération des données OpenStreetMap.
-```{r eval = TRUE, warning = FALSE, cache = TRUE}
 
-library(osmdata)
+############
+# 10 - Border Control - Visualisation des postes de contrôle
+#############
 
 # Convertir la bounding box en WGS 84
 bbox <- st_transform(bbox, 4326)
@@ -333,20 +297,15 @@ featpo$osm_id <- row.names(featpo)
 featpt <- rbind(featpt[, c("osm_id", "geometry")], featpo[, c("osm_id", "geometry")])
 poi_osm <- st_intersection(x = featpt, st_geometry(subregions))
 
-```
-
-
-Visualisation des points extraits.
-```{r eval = TRUE, warning = FALSE, cache = TRUE}
 # Représentation des points extraits
 lay("Localisation des postes frontaliers")
 plot(st_geometry(poi_osm), bg = "red", col = NA, pch = 21, cex = 0.8, add = TRUE)
 
-```
 
 
-Comptage des points dans une grille et première visualisation
-```{r eval = TRUE, warning = FALSE, cache = TRUE}
+############
+# 11 - Border Control - Densité #1
+#############
 
 # Créer une grille sur l'espace d'étude
 grid <- st_make_grid(subregions, cellsize = 50000)
@@ -363,9 +322,11 @@ propSymbolsLayer(grid, var = "ncops", col = "red", symbols = "square", add = T,
                  legend.title.cex = 0.7, legend.values.cex = 0.6,
                  legend.title.txt = "Nombre de postes frontière\n(zones de 50km²)")
 
-```
 
-```{r eval = TRUE, warning = FALSE, cache = TRUE}
+
+############
+# 12 - Border Control - Densité #2
+#############
 
 lay("Des tours de contrôle ?")
 choroLayer(x = grid, var = "ncops",
@@ -377,15 +338,21 @@ choroLayer(x = grid, var = "ncops",
            border = NA,
            add = TRUE)
 
-```
 
-# Migrations
+############
+# 13 - Border Control - Densité #3
+#############
 
-Cartographies du nombre de migrants morts à la frontières
+# [TO DO - REPRESENTATION 3D de ces éléments de grille ?]
 
-- Import (et mise en forme) des données de l'OIM
 
-```{r eval = TRUE}
+
+
+
+############
+# 14 - Morts aux frontières - Import et mise en forme des données
+#############
+
 
 # Import du fichier brut (OIM)
 iom <- read.csv("data/iom/MissingMigrants-Global-2019-10-29T14-11-50.csv", stringsAsFactors = F)
@@ -407,11 +374,15 @@ iom$longitude <- as.numeric(iom$longitude)
 # Conversion en objet sf et reprojection
 iom_sf <- st_as_sf(iom, coords = c("longitude", "latitude"), crs = 4326, agr = "constant")
 iom_sf <- st_transform(iom_sf,crs = prj)
-```
 
-- Comparaison régionale
 
-```{r eval = TRUE}
+
+
+
+############
+# 15 - Morts aux frontières - Comparaisons régionales
+#############
+
 par(mar=c(8,8,4,2))
 
 # Agréger pae zone géographique
@@ -432,11 +403,13 @@ cols[c(3)] <- "red"
 barplot(med$nb, ylab = "Nombre de personnes", names.arg = med$region, las = 2, 
         border="#991313",col = cols, cex.names = 0.8, cex.axis = 0.8)
 
-```
 
-- Evolution temporelle frontières mexicano-américaine
 
-```{r eval = TRUE}
+
+
+############
+# 16 - Morts aux frontières - Evolution temporelle
+#############
 
 # Extraction de la zone USA-Mexique
 iom_sf <- iom_sf[iom_sf$region =="US-Mexico Border",]
@@ -459,29 +432,38 @@ barplot(med$nb, xlab=paste0("Total sur la période: ",total,"\n(*) Du 1er janvie
         ylab="Nombre de personnes", names.arg=med$year,
         border="#991313",col=c("red","red","red","red","red","#ffbaba"),
         cex.names = 0.8, cex.axis = 0.8)
-```
 
-- Carte de localisation
 
-```{r eval = TRUE}
+
+############
+# 17 - Morts aux frontières - Carte de localisation
+#############
+
 lay("USA-Mexico border")
 plot(st_geometry(iom_sf), pch=20, col= "#eb3850", cex = 0.5, add=T)
-```
 
-- Symboles proportionnels
 
-```{r eval = TRUE}
+
+
+############
+# 18 - Morts aux frontières - Localisation et nombre de personnes
+#############
+
 lay("USA-Mexico border")
 propSymbolsLayer(x = iom_sf, var = "deads",
                  symbols = "circle", col =  "#eb3850",
                  legend.pos = "left", border = "black", lwd = 0.5,
                  legend.title.txt = "Dead\nand missing\nmigrants,\n2014 - 2019",
                  legend.style = "e")
-```
 
-- Cartogrammes de Dorling
+# Idée : carte animée, combiner graphique + figurés proportionnels par année
 
-```{r eval = TRUE}
+
+
+############
+# 19 - Morts aux frontières - Cartogramme de Dorling 
+#############
+
 iom_sf$m_weight <- 1
 iom_sf$m_weight[iom_sf$deads > 1] <- 0.5
 iom_sf$m_weight[iom_sf$deads >= 25] <- 0
@@ -490,32 +472,39 @@ deathsdor <- cartogram_dorling(x = st_jitter(iom_sf),weight = "deads", m_weight 
 lay("USA-Mexico border")
 plot(st_geometry(deathsdor), pch=20, col= "#eb3850", border ="#ede6bb", cex = 0.1, add=T)
 plot(st_geometry(fences), col= "#3d3c3c", lwd = 3 ,add= T)
-```
 
-- Cartogrammes de Dorling (après désagrégation)
 
-```{r eval = TRUE}
+
+
+############
+# 20 - Morts aux frontières - Cartogramme de Dorling (avec désagrégation)
+#############
+
 all <- iom_sf[,c("id","deads","year","geometry")]
 
 iom_unique <- all[all$deads == 1,]
 iom_multi <-  all[all$deads > 1,]
 
 for (i in 1:dim(iom_multi)[1]){
-nb <- as.numeric(iom_multi[i,"deads"])[1]
-tmp <- iom_multi[i,]
-tmp$deads <- 1
-for (j in 1:nb){ iom_unique <- rbind(iom_unique,tmp)}
+  nb <- as.numeric(iom_multi[i,"deads"])[1]
+  tmp <- iom_multi[i,]
+  tmp$deads <- 1
+  for (j in 1:nb){ iom_unique <- rbind(iom_unique,tmp)}
 }
 
 deathsdor2 <- cartogram_dorling(x = st_jitter(iom_unique),weight = "deads", k = .004)
 lay("USA-Mexico border")
 plot(st_geometry(deathsdor2), pch=20, col= "#eb3850", border ="#ede6bb", cex = 0.1, add=T)
 plot(st_geometry(fences), col= "#3d3c3c", lwd = 3 ,add= T)
-```
 
-- Geoweb (leaflet)
 
-```{r eval = TRUE}
+
+
+
+############
+# 21 - Carte interactive des morts aux frontières avec Leaflet
+#############
+
 
 iom <- read.csv("data/iom/MissingMigrants-Global-2019-09-04T11-59-55.csv", stringsAsFactors = F)
 iom <- iom[(iom$Location.Coordinates)!="",]
@@ -548,40 +537,21 @@ pins <- makeIcon(
 )
 
 iom$label <- paste0(
-                    "<h1>",iom$cause,"</h1>
+  "<h1>",iom$cause,"</h1>
                      <h3>year: </b>",iom$year,"<br/>
                      location: ",iom$location,"</h3>                      
                      <i>Source: ",iom$source,"</i>"
-                    )
-
-```
-
-
-```{r eval = TRUE}
+)
 
 m <- leaflet(iom) %>%
   addProviderTiles(providers$Esri.WorldStreetMap) %>%
   setView(lng = -104, lat = 30, zoom = 06) %>%
   addMarkers(~lon, ~lat, popup = ~label, clusterOptions = markerClusterOptions(), icon = pins ) %>%
   addScaleBar(position = "bottomleft") %>%
-addPolylines(data = fences, color = "black", weight = 7, opacity = 1)
+  addPolylines(data = fences, color = "black", weight = 7, opacity = 1)
 m
 
 
-```
 
-# --- R infos ---
-
-Version de R
-
-```{r, eval=T, echo=T}
-R.version
-```
-
-Session
-
-```{r, eval=T, echo=T}
-sessionInfo()
-```
 
 
