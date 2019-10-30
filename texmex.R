@@ -1,4 +1,7 @@
 
+authors <- "N. Lambert & R. Ysebaert, 2019\nData source: IOM, Didelon, Vandermotten, Dessouroux, (c) OpenStreetMap contributors, 2019"
+
+
 ################
 # 0 - Appel des librairies
 ################
@@ -15,6 +18,7 @@ library("OECD")
 library("ggplot2")
 library("ggthemes")
 library("osmdata")
+
 
 
 ################
@@ -82,7 +86,6 @@ countries_aea <- st_intersection(x = countries_aea, y = bbox_aea)
 # création du template
 
 lay_aea <- function(title = ""){
-authors <- "N. Lambert & R. Ysebaert, 2019\nData source: IOM, Didelon, Vandermotten, Dessouroux, (c) OpenStreetMap contributors, 2019"
 par(mar = c(0,0,1.2,0))
 plot(st_geometry(ocean_aea), col= "#b8d5e3", border = NA, xlim = bb_aea[c(1,3)], ylim = bb_aea[c(2,4)])
 plot(st_geometry(subregions_aea) + c(-10000, -10000), col ="#827e6c50", border = NA, add = T)
@@ -134,7 +137,6 @@ coastline_ortho <- st_intersection(x = coastline_ortho, y = bbox_ortho)
 # création du template
 
 lay_ortho <- function(title = ""){
-  authors <- "N. Lambert & R. Ysebaert, 2019\nData source: IOM, Didelon, Vandermotten, Dessouroux, (c) OpenStreetMap contributors, 2019"
   par(mar = c(0,0,1.2,0))
   plot(st_geometry(bbox_ortho), col= "#b8d5e3", border = NA, xlim = bb_ortho[c(1,3)], ylim = bb_ortho[c(2,4)])
   plot(st_geometry(subregions_ortho) + c(-10000, -10000), col ="#827e6c50", border = NA, add = T)
@@ -187,8 +189,8 @@ dev.off()
 # 4 - Import des données et jointures
 ################
 
-
 #  DATA -- PIB & demo (level 1-2)
+
 pib <- read.csv("data/regions/PIB.csv", sep = "\t",encoding = "UTF-8", dec = ",",
                 stringsAsFactors=FALSE)
 
@@ -197,38 +199,50 @@ pop <- read.csv("data/regions/POP.csv", sep = "\t", encoding = "UTF-8", dec = ",
                 stringsAsFactors=FALSE)
 
 
-subregions <- merge (x = subregions, y = pib, 
+subregions_aea <- merge (x = subregions_aea, y = pib, 
                      by.x = "ID_ADMIN_1",
                      by.y = "ID_ADMIN",
                      all.x = TRUE)
 
-subregions <- merge (x = subregions, y = pop, 
+subregions_aea <- merge (x = subregions_aea, y = pop, 
                      by.x = "ID_ADMIN_1",
                      by.y = "ID_ADMIN",
                      all.x = TRUE)
 
+subregions_ortho <- merge (x = subregions_ortho, y = pib, 
+                         by.x = "ID_ADMIN_1",
+                         by.y = "ID_ADMIN",
+                         all.x = TRUE)
 
+subregions_ortho <- merge (x = subregions_ortho, y = pop, 
+                         by.x = "ID_ADMIN_1",
+                         by.y = "ID_ADMIN",
+                         all.x = TRUE)
 
 ################
 # 5 - Evolution du PIB par habitant dans le temps
 ################
 
 # Télécharger les données de la table PDB_LV pour USA, Mexique, pays de l'OCDE
+
 df <- get_dataset(dataset = "PDB_LV", filter = list(c("MEX", "USA","OECD"), 
                                                     "T_GDPPOP",
                                                     "CPC"))
 
 # Transformer la date au format numérique
+
 df$obsTime <- as.numeric(df$obsTime)
 
 # Représentation graphique
+
+png("outputs/fig04.png", width = 1500, height = 1000, res = 150)
 ggplot(data = df, aes(x = obsTime, y = obsValue, color = LOCATION)) + 
   geom_line(size = 1) +  
   labs(x = NULL, y = "Dollars, prix courant", color = NULL,
        title =  "Évolution comparée du PIB par habitant (Mexique - USA - OCDE)") +
   theme_hc() +
   scale_color_manual(values=c("#999999", "#E69F00", "#56B4E9"))
-
+dev.off()
 
 
 ################
@@ -242,48 +256,95 @@ df$obsTime <- as.numeric(df$obsTime)
 
 
 # Représentation graphique
+
+png("outputs/fig05.png", width = 1500, height = 1000, res = 150)
 ggplot(data = df, aes(x = obsTime, y = obsValue, color = LOCATION)) + 
   geom_line(size = 1) +  
   labs(x = NULL, y = "Part de la population totale", color = NULL,
        title =  "Évolution de la part des moins de 20 ans (Mexique - USA - OCDE)") +
   theme_hc() +
   scale_color_manual(values=c("#999999", "#E69F00", "#56B4E9"))
-
-
+dev.off()
 
 
 ############### 
 # 7 - Cartographie des ruptures spatiales : Vieillissement démographique
 ###############
 
+# Version 1 ------
+
+png("outputs/fig06.png", width = sizes_aea[1], height = sizes_aea[2], res = 150)
+
+
 par(mar = c(0,0,1.2,0))
+plot(st_geometry(bbox_aea), col= "#b8d5e3", border = NA, xlim = bb_aea[c(1,3)], ylim = bb_aea[c(2,4)])
 
-lay("Une barrière démographique...")
-
-choroLayer(x = subregions, var = "POP65_POP15",
-           breaks = c(min(subregions$POP65_POP15, na.rm = T),
-                      20,25,35,50,65, max(subregions$POP65_POP15, na.rm = T)),
+choroLayer(x = subregions_aea, var = "POP65_POP15",
+           breaks = c(min(subregions_aea$POP65_POP15, na.rm = T),
+                      20,25,35,50,65, max(subregions_aea$POP65_POP15, na.rm = T)),
            col = carto.pal(pal1 = "green.pal", n1 = 3, pal2 = "red.pal", n2 = 3),
-           legend.pos = "topleft",
+           legend.pos = c(-1400000 , -600000),
            legend.horiz = TRUE, legend.title.cex = 0.7, legend.values.cex = 0.5,
            legend.title.txt = "Rapport entre la population âgée de plus de 65 ans\net la population âgée de moins de 15 ans\nen 2015 (%)",
            border = NA, add = TRUE)
 
-plot(st_geometry(coastline), col= "#6d9cb3",lwd = 1 ,add= T)
+subregions.borders <- getBorders(subregions_aea)
 
-# Get borders
-subregions.borders <- getBorders(subregions)
-
-discLayer(x = subregions.borders, df = subregions,
+discLayer(x = subregions.borders, df = subregions_aea,
           var = "POP65_POP15", col="black", nclass=3,
           method="equal", threshold = 0.3, sizemin = 0.5,
           sizemax = 10, type = "abs",legend.values.rnd = 0,
           legend.title.txt = "Discontinuités sur l'indice de veillissement 2015\n(différences absolues)",
-          legend.pos = "left", legend.title.cex = 0.7, legend.values.cex = 0.5,
+          legend.pos = c(-1400000 , -300000), legend.title.cex = 0.7, legend.values.cex = 0.5,
           add = TRUE)
 
 
+plot(st_geometry(coastline_aea), col= "#6d9cb3",lwd = 1 ,add= T)
 
+
+layoutLayer(title = "Une barrière démographique...",
+            author =  authors,
+            scale = 300, south = TRUE, frame = TRUE,
+            col = "#6d9cb3", coltitle = "white")
+
+dev.off()
+
+# Version 2 ------
+
+png("outputs/fig07.png", width = sizes_ortho[1], height = sizes_ortho[2], res = 150)
+
+par(mar = c(0,0,1.2,0))
+plot(st_geometry(bbox_ortho), col= "#b8d5e3", border = NA, xlim = bb_ortho[c(1,3)], ylim = bb_ortho[c(2,4)])
+
+choroLayer(x = subregions_ortho, var = "POP65_POP15",
+           breaks = c(min(subregions_ortho$POP65_POP15, na.rm = T),
+                      20,25,35,50,65, max(subregions_ortho$POP65_POP15, na.rm = T)),
+           col = carto.pal(pal1 = "green.pal", n1 = 3, pal2 = "red.pal", n2 = 3),
+           legend.pos = c(-1700000, 5000000),
+           legend.horiz = TRUE, legend.title.cex = 0.7, legend.values.cex = 0.5,
+           legend.title.txt = "Rapport entre la population âgée de plus de 65 ans\net la population âgée de moins de 15 ans\nen 2015 (%)",
+           border = NA, add = TRUE)
+
+subregions.borders <- getBorders(subregions_ortho)
+
+discLayer(x = subregions.borders, df = subregions_ortho,
+          var = "POP65_POP15", col="black", nclass=3,
+          method="equal", threshold = 0.3, sizemin = 0.5,
+          sizemax = 10, type = "abs",legend.values.rnd = 0,
+          legend.title.txt = "Discontinuités sur l'indice\nde veillissement 2015\n(différences\nabsolues)",
+          legend.pos = c(-1700000, 5300000), legend.title.cex = 0.7, legend.values.cex = 0.5,
+          add = TRUE)
+
+
+plot(st_geometry(coastline_ortho), col= "#6d9cb3",lwd = 1 ,add= T)
+
+
+layoutLayer(title = "Une barrière démographique...",
+            author =  authors,
+            scale = 300, south = TRUE, frame = TRUE,
+            col = "#6d9cb3", coltitle = "white")
+
+dev.off()
 
 ############### 
 # 8 -  Cartographie des ruptures spatiales : PIB par habitant
