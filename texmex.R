@@ -355,7 +355,7 @@ extrude <- function(id){
   nb <- as.numeric(discontinuities[id,"height"])[1]
   for (j in 1:nb){
     line <- st_geometry(line) + c(0,5000)
-    plot(st_geometry(line), col= "#ebd23480",lwd = 2 ,add= T)  
+    plot(st_geometry(line), col= "#ebd23490",lwd = 2 ,add= T)  
   }
   plot(line, col= "black",lwd = 2 ,add= T)
 }
@@ -395,68 +395,180 @@ dev.off()
 # 8 -  Cartographie des ruptures spatiales : PIB par habitant
 ###############
 
-lay("Doublé d'un mur de richesse... Mais quelles conséquences ?")
+# Version 1 ------
 
-choroLayer(x = subregions, var = "PIB100_2017",
-           breaks = c(min(subregions$PIB100_2017, na.rm = T),
-                      75,90,100,125,150,200, max(subregions$PIB100_2017, na.rm = T)),
+png("outputs/fig09.png", width = sizes_aea[1], height = sizes_aea[2], res = 150)
+
+par(mar = c(0,0,1.2,0))
+plot(st_geometry(bbox_aea), col= "#b8d5e3", border = NA, xlim = bb_aea[c(1,3)], ylim = bb_aea[c(2,4)])
+
+choroLayer(x = subregions_aea, var = "PIB100_2017",
+           breaks = c(min(subregions_aea$PIB100_2017, na.rm = T),
+                      75,90,100,125,150,200, max(subregions_aea$PIB100_2017, na.rm = T)),
            col = carto.pal(pal1 = "red.pal", n1 = 3, pal2 = "green.pal", n2 = 4),
-           legend.pos = "topleft",
+           legend.pos = c(-1400000 , -600000),
            legend.horiz = TRUE, legend.title.cex = 0.7, legend.values.cex = 0.5,
            legend.title.txt = "PIB par habitant 2017\n(100 = moyenne mondiale)",
            border = NA,
            add = TRUE)
 
-plot(st_geometry(coastline), col= "#6d9cb3",lwd = 1 ,add= T)
+plot(st_geometry(coastline_aea), col= "#6d9cb3",lwd = 1 ,add= T)
 
-# Get borders
-discLayer(x = subregions.borders, df = subregions,
+subregions.borders <- getBorders(subregions_aea)
+
+discLayer(x = subregions.borders, df = subregions_aea,
           var = "PIB100_2017", col="black", nclass=3,
           method="equal", threshold = 0.2, sizemin = 0.5,
           sizemax = 10, type = "abs",legend.values.rnd = 0,
           legend.title.txt = "Discontinuités de PIB par habitant 2017\n(différences absolues)",
-          legend.pos = "left", legend.title.cex = 0.7, legend.values.cex = 0.5,
+          legend.pos = c(-1400000 , -300000), legend.title.cex = 0.7, legend.values.cex = 0.5,
           add = TRUE)
 
 
+layoutLayer(title = "Doublée d'un mur de richesse... Mais quelles conséquences ?",
+            author =  authors,
+            scale = 300, south = TRUE, frame = TRUE,
+            col = "#6d9cb3", coltitle = "white")
+
+dev.off()
+
+# Version 2 ------
+
+png("outputs/fig10.png", width = sizes_ortho[1], height = sizes_ortho[2], res = 150)
+
+par(mar = c(0,0,1.2,0))
+plot(st_geometry(bbox_ortho), col= "#b8d5e3", border = NA, xlim = bb_ortho[c(1,3)], ylim = bb_ortho[c(2,4)])
+
+choroLayer(x = subregions_ortho, var = "PIB100_2017",
+           breaks = c(min(subregions_ortho$PIB100_2017, na.rm = T),
+                      75,90,100,125,150,200, max(subregions_ortho$PIB100_2017, na.rm = T)),
+           col = carto.pal(pal1 = "red.pal", n1 = 3, pal2 = "green.pal", n2 = 4),
+           legend.pos = c(-1700000, 5000000),
+           legend.horiz = TRUE, legend.title.cex = 0.7, legend.values.cex = 0.5,
+           legend.title.txt = "PIB par habitant 2017\n(100 = moyenne mondiale)",
+           border = NA,
+           add = TRUE)
+
+subregions.borders <- getBorders(subregions_ortho)
+
+discontinuities <- discLayer(x = subregions.borders, df = subregions_aea,
+          var = "PIB100_2017", col="black", nclass=3,
+          method="equal", threshold = 0.2, sizemin = 0.5,
+          sizemax = 10, type = "abs",legend.values.rnd = 0,
+          legend.title.txt = "Discontinuités de PIB par habitant 2017\n(différences absolues)",
+          legend.pos = c(-1700000, 5300000), legend.title.cex = 0.7, legend.values.cex = 0.5,
+          add = TRUE)
+
+plot(st_geometry(coastline_ortho), col= "#6d9cb3",lwd = 1 ,add= T)
+
+layoutLayer(title = "Doublée d'un mur de richesse... Mais quelles conséquences ?",
+            author =  authors,
+            scale = 300, south = TRUE, frame = TRUE,
+            col = "#6d9cb3", coltitle = "white")
+
+dev.off()
+
+# Version 3 ------
+
+threshold <- 0.3
+minvar <- as.numeric(quantile(discontinuities$disc, probs = c(1 - threshold)))
+discontinuities <- discontinuities[discontinuities$disc >= minvar,]
+discontinuities$height <- round(discontinuities$disc / 8,0)
+
+extrude <- function(id){
+  line <- st_geometry(discontinuities[id,])
+  plot(line, col= "black",lwd = 2 ,add= T)
+  nb <- as.numeric(discontinuities[id,"height"])[1]
+  for (j in 1:nb){
+    line <- st_geometry(line) + c(0,5000)
+    plot(st_geometry(line), col= "#ebd23490",lwd = 2 ,add= T)  
+  }
+  plot(line, col= "black",lwd = 2 ,add= T)
+}
+
+
+
+png("outputs/fig11.png", width = sizes_ortho[1], height = sizes_ortho[2], res = 150)
+
+par(mar = c(0,0,1.2,0))
+plot(st_geometry(bbox_ortho), col= "#b8d5e3", border = NA, xlim = bb_ortho[c(1,3)], ylim = bb_ortho[c(2,4)])
+
+choroLayer(x = subregions_ortho, var = "PIB100_2017",
+           breaks = c(min(subregions_ortho$PIB100_2017, na.rm = T),
+                      75,90,100,125,150,200, max(subregions_ortho$PIB100_2017, na.rm = T)),
+           col = carto.pal(pal1 = "red.pal", n1 = 3, pal2 = "green.pal", n2 = 4),
+           legend.pos = c(-1700000, 5000000),
+           legend.horiz = TRUE, legend.title.cex = 0.7, legend.values.cex = 0.5,
+           legend.title.txt = "PIB par habitant 2017\n(100 = moyenne mondiale)",
+           border = NA,
+           add = TRUE)
+
+
+plot(st_geometry(coastline_ortho), col= "#6d9cb3",lwd = 1 ,add= T)
+
+for (i in 1:length(discontinuities$disc))
+{
+  extrude(i)
+}
+legtxt <- "Sur cette carte, la hauteur\ndes barrières est proportionnelle\nà la valeur des discontinuités\nabsolues sur le PIB par habitant\nen 2017."
+text(-1700000, y = 5400000, legtxt  , cex = 0.9, pos = 4, font = 2) 
+layoutLayer(title = "Une barrière démographique...",
+            author =  authors,
+            scale = 300, south = TRUE, frame = TRUE,
+            col = "#6d9cb3", coltitle = "white")
+
+
+
+
+dev.off()
 
 ############
 # 9 - Anamorphose population / richesse
 #############
 
 # Gestion des multipolygones
-subregions <- st_cast(subregions, "MULTIPOLYGON")
+subregions_aea <- st_cast(subregions_aea, "MULTIPOLYGON")
 
 # Calcul cartogramme
-subregions_anam <- cartogram_cont(subregions,weight = "POP_2015", itermax = 30)
+subregions_anam <- cartogram_cont(subregions_aea,weight = "POP_2015", itermax = 30)
+
+png("outputs/fig12.png", width = sizes_aea[1], height = sizes_aea[2], res = 150)
+
+par(mar = c(0,0,1.2,0))
+
+plot(st_geometry(bbox_aea), col= "#b8d5e3", border = NA, xlim = bb_aea[c(1,3)], ylim = bb_aea[c(2,4)])
+
 
 # Cartographie
 choroLayer(x = subregions_anam, var = "PIB100_2017",
            breaks = c(min(subregions_anam$PIB100_2017, na.rm = T),
                       75,90,100,125,150,200, max(subregions_anam$PIB100_2017, na.rm = T)),
            col = carto.pal(pal1 = "red.pal", n1 = 3, pal2 = "green.pal", n2 = 5),
-           legend.pos = "topleft",
+           legend.pos = c(-1400000 , -600000),
            legend.horiz = TRUE, legend.title.cex = 0.7, legend.values.cex = 0.5,
            legend.title.txt = "PIB par habitant 2017\n(100 = moyenne mondiale)",
-           border = "white")
+           border = "white", add=T)
 
 # Et discontinuités associées
 subregions_anamBor <- getBorders(subregions_anam)
 
-discLayer(x = subregions_anamBor, df = subregions,
+discLayer(x = subregions_anamBor, df = subregions_aea,
           var = "PIB100_2017", col="black", nclass=3,
           method="equal", threshold = 0.2, sizemin = 0.5,
           sizemax = 10, type = "abs",legend.values.rnd = 0,
           legend.title.txt = "Discontinuités de PIB par habitant 2017\n(différences absolues)",
-          legend.pos = "left", legend.title.cex = 0.7, legend.values.cex = 0.5,
+          legend.pos = c(-1400000 , -300000), legend.title.cex = 0.7, legend.values.cex = 0.5,
           add = TRUE)
 
+legtxt <- "Sur cette carte,\nla surface\ndes régions\nest proportionnelle\nau PIB en 2017."
+text(-1400000, y = 300000, legtxt  , cex = 0.9, pos = 4, font = 2)
 
 layoutLayer(title = "Et si on déformait sur la population ?",
-            scale = FALSE, frame = TRUE,
+            author =  authors,
+            scale = 300, south = TRUE, frame = TRUE,
             col = "#6d9cb3", coltitle = "white")
 
-
+dev.off()
 
 ############
 # 10 - Border Control - Visualisation des postes de contrôle
