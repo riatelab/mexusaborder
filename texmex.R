@@ -40,10 +40,10 @@ coastline <- ne_download(scale = 50, type = "coastline", category = "physical", 
 # Océans 
 ocean <- ne_download(scale = 50, type = "ocean", category = "physical", returnclass = "sf")
 
-
 # -- Source : Cartographier le monde à l'échelle infranationale (CIST) -- 
 subregions <- st_read(dsn = "data/regions/mex_us_admin_1.shp",options = "ENCODING=UTF-8",
                       stringsAsFactors = FALSE)
+
 # [TO DO - Régler pb topologiques]
 
 
@@ -67,7 +67,6 @@ coastline_aea <- st_transform(coastline,crs = albers)
 ocean_aea <- st_transform(ocean,crs = albers) 
 subregions_aea <- st_transform(subregions,crs = albers) 
 
-
 # Choix de l'emprise (un peu de bidouille, pas optimal)
 
 bb_aea <- c(-1342784.0, -739750.5, 793341.2, 1317849.8)
@@ -81,7 +80,6 @@ subregions_aea <- st_intersection(x = subregions_aea, st_geometry(bbox_aea))
 coastline_aea <- st_intersection(x = coastline_aea, y = bbox_aea) 
 rivers_aea <- st_intersection(x = rivers_aea, y = bbox_aea)
 countries_aea <- st_intersection(x = countries_aea, y = bbox_aea) 
-#ocean_aea <- st_intersection(x = ocean_aea, y = bbox_aea) 
 
 # création du template
 
@@ -122,7 +120,6 @@ subregions_ortho <- st_transform(subregions,crs = ortho)
 
 # Choix de l'emprise (un peu de bidouille, pas optimal)
 
-bb_ortho <- c(-1668000, 4798000, 934863, 5900000)
 bb_ortho <- c(-1668000, 5100000, 934863, 5900000)
 
 d  <- 100000
@@ -156,7 +153,7 @@ png("outputs/fig02.png", width = sizes_ortho[1], height = sizes_ortho[2], res = 
 lay_ortho("Template cartographique 2 (projection orthographique)")
 dev.off()
 
-# Template bis avec les murs en 2.5 D () 
+# Template bis avec les murs en 2.5D
 
 lay_ortho2 <- function(title = ""){
   authors <- "N. Lambert & R. Ysebaert, 2019\nData source: IOM, Didelon, Vandermotten, Dessouroux, (c) OpenStreetMap contributors, 2019"
@@ -327,7 +324,7 @@ choroLayer(x = subregions_ortho, var = "POP65_POP15",
 
 subregions.borders <- getBorders(subregions_ortho)
 
-discLayer(x = subregions.borders, df = subregions_ortho,
+discontinuities <- discLayer(x = subregions.borders, df = subregions_ortho,
           var = "POP65_POP15", col="black", nclass=3,
           method="equal", threshold = 0.3, sizemin = 0.5,
           sizemax = 10, type = "abs",legend.values.rnd = 0,
@@ -335,10 +332,58 @@ discLayer(x = subregions.borders, df = subregions_ortho,
           legend.pos = c(-1700000, 5300000), legend.title.cex = 0.7, legend.values.cex = 0.5,
           add = TRUE)
 
-
 plot(st_geometry(coastline_ortho), col= "#6d9cb3",lwd = 1 ,add= T)
 
 
+layoutLayer(title = "Une barrière démographique...",
+            author =  authors,
+            scale = 300, south = TRUE, frame = TRUE,
+            col = "#6d9cb3", coltitle = "white")
+
+dev.off()
+
+# Version 3 ------
+
+threshold <- 0.3
+minvar <- as.numeric(quantile(discontinuities$disc, probs = c(1 - threshold)))
+discontinuities <- discontinuities[discontinuities$disc >= minvar,]
+discontinuities$height <- round(discontinuities$disc / 2,0)
+
+extrude <- function(id){
+  line <- st_geometry(discontinuities[id,])
+  plot(line, col= "black",lwd = 2 ,add= T)
+  nb <- as.numeric(discontinuities[id,"height"])[1]
+  for (j in 1:nb){
+    line <- st_geometry(line) + c(0,5000)
+    plot(st_geometry(line), col= "#ebd23480",lwd = 2 ,add= T)  
+  }
+  plot(line, col= "black",lwd = 2 ,add= T)
+}
+
+
+
+png("outputs/fig08.png", width = sizes_ortho[1], height = sizes_ortho[2], res = 150)
+
+par(mar = c(0,0,1.2,0))
+plot(st_geometry(bbox_ortho), col= "#b8d5e3", border = NA, xlim = bb_ortho[c(1,3)], ylim = bb_ortho[c(2,4)])
+
+choroLayer(x = subregions_ortho, var = "POP65_POP15",
+           breaks = c(min(subregions_ortho$POP65_POP15, na.rm = T),
+                      20,25,35,50,65, max(subregions_ortho$POP65_POP15, na.rm = T)),
+           col = carto.pal(pal1 = "green.pal", n1 = 3, pal2 = "red.pal", n2 = 3),
+           legend.pos = c(-1700000, 5000000),
+           legend.horiz = TRUE, legend.title.cex = 0.7, legend.values.cex = 0.5,
+           legend.title.txt = "Rapport entre la population âgée de plus de 65 ans\net la population âgée de moins de 15 ans\nen 2015 (%)",
+           border = NA, add = TRUE)
+
+
+plot(st_geometry(coastline_ortho), col= "#6d9cb3",lwd = 1 ,add= T)
+for (i in 1:length(discontinuities$disc))
+{
+  extrude(i)
+}
+legtxt <- "Sur cette carte, la hauteur\ndes barrières est proportionnelle\nà la valeur des discontinuités\nabsolues sur l'indice du\nvieillissement en 2015."
+text(-1700000, y = 5400000, legtxt  , cex = 0.9, pos = 4, font = 2) 
 layoutLayer(title = "Une barrière démographique...",
             author =  authors,
             scale = 300, south = TRUE, frame = TRUE,
