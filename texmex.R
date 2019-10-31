@@ -19,6 +19,7 @@ library("ggplot2")
 library("ggthemes")
 library("osmdata")
 library("htmlwidgets")
+library("animation")
 
 
 
@@ -852,6 +853,125 @@ dev.off()
 ############
 # 19 - Carte animée
 #############
+
+# Import & handeling
+
+iom <- read.csv("data/iom/MissingMigrants-Global-2019-10-29T14-11-50.csv", stringsAsFactors = F)
+iom <- iom[(iom$Location.Coordinates)!="",]
+latlon <- matrix(as.numeric(unlist(strsplit(iom$Location.Coordinates, split = ", "))), ncol = 2, byrow = T)
+colnames(latlon) <- c("lat", 'lon')
+iom <- cbind(iom, latlon)
+colnames(iom)
+
+iom <- iom[,c("Web.ID","Reported.Year","Reported.Month","Total.Dead.and.Missing","Region.of.Incident","lat","lon")]
+colnames(iom) <- c("id","year","month","deads","region","latitude","longitude")
+iom$deads <- as.numeric(iom$deads)
+iom <- iom[!is.na(iom$deads),]
+iom$latitude <- as.numeric(iom$latitude)
+iom$longitude <- as.numeric(iom$longitude)
+
+# Conversion en objet sf, reprojection et découpage
+
+iom_sf <- st_as_sf(iom, coords = c("longitude", "latitude"), crs = 4326, agr = "constant")
+iom_ortho <- st_transform(iom_sf,crs = ortho)
+iom_ortho <- st_intersection(x = iom_ortho, st_geometry(bbox_ortho))
+
+# Aggregte & barplot
+
+iom_ortho$date <- paste0(iom_ortho$month," ",iom_ortho$year)
+bymonth <- aggregate(iom_ortho$deads,list(iom_ortho$date), sum, simplify = TRUE )
+colnames(bymonth) <- c("date","deads")
+
+m <- c("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+y <- c("2014","2015","2016","2017","2018","2019")
+for (i in 1:length(y)){
+d <- paste0(m," ",y[i])
+if (i == 1) { all <- d } else {all <- c(all,d)}
+}
+
+all <- as.data.frame(all)
+all$id <- as.numeric(row.names(all))
+colnames(all)
+colnames(all) <- c("date","id")
+all <- merge (x = all, y = bymonth, 
+                           by.x = "date",
+                           by.y = "date",
+                           all.x = T)
+all <- all[order(all$id),]
+
+iom_ortho <- merge (x = iom_ortho, y = all[,c("date","id")], 
+              by.x = "date",
+              by.y = "date",
+              all.x = T)
+iom_ortho <- iom_ortho[,c("id.y","date","deads","geometry")]
+colnames(iom_ortho) <- c("id","date","deads","geometry")
+
+
+
+# Cartography
+
+inches <- 0.8
+fixmax <- max(iom_ortho$deads)
+
+for (i in 1:length(all$id)){
+  mapdate <- as.character(all$date[i])
+  if(i < 10) { num <- paste0("0",i) } else { num <- i }
+  file <- paste0("tmp/",num,".png")
+  png(file, width = sizes_ortho[1], height = sizes_ortho[2], res = 150)
+  
+  par(mar = c(0,0,0,0))
+  plot(st_geometry(bbox_ortho), col= "#555760", border = NA, xlim = bb_ortho[c(1,3)], ylim = bb_ortho[c(2,4)])
+  plot(st_geometry(subregions_ortho) + c(-10000, -10000), col ="#303135", border = NA, add = T)
+  plot(st_geometry(subregions_ortho), col= "#4d4e54", border = NA, cex = 0.5, add=T)
+  plot(st_geometry(rivers_ortho), col= "#858585",lwd = 1 ,add= T)
+
+  # Textes
+  title <- "DEAD AND MISSING MIGRANTS, 2014 - 2019"
+  source <- "Data source: IOM, 2019"
+  authors <- "Map designed by Nicolas Lambert and Ronan Ysebaert, 2019"
+  rect(-1900000, 6040000, -1900000 + 3000000, 6040000 + 150000, border = NA, col = "#00000080")
+  text(-1700000, y = 6100000, title  , cex = 2.5, pos = 4, font = 2, col="#ffe100") 
+  text(-1700000, y = 4900000, source  , cex = 0.5, pos = 4, font = 2, col="#ffe100") 
+  text(-1700000, y = 4850000, authors  , cex = 0.5, pos = 4, font = 2, col="#ffe100") 
+  text(-1700000, y = 5200000, substr(mapdate,1,3)  , cex = 2, pos = 4, font = 2, col="#ffe100") 
+  text(-1500000, y = 5200000, substr(mapdate,5,9)  , cex = 4, pos = 4, font = 2, col="#ffe100") 
+  
+  # compteur
+  
+  yref <- 4980000
+  height <- 100000
+  total <- sum(iom_ortho$deads[iom_ortho$id <= i])
+  val <- total *920
+  rect(xmin, yref, xmin + val, yref + height, border = NA, col = "#ffe100")
+  text(-1680000, y = 5020000, paste0(total, " people since January 1, 2014")  , cex = 1.6, pos = 4, font = 2, col="#eb3850")     
+  layer1 <- iom_ortho[iom_ortho$id <= i,]
+  layer2 <- iom_ortho[iom_ortho$id == i,]
+  
+  propSymbolsLayer(x = layer1, var = "deads",
+                   symbols = "circle", col =  "#eb385040",
+                   inches = inches, fixmax = fixmax,
+                   legend.pos = NA, border = NULL, lwd = 0.5)
+
+  plot(st_geometry(fences_ortho), col= "#bfbfbf",lwd = 1.5 ,add= T)
+  line <- st_geometry(fences_ortho)
+  for (i in 1:30){
+    line <- st_geometry(line) + c(0,2000)
+    plot(st_geometry(line), col= "#bfbfbf70",lwd = 1 ,add= T)  
+  }
+  plot(st_geometry(line), col= "#bfbfbf",lwd = 1.5 ,add= T) 
+  
+  
+  if (length(layer2$deads) > 0){  propSymbolsLayer(x = layer2, var = "deads",
+                   symbols = "circle", col =  "#ffe100",
+                   inches = inches, fixmax = fixmax,
+                   legend.pos = NA, border = "black", lwd = 1)
+  }
+  dev.off()
+}
+
+
+# convert pngs to one gif using ImageMagick
+system("convert -loop 1 -delay 40 tmp/*.png img/animate.gif")
 
 
 
