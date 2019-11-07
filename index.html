@@ -3,7 +3,7 @@
   <head>
     <title>FAIRE DES CARTES AVEC R</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Nicolas Lambert &amp; Ronan Ysebart" />
+    <meta name="author" content="Nicolas Lambert &amp; Ronan Ysebaert" />
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
   </head>
@@ -13,15 +13,31 @@ class: center, middle, inverse, title-slide
 
 # FAIRE DES CARTES AVEC R
 ## La frontière États-Unis - Mexique
-### Nicolas Lambert &amp; Ronan Ysebart
+### Nicolas Lambert &amp; Ronan Ysebaert
 ### 20 novembre 2019
 
 ---
 
 
+background-image: url(img/photo2.jpg)
+background-size: contain
+
+
+---
+
+
+background-image: url(img/photo.jpg)
+background-size: contain
+
+
+---
+
 # Template 1 (projection Albers)
 
-Bla bla bla
+Les couches géographiques sont préalablement importées, transformées
+dans la projection cible du modèle cartographique puis intersectées avec l'emprise de l'espace d'étude.  
+
+La fonction `lay_aea` crée le modèle cartographique qui sera utilisé dans les représentations ultérieures : ordre d'affichage et styles associés des couches géographiques.  
 
 ```r
 lay_aea &lt;- function(title = ""){
@@ -46,16 +62,115 @@ background-image: url(img/fig01.png)
 background-size: contain
 
 ---
+
+# Template 2 (projection orthographique)
+
+Un second modèle "vu du sud" est créé en utilisant et paramétrant
+une projection orthographique. 
+
+```r
+
+# Choix de la projection
+ortho &lt;- "+proj=ortho +lat_0=-35 +lon_0=-104 +x_0=0 +y_0=0 +ellps=
+          WGS84 +units=m +no_defs"
+
+# Transformation des couches dans la bonne projection
+countries_ortho &lt;- st_transform(countries,crs = ortho) 
+
+# Création de la bounding box
+bb_ortho &lt;- c(-1668000, 5100000, 934863, 5900000)
+d  &lt;- 100000
+bbox_ortho &lt;- st_as_sfc(st_bbox(c(xmin = bb_ortho[1]-2*d ,
+                                  xmax = bb_ortho[3]+2*d, 
+                                  ymin = bb_ortho[4]+3.5*d, 
+                                  ymax = bb_ortho[2]-3.5*d), 
+                                crs = ortho))
+
+# Intersection du fond régional avec la bbox
+subregions_ortho &lt;- st_intersection(x = subregions_ortho, 
+                                    st_geometry(bbox_ortho))
+                                
+
+
+```
+
+---
+
 background-image: url(img/fig02.png)
 background-size: contain
+
+---
+
+# Template 3 (projection orthographique et mur effet 2.5D)
+
+En translatant 20 fois de 5000 m vers le nord le mur frontalier, on renforce
+graphiquement l'idée du mur. 
+
+```r
+
+  line &lt;- st_geometry(fences_ortho)
+  for (i in 1:20){
+    line &lt;- st_geometry(line) + c(0,5000)
+    plot(st_geometry(line), col= "#565b6380",lwd = 2 ,add= T)  
+  }
+  plot(st_geometry(line), col= "#3d3c3c",lwd = 2 ,add= T) 
+
+```
 
 ---
 background-image: url(img/fig03.png)
 background-size: contain
 
+
 ---
+
+# Mais existe-t-il vraiment un bon modèle cartographique ? 
+
+La fonction **`cartogram_cont`** du package **cartogram** permet 
+de générer des cartes en anamorphose selon l'algorithme de Dougenik.  
+
+```r
+subregions_anam &lt;- cartogram_cont(subregions_all,
+                                  weight = "POP_2015", itermax = 30)
+
+```
+
+---
+
 background-image: url(img/fig04.png)
 background-size: contain
+
+---
+
+
+# Évolution du PIB et des moins de 20 ans dans le temps 
+
+De nombreux packages utilisent les API des principaux fournisseurs
+de données internationaux, comme **`OECD`**. 
+
+Ils permettent efficacement de récupérer des données de référence
+et produire des représentations graphiques simples sans avoir à télécharger
+de données depuis les portails d'accès aux données. 
+
+```r
+
+# Télécharger les données de la table PDB_LV pour USA, Mexique, pays de l'OCDE
+df &lt;- get_dataset(dataset = "PDB_LV",
+                  filter = list(c("MEX", "USA","OECD"), "T_GDPPOP", "CPC"))
+
+# Transformer la date au format numérique
+df$obsTime &lt;- as.numeric(df$obsTime)
+
+# Représentation graphique
+ggplot(data = df, aes(x = obsTime, y = obsValue, color = LOCATION)) + 
+  geom_line(size = 1) +  
+  labs(x = NULL, y = "Dollars, prix courant", color = NULL,
+       title =  "Évolution comparée du PIB par habitant (Mexique - USA - OCDE)") +
+  theme_hc() +
+  scale_color_manual(values=c("#999999", "#E69F00", "#56B4E9"))
+
+
+```
 
 ---
 background-image: url(img/fig05.png)
@@ -65,6 +180,48 @@ background-size: contain
 background-image: url(img/fig06.png)
 background-size: contain
 
+
+---
+
+# Des murs dans les données ?
+
+Le package **`cartography`** met à disposition les fonctions **`getBorders`** pour extraire les frontières entre les polygones
+et **`discLayer`** pour affecter une épaisseur de ligne dépendant des valeurs des deux polygones qui créent la frontière. 
+
+```r
+
+plot(st_geometry(bbox_ortho), col= "#b8d5e3", border = NA, xlim = bb_ortho[c(1,3)],ylim = bb_ortho[c(2,4)])
+
+choroLayer(x = subregions_ortho, var = "POP65_POP15", 
+           breaks = c(min(subregions_ortho$POP65_POP15, na.rm = T),
+                      20,25,35,50,65, max(subregions_ortho$POP65_POP15, na.rm = T)),
+           col = carto.pal(pal1 = "green.pal", n1 = 3, pal2 = "red.pal", n2 = 3),
+           legend.pos = c(-1700000, 5000000),
+           legend.horiz = TRUE, legend.title.cex = 0.7, legend.values.cex = 0.5,
+           legend.title.txt = "Rapport entre la population âgée de plus de 65 ans\net la population âgée de moins de 15 ans\nen 2015 (%)",
+           border = NA, add = TRUE)
+
+* subregions.borders &lt;- getBorders(subregions_ortho)
+
+* discontinuities &lt;- discLayer(x = subregions.borders, df = subregions_ortho,
+*          var = "POP65_POP15", col="black", nclass=3,
+*          method="equal", threshold = 0.3, sizemin = 0.5,
+*          sizemax = 10, type = "abs",legend.values.rnd = 0,
+*          legend.title.txt = "Discontinuités sur l'indice\nde veillissement 2015\n(différences\nabsolues)",
+*          legend.pos = c(-1700000, 5300000), legend.title.cex = 0.7, legend.values.cex = 0.5,
+*          add = TRUE)
+
+plot(st_geometry(coastline_ortho), col= "#6d9cb3",lwd = 1 ,add= T)
+
+
+layoutLayer(title = "Une barrière démographique...",
+            author =  authors,
+            scale = 300, south = TRUE, frame = TRUE,
+            col = "#6d9cb3", coltitle = "white")
+
+```
+
+
 ---
 background-image: url(img/fig07.png)
 background-size: contain
@@ -72,6 +229,40 @@ background-size: contain
 ---
 background-image: url(img/fig08.png)
 background-size: contain
+
+---
+
+# Des (vrais) murs dans les données ?
+
+Ce bout de code permet d'extruder les lignes frontières de 5000m vers le nord
+proportionnellement à la valeur de la discontinuité.
+
+Plus le mur est haut, plus la discontinuité est importante !
+
+```r
+
+threshold &lt;- 0.3
+minvar &lt;- as.numeric(quantile(discontinuities$disc, probs = c(1 - threshold)))
+discontinuities &lt;- discontinuities[discontinuities$disc &gt;= minvar,]
+discontinuities$height &lt;- round(discontinuities$disc / 2,0)
+
+extrude &lt;- function(id){
+  line &lt;- st_geometry(discontinuities[id,])
+  plot(line, col = "black",lwd = 2 ,add = TRUE)
+  nb &lt;- as.numeric(discontinuities[id,"height"])[1]
+  for (j in 1:nb){
+    line &lt;- st_geometry(line) + c(0,5000)
+    plot(st_geometry(line), col= "#ebd23490",lwd = 2 ,add = TRUE)  
+  }
+  plot(line, col= "black",lwd = 2 ,add = TRUE)
+}
+
+for (i in 1:length(discontinuities$disc))
+{
+  extrude(i)
+}
+
+```
 
 ---
 background-image: url(img/fig09.png)
@@ -90,8 +281,56 @@ background-image: url(img/fig12.png)
 background-size: contain
 
 ---
+
+# Des flics sur la frontière... 
+
+La librairie **`osmdata`** permet d'effectuer des requêtes (pas trop importantes)
+sur le contenu de la base OpenStreetMap. 
+
+```r
+
+# Convertir la bounding box en WGS 84
+bbox &lt;- st_transform(bbox_aea, 4326)
+
+# Définir la requête (clé/valeur OSM sur bounding box)
+opqbox &lt;- opq(bbox = bbox , timeout = 5000)
+opquery &lt;- add_osm_feature(opq = opqbox, key = "barrier", value = "border_control")
+feat &lt;- osmdata_sf(opquery)
+
+# Extraire les points qui répondent à la requête
+featpt &lt;- st_transform(feat$osm_points, albers)
+featpt &lt;- featpt[featpt[["barrier"]] %in% "border_control", ]
+
+# Extraire les polygones qui répondent à la requête
+featpo &lt;- st_transform(feat$osm_polygons, albers)
+st_geometry(featpo) &lt;- st_centroid(st_geometry(featpo))
+featpo$osm_id &lt;- row.names(featpo)
+
+# Combiner points et polygones, les intersecter avec la bounding box
+featpt &lt;- rbind(featpt[, c("osm_id", "geometry")], featpo[, c("osm_id", "geometry")])
+poi_osm &lt;- st_intersection(x = featpt, st_geometry(subregions_aea))
+
+```
+
+---
 background-image: url(img/fig13.png)
 background-size: contain
+
+---
+
+
+# Des flics... Oui, mais combien ? 
+
+Pour y voir plus clair, on regarde le nombre de postes frontières contenus dans une grille régulière de 50 km². 
+
+```r
+# Créer une grille sur l'espace d'étude
+grid &lt;- st_make_grid(subregions_aea, cellsize = 50000)
+grid &lt;- st_sf(grid)
+
+# Compter le nombre de postes de police par points de grille
+grid$ncops &lt;- lengths(st_covers(grid, poi_osm))
+```
 
 ---
 background-image: url(img/fig14.png)
