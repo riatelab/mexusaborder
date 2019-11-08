@@ -19,6 +19,19 @@ class: center, middle, inverse, title-slide
 ---
 
 
+&lt;style type="text/css"&gt;
+body{ /* Normal  */
+      font-size: 12px;
+  }
+code.r{ /* Code block */
+    font-size: 12px;
+}
+pre { /* Code block - determines code spacing between lines */
+    font-size: 14px;
+}
+&lt;/style&gt;
+---
+
 background-image: url(img/photo2.jpg)
 background-size: contain
 
@@ -34,12 +47,44 @@ background-size: contain
 
 # Template 1 (projection Albers)
 
-Les couches géographiques sont préalablement importées, transformées
-dans la projection cible du modèle cartographique puis intersectées avec l'emprise de l'espace d'étude.  
-
-La fonction `lay_aea` crée le modèle cartographique qui sera utilisé dans les représentations ultérieures : ordre d'affichage et styles associés des couches géographiques.  
+Les géométries sont importées avec les fonctions du package **`rnaturalearth`**, transformées
+dans la projection cible du modèle cartographique puis intersectées avec l'emprise de l'espace d'étude (fonctions du package **`sf`**).  
 
 ```r
+
+# Import des géométries
+countries &lt;- ne_countries(scale = 50, type = "countries", continent = NULL,
+                          country = NULL, geounit = NULL, sovereignty = NULL,
+                          returnclass = "sf")
+countries &lt;- countries[countries$adm0_a3 %in% c("MEX","USA"),]
+
+# Choix de la projection
+albers &lt;- "+proj=aea +lat_1=14.5 +lat_2=32.5 +lat_0=24 +lon_0=-105 +x_0=0 +y_0=0
++ellps=GRS80 +datum=NAD83 +units=m +no_defs"
+
+# Transformation des couches dans la bonne projection
+countries_ortho &lt;- st_transform(countries,crs = ortho) 
+
+# Création de la bounding box
+bb_aea &lt;- c(-1342784.0, -739750.5, 793341.2, 1317849.8)
+d &lt;- 100000
+bbox_aea &lt;- st_as_sfc(st_bbox(c(xmin = bb_aea[1]-2*d , xmax = bb_aea[3]+2*d, 
+                                ymin = bb_aea[4]+d, ymax = bb_aea[2]-d), 
+                              crs = albers))
+
+# Intersection du fond régional avec la bbox
+subregions_aea &lt;- st_intersection(x = subregions_aea, st_geometry(bbox_aea))
+
+```
+       
+---
+
+# Template 1 (projection Albers)
+
+La fonction *`lay_aea`* crée le modèle cartographique qui sera utilisé dans les représentations ultérieures : ordre d'affichage et styles associés des couches géographiques.  
+
+```r
+
 lay_aea &lt;- function(title = ""){
 par(mar = c(0,0,1.2,0))
 plot(st_geometry(ocean_aea), col= "#b8d5e3", border = NA, xlim = bb_aea[c(1,3)], ylim = bb_aea[c(2,4)])
@@ -58,6 +103,7 @@ layoutLayer(title = title,
 
 ```
 ---
+
 background-image: url(img/fig01.png)
 background-size: contain
 
@@ -65,32 +111,13 @@ background-size: contain
 
 # Template 2 (projection orthographique)
 
-Un second modèle "vu du sud" est créé en utilisant et paramétrant
-une projection orthographique. 
+Un second modèle "vu du sud" est créé en utilisant une projection orthographique. 
+
 
 ```r
 
-# Choix de la projection
-ortho &lt;- "+proj=ortho +lat_0=-35 +lon_0=-104 +x_0=0 +y_0=0 +ellps=
-          WGS84 +units=m +no_defs"
-
-# Transformation des couches dans la bonne projection
-countries_ortho &lt;- st_transform(countries,crs = ortho) 
-
-# Création de la bounding box
-bb_ortho &lt;- c(-1668000, 5100000, 934863, 5900000)
-d  &lt;- 100000
-bbox_ortho &lt;- st_as_sfc(st_bbox(c(xmin = bb_ortho[1]-2*d ,
-                                  xmax = bb_ortho[3]+2*d, 
-                                  ymin = bb_ortho[4]+3.5*d, 
-                                  ymax = bb_ortho[2]-3.5*d), 
-                                crs = ortho))
-
-# Intersection du fond régional avec la bbox
-subregions_ortho &lt;- st_intersection(x = subregions_ortho, 
-                                    st_geometry(bbox_ortho))
-                                
-
+* ortho &lt;- "+proj=ortho +lat_0=-35 +lon_0=-104 +x_0=0 +y_0=0 +ellps=
+*           WGS84 +units=m +no_defs"
 
 ```
 
@@ -108,12 +135,12 @@ graphiquement l'idée du mur.
 
 ```r
 
-  line &lt;- st_geometry(fences_ortho)
-  for (i in 1:20){
-    line &lt;- st_geometry(line) + c(0,5000)
-    plot(st_geometry(line), col= "#565b6380",lwd = 2 ,add= T)  
-  }
-  plot(st_geometry(line), col= "#3d3c3c",lwd = 2 ,add= T) 
+*   line &lt;- st_geometry(fences_ortho)
+*   for (i in 1:20){
+*     line &lt;- st_geometry(line) + c(0,5000)
+*     plot(st_geometry(line), col= "#565b6380",lwd = 2 ,add= T)  
+*   }
+*   plot(st_geometry(line), col= "#3d3c3c",lwd = 2 ,add= T) 
 
 ```
 
@@ -130,8 +157,9 @@ La fonction **`cartogram_cont`** du package **cartogram** permet
 de générer des cartes en anamorphose selon l'algorithme de Dougenik.  
 
 ```r
-subregions_anam &lt;- cartogram_cont(subregions_all,
-                                  weight = "POP_2015", itermax = 30)
+
+* subregions_anam &lt;- cartogram_cont(subregions_all,
+*                                   weight = "POP_2015", itermax = 30)
 
 ```
 
@@ -145,18 +173,16 @@ background-size: contain
 
 # Évolution du PIB et des moins de 20 ans dans le temps 
 
-De nombreux packages utilisent les API des principaux fournisseurs
+Plusieurs packages utilisent les API des principaux fournisseurs
 de données internationaux, comme **`OECD`**. 
 
-Ils permettent efficacement de récupérer des données de référence
-et produire des représentations graphiques simples sans avoir à télécharger
-de données depuis les portails d'accès aux données. 
+C'est un moyen efficace sans sortir de R pour récupérer et représenter de la donnée. 
 
 ```r
 
 # Télécharger les données de la table PDB_LV pour USA, Mexique, pays de l'OCDE
-df &lt;- get_dataset(dataset = "PDB_LV",
-                  filter = list(c("MEX", "USA","OECD"), "T_GDPPOP", "CPC"))
+* df &lt;- get_dataset(dataset = "PDB_LV",
+*                   filter = list(c("MEX", "USA","OECD"), "T_GDPPOP", "CPC"))
 
 # Transformer la date au format numérique
 df$obsTime &lt;- as.numeric(df$obsTime)
@@ -168,7 +194,6 @@ ggplot(data = df, aes(x = obsTime, y = obsValue, color = LOCATION)) +
        title =  "Évolution comparée du PIB par habitant (Mexique - USA - OCDE)") +
   theme_hc() +
   scale_color_manual(values=c("#999999", "#E69F00", "#56B4E9"))
-
 
 ```
 
@@ -185,8 +210,7 @@ background-size: contain
 
 # Des murs dans les données ?
 
-Le package **`cartography`** met à disposition les fonctions **`getBorders`** pour extraire les frontières entre les polygones
-et **`discLayer`** pour affecter une épaisseur de ligne dépendant des valeurs des deux polygones qui créent la frontière. 
+Les fonctions *`getBorders`* et  *`discLayer`* du  package **`cartography`**  permettent d'extraire les frontières entre des polygones et représenter l'importance des discontinuités territoriales. 
 
 ```r
 
@@ -213,7 +237,6 @@ choroLayer(x = subregions_ortho, var = "POP65_POP15",
 
 plot(st_geometry(coastline_ortho), col= "#6d9cb3",lwd = 1 ,add= T)
 
-
 layoutLayer(title = "Une barrière démographique...",
             author =  authors,
             scale = 300, south = TRUE, frame = TRUE,
@@ -234,8 +257,7 @@ background-size: contain
 
 # Des (vrais) murs dans les données ?
 
-Ce bout de code permet d'extruder les lignes frontières de 5000m vers le nord
-proportionnellement à la valeur de la discontinuité.
+Ce bout de code permet de translater les frontières proportionnellement à la valeur de leur discontinuité respective.
 
 Plus le mur est haut, plus la discontinuité est importante !
 
@@ -246,21 +268,21 @@ minvar &lt;- as.numeric(quantile(discontinuities$disc, probs = c(1 - threshold))
 discontinuities &lt;- discontinuities[discontinuities$disc &gt;= minvar,]
 discontinuities$height &lt;- round(discontinuities$disc / 2,0)
 
-extrude &lt;- function(id){
-  line &lt;- st_geometry(discontinuities[id,])
-  plot(line, col = "black",lwd = 2 ,add = TRUE)
-  nb &lt;- as.numeric(discontinuities[id,"height"])[1]
-  for (j in 1:nb){
-    line &lt;- st_geometry(line) + c(0,5000)
-    plot(st_geometry(line), col= "#ebd23490",lwd = 2 ,add = TRUE)  
-  }
-  plot(line, col= "black",lwd = 2 ,add = TRUE)
-}
+* extrude &lt;- function(id){
+*   line &lt;- st_geometry(discontinuities[id,])
+*   plot(line, col = "black",lwd = 2 , add = TRUE)
+*   nb &lt;- as.numeric(discontinuities[id,"height"])[1]
+*   for (j in 1:nb){
+*     line &lt;- st_geometry(line) + c(0,5000)
+*     plot(st_geometry(line), col= "#ebd23490", lwd = 2 ,add = TRUE)  
+*   }
+*   plot(line, col= "black", lwd = 2 , add = TRUE)
+* }
 
-for (i in 1:length(discontinuities$disc))
-{
-  extrude(i)
-}
+* for (i in 1:length(discontinuities$disc))
+* {
+*   extrude(i)
+* }
 
 ```
 
@@ -282,10 +304,12 @@ background-size: contain
 
 ---
 
-# Des flics sur la frontière... 
+# Du border control... 
 
-La librairie **`osmdata`** permet d'effectuer des requêtes (pas trop importantes)
+Le package **`osmdata`** permet d'effectuer des requêtes (pas trop importantes)
 sur le contenu de la base OpenStreetMap. 
+
+La fonction *`opquery`* permet d'extraire tous les obojets (points/polygones) contenus dans la base de données OSM qui sont inclus dans une bounding box prédéfinie et pour un couple de clé/valeur. 
 
 ```r
 
@@ -293,9 +317,9 @@ sur le contenu de la base OpenStreetMap.
 bbox &lt;- st_transform(bbox_aea, 4326)
 
 # Définir la requête (clé/valeur OSM sur bounding box)
-opqbox &lt;- opq(bbox = bbox , timeout = 5000)
-opquery &lt;- add_osm_feature(opq = opqbox, key = "barrier", value = "border_control")
-feat &lt;- osmdata_sf(opquery)
+* opqbox &lt;- opq(bbox = bbox , timeout = 5000)
+* opquery &lt;- add_osm_feature(opq = opqbox, key = "barrier", value = "border_control")
+* feat &lt;- osmdata_sf(opquery)
 
 # Extraire les points qui répondent à la requête
 featpt &lt;- st_transform(feat$osm_points, albers)
@@ -319,17 +343,27 @@ background-size: contain
 ---
 
 
-# Des flics... Oui, mais combien ? 
+# Du border control... 
 
-Pour y voir plus clair, on regarde le nombre de postes frontières contenus dans une grille régulière de 50 km². 
+Pour y voir plus clair, on crée une grille de 50 km² et on dénombre de postes frontières pour chaque élément de la grille.
+Les postes frontières peuvent alors être représentés sous forme de figurés proportionnels... 
 
 ```r
+
 # Créer une grille sur l'espace d'étude
 grid &lt;- st_make_grid(subregions_aea, cellsize = 50000)
 grid &lt;- st_sf(grid)
 
 # Compter le nombre de postes de police par points de grille
-grid$ncops &lt;- lengths(st_covers(grid, poi_osm))
+* grid$ncops &lt;- lengths(st_covers(grid, poi_osm))
+
+# Figurés proportionnels
+lay_aea("Nombre de postes frontaliers")
+propSymbolsLayer(grid, var = "ncops", col = "red", symbols = "square", add = T,
+                 legend.pos = "left",
+                 legend.title.cex = 0.7, legend.values.cex = 0.6,
+                 legend.title.txt = "Nombre de postes frontière\n(zones de 50km²)")
+
 ```
 
 ---
@@ -337,42 +371,322 @@ background-image: url(img/fig14.png)
 background-size: contain
 
 ---
+
+# Du border control... 
+
+Ou directement sur le carroyage. On s'intéresse ici à la part des postes frontaliers sur l'espace d'étude... 
+
+```r
+
+grid$dens &lt;- (grid$ncops / sum(grid$ncops)) * 100
+grid &lt;- grid[grid$ncops != 0, ] 
+
+lay_aea("Concentration du contrôle frontalier")
+choroLayer(x = grid, var = "dens",
+           breaks = c(min(grid$dens), 1, 2, 5, 10, max(grid$dens)),
+           col = carto.pal(pal1 = "brown.pal", n1 = 5),
+           legend.pos = "left",
+           legend.title.cex = 0.7, legend.values.cex = 0.6,
+           legend.title.txt = "Part des postes frontaliers sur l'espace d'étude (%)",
+           border = NA,
+           add = TRUE)
+plot(st_geometry(fences_aea), col= "#3d3c3c",lwd = 3 ,add= T)
+
+```
+
+---
 background-image: url(img/fig15.png)
 background-size: contain
 
 ---
+
+# Aux tours de contrôle !
+
+L'usage de l'argument **bar** de la fonction *`propSymbolsLayer`* (package **`cartography`**), associé à une projection orthographique permet de donner une impression 3d intéressante.
+
+L'ajout du mur de séparation permet d'apprécier que ces "tours de contrôle" sont bien situées en territoire américain...
+
+```r
+
+lay_ortho(title = "Des tours de contrôle")
+
+propSymbolsLayer(x = grid, var = "ncops",
+                      col = "red",
+*                     symbols = "bar",
+                      inches = 1.3,
+                      border = "grey50", lwd = 1,
+                      legend.pos = c(-1700000, 5000000), 
+                      legend.title.txt = "Nombre de postes frontières\n(zones de 20 km²)",
+                      legend.style = "e")
+                      
+for (i in 1:15){
+  line &lt;- st_geometry(line) + c(0,5000)
+  plot(st_geometry(line), col= "#565b6380",lwd = 2 ,add= T)  
+
+```
+
+
+---
+
 background-image: url(img/fig16.png)
 background-size: contain
+
+---
+
+# Morts aux frontières - en chiffres
+
+L'OIM compile la localisation de personnes qui ont trouvé la mort au cours de leur trajectoire migratoire. 
+
+Après avoir importé les données et les avoir nettoyé, on peut réaliser plusieurs barplots pour
+visualiser l'importance de la tragédie migratoire dans l'espace... 
+
+```r
+
+# Import du fichier brut (OIM)
+iom &lt;- read.csv("data/iom/MissingMigrants-Global-2019-10-29T14-11-50.csv", stringsAsFactors = F)
+
+# Gestion des coordonnées
+iom &lt;- iom[(iom$Location.Coordinates)!="",]
+latlon &lt;- matrix(as.numeric(unlist(strsplit(iom$Location.Coordinates, split = ", "))), ncol = 2, byrow = T)
+colnames(latlon) &lt;- c("lat", 'lon')
+iom &lt;- cbind(iom, latlon)
+
+# Sélection et renommage des variables, conversion au format numérique des champs
+iom &lt;- iom[,c("Web.ID","Reported.Year","Total.Dead.and.Missing","Number.of.Survivors","Region.of.Incident","lat","lon")]
+colnames(iom) &lt;- c("id","year","deads","survivors","region","latitude","longitude")
+iom$deads &lt;- as.numeric(iom$deads)
+iom &lt;- iom[!is.na(iom$deads),]
+iom$latitude &lt;- as.numeric(iom$latitude)
+iom$longitude &lt;- as.numeric(iom$longitude)
+
+# Agréger par zone géographique
+med &lt;- aggregate(iom_sf$deads,list(iom_sf$region), sum, simplify = TRUE )
+
+# Barplot
+barplot(med$nb, ylab = "Nombre de personnes", names.arg = med$region, las = 2, 
+        border="#991313",col = cols, cex.names = 0.8, cex.axis = 0.8)
+
+```
 
 ---
 background-image: url(img/fig17.png)
 background-size: contain
 
 ---
+
+# Morts aux frontières - en chiffres
+
+Et dans le temps...
+
+```r
+
+med &lt;- aggregate(iom_sf$deads,list(iom_sf$year), sum, simplify = TRUE )
+
+barplot(med$nb, xlab=paste0("Total sur la période: ",total,"\n(*) Du 1er janvier au 29 octobre 2019"), 
+        ylab="Nombre de personnes", names.arg=med$year,
+        border="#991313",col=c("red","red","red","red","red","#ffbaba"),
+        cex.names = 0.8, cex.axis = 0.8)
+        
+```
+
+---
 background-image: url(img/fig18.png)
 background-size: contain
+
+---
+
+# Morts aux frontières - carte de localisation
+
+On transforme le dataframe en objet sf pour obtenir la localisation du phénomène et on l'intersecte avec l'emprise de l'espace d'étude. 
+
+Une première carte de localisation de ces événements est ainsi créée. 
+
+```r
+
+iom_sf &lt;- st_as_sf(iom, coords = c("longitude", "latitude"), crs = 4326, agr = "constant")
+iom_ortho &lt;- st_transform(iom_sf,crs = ortho)
+iom_ortho &lt;- st_intersection(x = iom_ortho, st_geometry(bbox_ortho))
+
+lay_ortho("Migrants morts et portés disparus à la frontière USA-Mexique, 2014 - 2019")
+plot(st_geometry(iom_ortho), pch=20, col= "#eb3850", cex = 0.5, add=T)
+plot(st_geometry(fences_ortho), col= "#3d3c3c",lwd = 3 ,add= T)
+legtxt &lt;- "Sur cette carte, chaque point\ncorrespond à un évenement\nayant donné la mort d'au\nmoins une personne\nsur la période 2014 - 2019"
+text(-1700000, y = 5200000, legtxt  , cex = 0.9, pos = 4, font = 2) 
+
+
+```
 
 ---
 background-image: url(img/fig19.png)
 background-size: contain
 
 ---
+
+# Morts aux frontières - Localisation et nombre de personnes
+
+Dans la base de données de l'OIM, un événement peut regrouper plusieurs décès...
+
+```r
+
+lay_ortho("Migrants morts et portés disparus à la frontière USA-Mexique, 2014 - 2019")
+propSymbolsLayer(x = iom_ortho, var = "deads",
+                 symbols = "circle", col =  "#eb3850",
+                 legend.pos = "left", border = "#ede6bb", lwd = 0.5,
+                 legend.title.txt = "Nombre de morts\net portés disparus\nsur la période\n2014 - 2019",
+                 legend.style = "e")
+plot(st_geometry(fences_ortho), col= "#3d3c3c",lwd = 3 ,add= T)
+
+```
+
+---
+
 background-image: url(img/fig20.png)
 background-size: contain
 
 ---
+
+# Morts aux frontières - Cartogramme de Dorling
+
+La fonction *`cartogram_dorling`* du package **`cartogram`** permet de d'éviter le recouvrement graphique des cercles.
+La fonction *`st_jitter`* du package **`sf`** optimise leur localisation.  
+
+
+```r
+# Localisation des points précise plus importante pour gros événements
+iom_ortho$m_weight &lt;- 1
+iom_ortho$m_weight[iom_ortho$deads &gt; 1] &lt;- 0.5
+iom_ortho$m_weight[iom_ortho$deads &gt;= 25] &lt;- 0
+
+# Cartogramme Dorling / Jitter
+deathsdor &lt;- cartogram_dorling(x = st_jitter(iom_ortho),weight = "deads", m_weight = iom_ortho$m_weight, k = .4)
+
+# Représentation graphique
+lay_ortho("Migrants morts et portés disparus à la frontière USA-Mexique, 2014 - 2019")
+plot(st_geometry(deathsdor), pch=20, col= "#eb3850", border ="#ede6bb", cex = 0.1, add=T)
+plot(st_geometry(fences_ortho), col= "#3d3c3c", lwd = 3 ,add= T)
+
+```
+
+
+---
+
 background-image: url(img/fig21.png)
 background-size: contain
+
+---
+
+# Morts aux frontières - Cartogramme de Dorling (avec désagrégation)
+
+Cette boucle permet de désagréger les événements comprenant plusieurs décès de telle
+sorte qu'un point représente un décès. 
+
+```r
+iom_unique &lt;- all[all$deads == 1,]
+iom_multi &lt;-  all[all$deads &gt; 1,]
+
+for (i in 1:dim(iom_multi)[1]){
+  nb &lt;- as.numeric(iom_multi[i,"deads"])[1]
+  tmp &lt;- iom_multi[i,]
+  tmp$deads &lt;- 1
+  for (j in 1:nb){ iom_unique &lt;- rbind(iom_unique,tmp)}
+}
+
+deathsdor2 &lt;- cartogram_dorling(x = st_jitter(iom_unique), weight = "deads", k = .003)
+
+```
 
 ---
 background-image: url(img/fig22.png)
 background-size: contain
 
 ---
+
+# Morts aux frontières - Carte animée
+
+Une boucle est créée pour cumuler et localiser le nombre de morts par mois depuis 2014. 
+72 représentation sont ainsi créées puis assemblées avec ImageMagick pour créer une animation. 
+
+```r
+
+iom_ortho$date &lt;- paste0(iom_ortho$month," ",iom_ortho$year)
+bymonth &lt;- aggregate(iom_ortho$deads,list(iom_ortho$date), sum, simplify = TRUE )
+colnames(bymonth) &lt;- c("date","deads")
+
+m &lt;- c("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+y &lt;- c("2014","2015","2016","2017","2018","2019")
+for (i in 1:length(y)){
+d &lt;- paste0(m," ",y[i])
+if (i == 1) { all &lt;- d } else {all &lt;- c(all,d)}
+}
+
+all &lt;- as.data.frame(all)
+all$id &lt;- as.numeric(row.names(all))
+colnames(all) &lt;- c("date","id")
+all &lt;- merge (x = all, y = bymonth, 
+                           by.x = "date",
+                           by.y = "date",
+                           all.x = T)
+all &lt;- all[order(all$id),]
+
+inches &lt;- 0.8
+fixmax &lt;- max(iom_ortho$deads)
+
+for (i in 1:length(all$id)){
+  mapdate &lt;- as.character(all$date[i])
+  if(i &lt; 10) { num &lt;- paste0("0",i) } else { num &lt;- i }
+  file &lt;- paste0("tmp/",num,".png")
+  png(file, width = sizes_ortho[1], height = sizes_ortho[2], res = 150)
+  
+  par(mar = c(0,0,0,0))
+  plot(st_geometry(bbox_ortho), col= "#555760", border = NA, xlim = bb_ortho[c(1,3)], ylim = bb_ortho[c(2,4)])
+  plot(st_geometry(subregions_ortho) + c(-10000, -10000), col ="#303135", border = NA, add = T)
+  plot(st_geometry(subregions_ortho), col= "#4d4e54", border = NA, cex = 0.5, add=T)
+  plot(st_geometry(rivers_ortho), col= "#858585",lwd = 1 ,add= T)
+  dev.off()
+  
+```
+
+
+---
 background-image: url(img/animate.gif)
 background-size: contain
 
 ---
+
+# Morts aux frontières - Carte interactive
+
+Le package **`leaflet`** est utile pour créer, paramétrer et exporter des cartes interactives. 
+
+```r
+
+pins &lt;- makeIcon(
+  iconUrl = "data/pin.svg",
+  iconWidth = 30, iconHeight = 30,
+  iconAnchorX = 15, iconAnchorY = 15
+)
+
+iom$label &lt;- paste0(
+  "&lt;h1&gt;",iom$cause,"&lt;/h1&gt;
+                     &lt;h3&gt;year: &lt;/b&gt;",iom$year,"&lt;br/&gt;
+                     location: ",iom$location,"&lt;/h3&gt;                      
+                     &lt;i&gt;Source: ",iom$source,"&lt;/i&gt;"
+)
+
+m &lt;- leaflet(iom) %&gt;%
+  addProviderTiles(providers$Esri.WorldStreetMap) %&gt;%
+  setView(lng = -104, lat = 30, zoom = 06) %&gt;%
+  addMarkers(~lon, ~lat, popup = ~label, clusterOptions = markerClusterOptions(), icon = pins ) %&gt;%
+  addScaleBar(position = "bottomleft") %&gt;%
+  addPolylines(data = fences, color = "black", weight = 7, opacity = 1)
+
+
+saveWidget(m, file="leaflet.html", title = "The Border Kills", selfcontained = TRUE)
+
+```
+
+---
+
+
 &lt;iframe src="leaflet.html" width=100% height=100%&gt;&lt;/iframe&gt;
 
 ---

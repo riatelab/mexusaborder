@@ -637,7 +637,7 @@ poi_osm <- st_intersection(x = featpt, st_geometry(subregions_aea))
 
 png("img/fig13.png", width = sizes_aea[1], height = sizes_aea[2], res = 150)
 par(mar = c(0,0,1.2,0))
-lay_aea("Localisation des postes frontaliers")
+lay_aea(paste0(sum(grid$ncops)," postes frontières (v1) !"))
 plot(st_geometry(poi_osm), bg = "red", col = NA, pch = 21, cex = 0.8, add = TRUE)
 legtxt <- "Chaque point rouge\nreprésente un poste\nfrontalier recensé\ndans OpenStreetMap."
 text(-1400000, y = -100000, legtxt  , cex = 0.9, pos = 4, font = 2)
@@ -654,34 +654,38 @@ grid <- st_sf(grid)
 # Compter le nombre de postes de police par points de grille
 grid$ncops <- lengths(st_covers(grid, poi_osm))
 
-# Plusieurs façons de visualiser les résultats (tests)
+# Figurés proportionnels
 png("img/fig14.png", width = sizes_aea[1], height = sizes_aea[2], res = 150)
-lay_aea("Densité de postes frontaliers")
+lay_aea(paste0(sum(grid$ncops)," postes frontières (v2) !"))
 propSymbolsLayer(grid, var = "ncops", col = "red", symbols = "square", add = T,
                  legend.pos = "left",
                  legend.title.cex = 0.7, legend.values.cex = 0.6,
                  legend.title.txt = "Nombre de postes frontière\n(zones de 50km²)")
-
 dev.off()
 
 ############
 # 12 - Border Control - Densité #2
 #############
 
-# ATTENTION, IL MANQUE SAN DIEGO / TIJUANA !
+
+grid$dens <- (grid$ncops / sum(grid$ncops)) * 100
+grid <- grid[grid$ncops != 0, ] 
+
 
 png("img/fig15.png", width = sizes_aea[1], height = sizes_aea[2], res = 150)
-lay_aea("Densité de postes frontaliers (A CORRIGER !)")
-choroLayer(x = grid, var = "ncops",
-           breaks = c(0.535, 5, 10, 20, 40, 66),
+lay_aea(paste0(sum(grid$ncops)," postes frontières (v3) !"))
+choroLayer(x = grid, var = "dens",
+           breaks = c(min(grid$dens), 1, 2, 5, 10, max(grid$dens)),
            col = carto.pal(pal1 = "brown.pal", n1 = 5),
            legend.pos = "left",
            legend.title.cex = 0.7, legend.values.cex = 0.6,
-           legend.title.txt = "Nombre de postes frontière\n(zones de 50km²)",
+           legend.title.txt = "Part des postes frontaliers sur l'espace d'étude (%)",
            border = NA,
            add = TRUE)
 plot(st_geometry(fences_aea), col= "#3d3c3c",lwd = 3 ,add= T)
 dev.off()
+
+
 
 ############
 # 13 - Border Control - Densité #3
@@ -690,37 +694,34 @@ dev.off()
 
 # A améliorer (mettre devant les "tours" qui sont devant) !!!!! 
 
-
 grid <- st_make_grid(subregions_ortho, cellsize = 20000)
 grid <- st_sf(grid)
 poi_osm <- st_transform(poi_osm,ortho)
 grid$ncops <- lengths(st_covers(grid, poi_osm))
 grid <- grid[grid$ncops>0,]
 
+
 png("img/fig16.png", width = sizes_ortho[1], height = sizes_ortho[2], res = 150)
-par(mar = c(0,0,1.2,0))
-plot(st_geometry(bbox_ortho), col= "#b8d5e3", border = NA, xlim = bb_ortho[c(1,3)], ylim = bb_ortho[c(2,4)])
-plot(st_geometry(subregions_ortho) + c(-10000, -10000), col ="#827e6c50", border = NA, add = T)
-plot(st_geometry(subregions_ortho), col= "#ede6bb", border = "white", cex = 0.5, add=T)
-plot(st_geometry(coastline_ortho), col= "#6d9cb3",lwd = 1 ,add= T)
-plot(st_geometry(rivers_ortho), col= "#6d9cb3",lwd = 1 ,add= T)
-plot(st_geometry(fences_ortho), col= "#3d3c3c",lwd = 3 ,add= T)
-propSymbolsChoroLayer(x = grid, var = "ncops", var2 = "ncops",
-                      col = carto.pal(pal1 = "brown.pal", n1 = 5),
+lay_ortho(title = "Sacrées tours de contrôle !")
+
+propSymbolsLayer(x = grid, var = "ncops",
+                      col = "red",
                       symbols = "bar",
-                      inches = 1, breaks = c(0.535, 5, 10, 20, 40, 66),
+                      inches = 1.3,
                       border = "grey50", lwd = 1,
-                      legend.var.pos = c(-1700000, 5000000), 
-                      legend.var2.pos = "left",
-                      legend.var2.values.rnd = -2,
-                      legend.var2.title.txt = "ncops",
-                      legend.var.title.txt = "ncops",
-                      legend.var.style = "e")
-layoutLayer(title = "(A AMELIORER !)",
-            author =  authors,
-            scale = 300, south = TRUE, frame = TRUE,
-            col = "#6d9cb3", coltitle = "white")
+                      legend.pos = c(-1700000, 5000000), 
+                      legend.title.txt = "Nombre de postes frontières\n(zones de 20 km²)",
+                      legend.style = "e")
+
+line <- st_geometry(fences_ortho)
+for (i in 1:15){
+  line <- st_geometry(line) + c(0,5000)
+  plot(st_geometry(line), col= "#565b6380",lwd = 2 ,add= T)  
+}
+plot(st_geometry(line), col= "#3d3c3c",lwd = 2 ,add= T) 
 dev.off()
+
+
 
 ############
 # 14 - Morts aux frontières - Import et mise en forme des données
@@ -911,7 +912,7 @@ iom_sf <- st_as_sf(iom, coords = c("longitude", "latitude"), crs = 4326, agr = "
 iom_ortho <- st_transform(iom_sf,crs = ortho)
 iom_ortho <- st_intersection(x = iom_ortho, st_geometry(bbox_ortho))
 
-# Aggregte & barplot
+# Aggregete & barplot
 
 iom_ortho$date <- paste0(iom_ortho$month," ",iom_ortho$year)
 bymonth <- aggregate(iom_ortho$deads,list(iom_ortho$date), sum, simplify = TRUE )
@@ -926,7 +927,6 @@ if (i == 1) { all <- d } else {all <- c(all,d)}
 
 all <- as.data.frame(all)
 all$id <- as.numeric(row.names(all))
-colnames(all)
 colnames(all) <- c("date","id")
 all <- merge (x = all, y = bymonth, 
                            by.x = "date",
