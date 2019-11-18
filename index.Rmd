@@ -180,7 +180,7 @@ background-size: contain
 Plusieurs packages utilisent les API des principaux fournisseurs
 de données internationaux, comme **`OECD`**. 
 
-C'est un moyen efficace sans sortir de R pour récupérer et représenter de la donnée. 
+C'est un moyen efficace sans sortir de R pour récupérer des données.  
 
 ```r
 
@@ -191,12 +191,19 @@ C'est un moyen efficace sans sortir de R pour récupérer et représenter de la 
 # Transformer la date au format numérique
 df$obsTime <- as.numeric(df$obsTime)
 
+```
+
+--
+
+Le package **`ggthemes`** propose des modèles de mise en forme assez esthétiques. 
+
+```r
 # Représentation graphique
 ggplot(data = df, aes(x = obsTime, y = obsValue, color = LOCATION)) + 
   geom_line(size = 1) +  
   labs(x = NULL, y = "Dollars, prix courant", color = NULL,
        title =  "Évolution comparée du PIB par habitant (Mexique - USA - OCDE)") +
-  theme_hc() +
+*  theme_hc() +
   scale_color_manual(values=c("#999999", "#E69F00", "#56B4E9"))
 
 ```
@@ -314,12 +321,12 @@ background-size: contain
 
 ---
 
-# Du border control... 
+# Des points de contrôle... 
 
 Le package **`osmdata`** permet d'effectuer des requêtes (pas trop importantes)
 sur le contenu de la base OpenStreetMap. 
 
-La fonction *`opquery`* permet d'extraire tous les obojets (points/polygones) contenus dans la base de données OSM qui sont inclus dans une bounding box prédéfinie et pour un couple de clé/valeur. 
+La fonction *`opquery`* permet d'extraire tous les obojets (points/polygones) contenus dans la base de données OSM qui sont inclus dans une bounding box prédéfinie et pour un couple **clé/valeur**. 
 
 ```r
 
@@ -330,6 +337,15 @@ bbox <- st_transform(bbox_aea, 4326)
 * opqbox <- opq(bbox = bbox , timeout = 5000)
 * opquery <- add_osm_feature(opq = opqbox, key = "barrier", value = "border_control")
 * feat <- osmdata_sf(opquery)
+
+```
+---
+
+# Des points de contrôle... 
+
+On extrait les centroides des polygones que l'on combine aux points qui répondent à la requête...
+
+```r
 
 # Extraire les points qui répondent à la requête
 featpt <- st_transform(feat$osm_points, albers)
@@ -346,6 +362,21 @@ poi_osm <- st_intersection(x = featpt, st_geometry(subregions_aea))
 
 ```
 
+--
+
+... Puis on les comptabilise et on les représente.
+
+```r
+
+* lay_aea(paste0("Au moins ", sum(grid$ncops)," postes frontières..."))
+* plot(st_geometry(poi_osm), bg = "red", col = NA, pch = 21, cex = 0.8, add = TRUE)
+legtxt <- "Chaque point rouge\nreprésente un poste\nfrontalier recensé\ndans OpenStreetMap."
+text(-1400000, y = -100000, legtxt  , cex = 0.9, pos = 4, font = 2)
+
+```
+
+
+
 ---
 background-image: url(img/fig13.png)
 background-size: contain
@@ -353,7 +384,7 @@ background-size: contain
 ---
 
 
-# Du border control... 
+# Aux carreaux de contrôle... 
 
 Pour y voir plus clair, on crée une grille de 50 km² et on dénombre de postes frontières pour chaque élément de la grille.
 Les postes frontières peuvent alors être représentés sous forme de figurés proportionnels... 
@@ -368,7 +399,7 @@ grid <- st_sf(grid)
 * grid$ncops <- lengths(st_covers(grid, poi_osm))
 
 # Figurés proportionnels
-lay_aea("Nombre de postes frontaliers")
+lay_aea("Les hot-spots du contrôle frontalier - dénombrement")
 propSymbolsLayer(grid, var = "ncops", col = "red", symbols = "square", add = T,
                  legend.pos = "left",
                  legend.title.cex = 0.7, legend.values.cex = 0.6,
@@ -382,16 +413,18 @@ background-size: contain
 
 ---
 
-# Du border control... 
+# Aux carreaux de contrôle... 
 
-Ou directement sur le carroyage. On s'intéresse ici à la part des postes frontaliers sur l'espace d'étude... 
+Ou directement sur le carroyage. On s'intéresse ici à la densité des points de contrôle,
+exprimés en part du total de l'espace d'étude. 
 
 ```r
 
+# Calcul de densité
 grid$dens <- (grid$ncops / sum(grid$ncops)) * 100
 grid <- grid[grid$ncops != 0, ] 
 
-lay_aea("Concentration du contrôle frontalier")
+lay_aea("Les hot-spots du contrôle frontalier - Part du total")
 choroLayer(x = grid, var = "dens",
            breaks = c(min(grid$dens), 1, 2, 5, 10, max(grid$dens)),
            col = carto.pal(pal1 = "brown.pal", n1 = 5),
@@ -410,7 +443,7 @@ background-size: contain
 
 ---
 
-# Aux tours de contrôle !
+# Et aux tours de contrôle !
 
 L'usage de l'argument **bar** de la fonction *`propSymbolsLayer`* (package **`cartography`**), associé à une projection orthographique permet de donner une impression 3d intéressante.
 
@@ -418,20 +451,21 @@ L'ajout du mur de séparation permet d'apprécier que ces "tours de contrôle" s
 
 ```r
 
-lay_ortho(title = "Des tours de contrôle")
+lay_ortho(title = "Sacrées tours de contrôle !")
 
-propSymbolsLayer(x = grid, var = "ncops",
-                      col = "red",
-*                     symbols = "bar",
-                      inches = 1.3,
-                      border = "grey50", lwd = 1,
-                      legend.pos = c(-1700000, 5000000), 
-                      legend.title.txt = "Nombre de postes frontières\n(zones de 20 km²)",
-                      legend.style = "e")
-                      
+propSymbolsLayer(x = grid, var = "ncops", col = "darkred",
+*                symbols = "bar",
+                 inches = 1.3,
+                 border = "white", lwd = 1, legend.pos = c(-1700000, 5000000), 
+                 legend.title.txt = "Nombre de postes frontières\n(zones de 20 km²)",
+                 legend.style = "e")
+
+line <- st_geometry(fences_ortho)
 for (i in 1:15){
   line <- st_geometry(line) + c(0,5000)
   plot(st_geometry(line), col= "#565b6380",lwd = 2 ,add= T)  
+}
+plot(st_geometry(line), col= "#3d3c3c",lwd = 2 ,add= T) 
 
 ```
 

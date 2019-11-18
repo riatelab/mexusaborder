@@ -1,10 +1,23 @@
+#############################################################
+#                                                           #
+#              ♥ FAIRE DES CARTES AVEC R ♥                  #
+#      APPLICATION A LA FRONTIERE ETATS-UNIS / MEXIQUE      #
+#   NICOLAS LAMBERT, RONAN YSEBAERT, UMS RIATE, NOV.2019    #
+#                                                           #
+#############################################################
+
+# Ce programme exécute l'ensemble des représentations graphiques de la
+# présentation
+
 
 authors <- "N. Lambert & R. Ysebaert, 2019\nData source: IOM, Didelon, Vandermotten, Dessouroux, (c) OpenStreetMap contributors, 2019"
 
 
-################
-# 0 - Appel des librairies
-################
+######################################################################
+# 0 Préparation des données et création des modèles cartographiques
+#####################################################################
+
+# Appel des librairies ------
 
 library("sf")
 library("rnaturalearth")
@@ -23,9 +36,7 @@ library("animation")
 
 
 
-################
-# 1 - Import des géométries
-################
+# Import des géométries ------
 
 # Pays - Natural Earth
 countries <- ne_countries(scale = 50, type = "countries", continent = NULL,
@@ -56,11 +67,7 @@ fences <- geojson_sf("data/data.world/border-fence.geojson")
 
 
 
-
-
-################
-# 2 - Mise en forme des géométries et création d'un template [Projection Albers]
-################
+# Mise en forme des géométries et création d'un template [Projection Albers] ------
 
 # Choix de la projection
 
@@ -117,11 +124,7 @@ dev.off()
 
 
 
-
-
-################
-# 3 - Mise en forme des géométries et création d'un template [Projection Orthographique]
-################
+# Mise en forme des géométries et création d'un template [Projection Orthographique] ------
 
 # Choix de la projection
 
@@ -170,7 +173,9 @@ png("img/fig02.png", width = sizes_ortho[1], height = sizes_ortho[2], res = 150)
 lay_ortho("Template cartographique 2 (projection orthographique)")
 dev.off()
 
-# Template bis avec les murs en 2.5D
+
+
+# Template bis avec les murs en 2.5D ------
 
 lay_ortho2 <- function(title = ""){
   authors <- "N. Lambert & R. Ysebaert, 2019\nData source: IOM, Didelon, Vandermotten, Dessouroux, (c) OpenStreetMap contributors, 2019"
@@ -201,12 +206,7 @@ dev.off()
 
 
 
-
-################
-# 4 - Import des données et jointures
-################
-
-#  DATA -- PIB & demo (level 1-2)
+# Import des données socio-éco et jointure ------
 
 pib <- read.csv("data/regions/PIB.csv", sep = "\t",encoding = "UTF-8", dec = ",",
                 stringsAsFactors=FALSE)
@@ -248,44 +248,14 @@ subregions_all <- merge (x = subregions_all, y = pop,
 
 
 
-############
-# 5 - Anamorphose population
-#############
 
-# Gestion des multipolygones
-subregions_all <- st_cast(subregions_all, "MULTIPOLYGON")
+##############################################################
+# 1 - Statistiques comparées en utilisant des données OCDE
+###############################################################
 
-# Calcul cartogramme
-subregions_anam <- cartogram_cont(subregions_all,weight = "POP_2015", itermax = 30)
-
-png("img/fig04.png", width = sizes_aea[1], height = sizes_aea[2], res = 150)
-
-par(mar = c(0,0,1.2,0))
-
-plot(st_geometry(bbox_aea), col= "#b8d5e3", border = NA, xlim = bb_aea[c(1,3)], ylim = bb_aea[c(2,4)])
-plot(st_geometry(subregions_all), col = "#bcbbbd", border = NA, add = TRUE)
-plot(subregions_anam["ISO3.x"], pal = c("#d1abf7", "#a0b1eb"), border = "white", add = TRUE)
-
-legtxt <- "Sur cette carte,\nla surface\ndes régions\nest proportionnelle\nà la population en 2015."
-text(-1400000, y = 300000, legtxt  , cex = 0.9, pos = 4, font = 2)
-
-layoutLayer(title = "Et si on déformait sur la population ?",
-            author =  authors,
-            scale = FALSE, south = TRUE, frame = TRUE,
-            col = "#6d9cb3", coltitle = "white")
-
-dev.off()
-
-
-
-
-
-################
-# 7 - Evolution du PIB par habitant dans le temps
-################
+# PIB par habitant ------
 
 # Télécharger les données de la table PDB_LV pour USA, Mexique, pays de l'OCDE
-
 df <- get_dataset(dataset = "PDB_LV",
                   filter = list(c("MEX", "USA","OECD"), "T_GDPPOP", "CPC"))
 
@@ -306,10 +276,7 @@ dev.off()
 
 
 
-
-################
-# 8 - Evolution des moins de 20 ans dans le temps
-################
+# Moins de 20 ans ------
 
 df <- as.data.frame(get_dataset(dataset = "POP_PROJ", 
                                 filter = list(c("MEX","USA","OECD"),"TT","D1TTR5Y4")))
@@ -331,12 +298,11 @@ dev.off()
 
 
 
+################################################ 
+# 2 - Cartographie des ruptures spatiales
+################################################
 
-############### 
-# 9 - Cartographie des ruptures spatiales : Vieillissement démographique
-###############
-
-# Version 1 ------
+# Vieillisement démographique (version 1) ------
 
 png("img/fig07.png", width = sizes_aea[1], height = sizes_aea[2], res = 150)
 
@@ -373,7 +339,8 @@ layoutLayer(title = "Une barrière démographique...",
 dev.off()
 
 
-# Version 2 ------
+
+# Vieillisement démographique (version 2) ------
 
 png("img/fig08.png", width = sizes_ortho[1], height = sizes_ortho[2], res = 150)
 
@@ -410,7 +377,8 @@ layoutLayer(title = "Une barrière démographique...",
 dev.off()
 
 
-# Version 3 ------
+
+# Vieillisement démographique (version 3) ------
 
 threshold <- 0.3
 minvar <- as.numeric(quantile(discontinuities$disc, probs = c(1 - threshold)))
@@ -428,7 +396,6 @@ extrude <- function(id){
   }
   plot(line, col= "black",lwd = 2 ,add = TRUE)
 }
-
 
 
 png("img/fig09.png", width = sizes_ortho[1], height = sizes_ortho[2], res = 150)
@@ -462,12 +429,7 @@ dev.off()
 
 
 
-
-############### 
-# 10 -  Cartographie des ruptures spatiales : PIB par habitant
-###############
-
-# Version 1 ------
+# PIB par habitant (version 1) ------
 
 png("img/fig10.png", width = sizes_aea[1], height = sizes_aea[2], res = 150)
 
@@ -504,7 +466,9 @@ layoutLayer(title = "Doublée d'un mur de richesse... Mais quelles conséquences
 
 dev.off()
 
-# Version 2 ------
+
+
+# PIB par habitant (version 2) ------
 
 png("img/fig11.png", width = sizes_ortho[1], height = sizes_ortho[2], res = 150)
 
@@ -540,7 +504,9 @@ layoutLayer(title = "Doublée d'un mur de richesse... Mais quelles conséquences
 
 dev.off()
 
-# Version 3 ------
+
+
+# PIB par habitant (version 3) ------
 
 threshold <- 0.3
 minvar <- as.numeric(quantile(discontinuities$disc, probs = c(1 - threshold)))
@@ -607,10 +573,11 @@ dev.off()
 
 
 
-
 ############
-# 11 - Border Control - Visualisation des postes de contrôle
+# 3 - Border Control - Visualisation des postes de contrôle
 #############
+
+# Extraction des données ------
 
 # Convertir la bounding box en WGS 84
 bbox <- st_transform(bbox_aea, 4326)
@@ -633,20 +600,6 @@ featpo$osm_id <- row.names(featpo)
 featpt <- rbind(featpt[, c("osm_id", "geometry")], featpo[, c("osm_id", "geometry")])
 poi_osm <- st_intersection(x = featpt, st_geometry(subregions_aea))
 
-# Représentation des points extraits
-
-png("img/fig13.png", width = sizes_aea[1], height = sizes_aea[2], res = 150)
-par(mar = c(0,0,1.2,0))
-lay_aea(paste0(sum(grid$ncops)," postes frontières (v1) !"))
-plot(st_geometry(poi_osm), bg = "red", col = NA, pch = 21, cex = 0.8, add = TRUE)
-legtxt <- "Chaque point rouge\nreprésente un poste\nfrontalier recensé\ndans OpenStreetMap."
-text(-1400000, y = -100000, legtxt  , cex = 0.9, pos = 4, font = 2)
-dev.off()
-
-############
-# 11 - Border Control - Densité #1
-#############
-
 # Créer une grille sur l'espace d'étude
 grid <- st_make_grid(subregions_aea, cellsize = 50000)
 grid <- st_sf(grid)
@@ -654,46 +607,54 @@ grid <- st_sf(grid)
 # Compter le nombre de postes de police par points de grille
 grid$ncops <- lengths(st_covers(grid, poi_osm))
 
-# Figurés proportionnels
+# Calcul de la part du total sur l'espace d'étude
+grid$dens <- (grid$ncops / sum(grid$ncops)) * 100
+grid <- grid[grid$ncops != 0, ] 
+
+
+
+# Visualisation 1 (points) ------
+
+png("img/fig13.png", width = sizes_aea[1], height = sizes_aea[2], res = 150)
+par(mar = c(0,0,1.2,0))
+lay_aea(paste0("Au moins ", sum(grid$ncops)," postes frontières..."))
+plot(st_geometry(poi_osm), bg = "red", col = NA, pch = 21, cex = 0.8, add = TRUE)
+legtxt <- "Chaque point rouge\nreprésente un poste\nfrontalier recensé\ndans OpenStreetMap."
+text(-1400000, y = -100000, legtxt  , cex = 0.9, pos = 4, font = 2)
+dev.off()
+
+
+
+# Visualisation 2 (figurés proportionnels) ------
+
 png("img/fig14.png", width = sizes_aea[1], height = sizes_aea[2], res = 150)
-lay_aea(paste0(sum(grid$ncops)," postes frontières (v2) !"))
+lay_aea("Les hot-spots du contrôle frontalier - dénombrement")
 propSymbolsLayer(grid, var = "ncops", col = "red", symbols = "square", add = T,
                  legend.pos = "left",
                  legend.title.cex = 0.7, legend.values.cex = 0.6,
                  legend.title.txt = "Nombre de postes frontière\n(zones de 50km²)")
 dev.off()
 
-############
-# 12 - Border Control - Densité #2
-#############
 
 
-grid$dens <- (grid$ncops / sum(grid$ncops)) * 100
-grid <- grid[grid$ncops != 0, ] 
-
+# Visualisation 3 (Grille) ------
 
 png("img/fig15.png", width = sizes_aea[1], height = sizes_aea[2], res = 150)
-lay_aea(paste0(sum(grid$ncops)," postes frontières (v3) !"))
+lay_aea("Les hot-spots du contrôle frontalier - Part du total")
 choroLayer(x = grid, var = "dens",
            breaks = c(min(grid$dens), 1, 2, 5, 10, max(grid$dens)),
            col = carto.pal(pal1 = "brown.pal", n1 = 5),
-           legend.pos = "left",
-           legend.title.cex = 0.7, legend.values.cex = 0.6,
-           legend.title.txt = "Part des postes frontaliers sur l'espace d'étude (%)",
-           border = NA,
-           add = TRUE)
+           legend.pos = "left", legend.title.cex = 0.7, legend.values.cex = 0.6,
+           legend.title.txt = "Part des postes frontaliers\nde l'espace d'étude (%)",
+           border = NA, add = TRUE)
 plot(st_geometry(fences_aea), col= "#3d3c3c",lwd = 3 ,add= T)
 dev.off()
 
 
 
-############
-# 13 - Border Control - Densité #3
-#############
+# Visualisation 4 (Tours de contrôle) ------
 
-
-# A améliorer (mettre devant les "tours" qui sont devant) !!!!! 
-
+# On affine la résolution des grilles (20 km)
 grid <- st_make_grid(subregions_ortho, cellsize = 20000)
 grid <- st_sf(grid)
 poi_osm <- st_transform(poi_osm,ortho)
@@ -704,14 +665,12 @@ grid <- grid[grid$ncops>0,]
 png("img/fig16.png", width = sizes_ortho[1], height = sizes_ortho[2], res = 150)
 lay_ortho(title = "Sacrées tours de contrôle !")
 
-propSymbolsLayer(x = grid, var = "ncops",
-                      col = "red",
-                      symbols = "bar",
-                      inches = 1.3,
-                      border = "grey50", lwd = 1,
-                      legend.pos = c(-1700000, 5000000), 
-                      legend.title.txt = "Nombre de postes frontières\n(zones de 20 km²)",
-                      legend.style = "e")
+propSymbolsLayer(x = grid, var = "ncops", col = "darkred",
+                 symbols = "bar",
+                 inches = 1.3,
+                 border = "white", lwd = 1, legend.pos = c(-1700000, 5000000), 
+                 legend.title.txt = "Nombre de postes frontières\n(zones de 20 km²)",
+                 legend.style = "e")
 
 line <- st_geometry(fences_ortho)
 for (i in 1:15){
@@ -723,9 +682,12 @@ dev.off()
 
 
 
-############
-# 14 - Morts aux frontières - Import et mise en forme des données
-#############
+
+###########################
+# 4 - Morts aux frontières 
+###########################
+
+# Import et mise en forme des données ------
 
 # Import du fichier brut (OIM)
 iom <- read.csv("data/iom/MissingMigrants-Global-2019-10-29T14-11-50.csv", stringsAsFactors = F)
@@ -754,9 +716,9 @@ iom_ortho <- st_transform(iom_sf,crs = ortho)
 iom_ortho <- st_intersection(x = iom_ortho, st_geometry(bbox_ortho))
 iom_aea <- st_intersection(x = iom_aea, st_geometry(bbox_aea))
 
-############
-# 15 - Morts aux frontières - Comparaisons régionales
-#############
+
+
+# Comparaisons régionales ------
 
 png("img/fig17.png", width = 1500, height = 1000, res = 150)
 
@@ -783,10 +745,8 @@ barplot(med$nb, ylab = "Nombre de personnes", names.arg = med$region, las = 2,
 dev.off()
 
 
-############
-# 16 - Morts aux frontières - Evolution temporelle
-#############
 
+# Evolution temporelle------
 
 # Extraction de la zone USA-Mexique
 iom_sf <- iom_sf[iom_sf$region =="US-Mexico Border",]
@@ -813,9 +773,9 @@ barplot(med$nb, xlab=paste0("Total sur la période: ",total,"\n(*) Du 1er janvie
 
 dev.off()
 
-############
-# 17 - Morts aux frontières - Carte de localisation
-#############
+
+
+# Carte de localisation ------
 
 png("img/fig19.png", width = sizes_ortho[1], height = sizes_ortho[2], res = 150)
 lay_ortho("Migrants morts et portés disparus à la frontière USA-Mexique, 2014 - 2019")
@@ -826,9 +786,8 @@ text(-1700000, y = 5200000, legtxt  , cex = 0.9, pos = 4, font = 2)
 dev.off()
 
 
-############
-# 18 - Morts aux frontières - Localisation et nombre de personnes
-#############
+
+# Localisation et nombre de personnes ------
 
 png("img/fig20.png", width = sizes_ortho[1], height = sizes_ortho[2], res = 150)
 
@@ -841,9 +800,9 @@ propSymbolsLayer(x = iom_ortho, var = "deads",
 plot(st_geometry(fences_ortho), col= "#3d3c3c",lwd = 3 ,add= T)
 dev.off()
 
-############
-# 19 - Morts aux frontières - Cartogramme de Dorling 
-#############
+
+
+# Cartogramme de Dorling ------
 
 iom_ortho$m_weight <- 1
 iom_ortho$m_weight[iom_ortho$deads > 1] <- 0.5
@@ -860,9 +819,9 @@ text(-1700000, y = 5200000, legtxt  , cex = 0.9, pos = 4, font = 2)
 
 dev.off()
 
-############
-# 20 - Morts aux frontières - Cartogramme de Dorling (avec désagrégation)
-#############
+
+
+# Cartogramme de Dorling (avec désagrégation) ------
 
 all <- iom_ortho[,c("id","deads","year","geometry")]
 
@@ -886,9 +845,8 @@ text(-1700000, y = 5200000, legtxt  , cex = 0.9, pos = 4, font = 2)
 dev.off()
 
 
-############
-# 19 - Carte animée
-#############
+
+# Carte animée ------
 
 # Import & handeling
 
@@ -940,7 +898,6 @@ iom_ortho <- merge (x = iom_ortho, y = all[,c("date","id")],
               all.x = T)
 iom_ortho <- iom_ortho[,c("id.y","date","deads","geometry")]
 colnames(iom_ortho) <- c("id","date","deads","geometry")
-
 
 
 # Cartography
@@ -1010,10 +967,7 @@ system("convert -loop 1 -delay 40 tmp/*.png img/animate.gif")
 
 
 
-############
-# 21 - Carte interactive
-#############
-
+# Carte interactive ------
 
 iom <- read.csv("data/iom/MissingMigrants-Global-2019-09-04T11-59-55.csv", stringsAsFactors = F)
 iom <- iom[(iom$Location.Coordinates)!="",]
@@ -1061,7 +1015,3 @@ m <- leaflet(iom) %>%
 
 
 saveWidget(m, file="leaflet.html", title = "The Border Kills", selfcontained = TRUE)
-
-
-
-
