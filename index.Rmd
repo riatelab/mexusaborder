@@ -61,7 +61,7 @@ Puis sont transformées dans la projection cible du modèle cartographique et in
 ```r
 # Choix de la projection
 *albers <- "+proj=aea +lat_1=14.5 +lat_2=32.5 +lat_0=24 +lon_0=-105 +x_0=0 +y_0=0
-*+ellps=GRS80 +datum=NAD83 +units=m +no_defs"
+*          +ellps=GRS80 +datum=NAD83 +units=m +no_defs"
 ```
 
 --
@@ -94,17 +94,20 @@ La fonction *`lay_aea`* crée le modèle cartographique qui sera utilisé dans l
 ```r
 
 lay_aea <- function(title = ""){
-par(mar = c(0,0,1.2,0))
-plot(st_geometry(ocean_aea), col= "#b8d5e3", border = NA, xlim = bb_aea[c(1,3)], ylim = bb_aea[c(2,4)])
-plot(st_geometry(subregions_aea) + c(-10000, -10000), col ="#827e6c50", border = NA, add = T)
-plot(st_geometry(subregions_aea), col= "#ede6bb", border = "white", cex = 0.5, add=T)
-plot(st_geometry(coastline_aea), col= "#6d9cb3",lwd = 1 ,add= T)
-plot(st_geometry(rivers_aea), col= "#6d9cb3",lwd = 1 ,add= T)
-plot(st_geometry(fences_aea), col= "#3d3c3c",lwd = 3 ,add= T)
-layoutLayer(title = title,
-            author =  authors,
-            scale = 300, south = TRUE, frame = TRUE,
-            col = "#6d9cb3", coltitle = "white")
+  par(mar = c(0,0,1.2,0))
+  plot(st_geometry(ocean_aea), col= "#b8d5e3", border = NA, xlim = bb_aea[c(1,3)],
+       ylim = bb_aea[c(2,4)])
+  plot(st_geometry(subregions_aea) + c(-10000, -10000), col ="#827e6c50",
+       border = NA, add = T)
+  plot(st_geometry(subregions_aea), col= "#ede6bb", border = "white",
+       cex = 0.5, add=T)
+  plot(st_geometry(coastline_aea), col= "#6d9cb3",lwd = 1 ,add= T)
+  plot(st_geometry(rivers_aea), col= "#6d9cb3",lwd = 1 ,add= T)
+  plot(st_geometry(fences_aea), col= "#3d3c3c",lwd = 3 ,add= T)
+  layoutLayer(title = title,
+              author =  authors,
+              scale = 300, south = TRUE, frame = TRUE,
+              col = "#6d9cb3", coltitle = "white")
 }
 
 ```
@@ -243,14 +246,13 @@ choroLayer(x = subregions_ortho, var = "POP65_POP15",
 --
 ```r
 # Discontiuités
-* discontinuities <- discLayer(x = subregions.borders, df = subregions_ortho,
-*          var = "POP65_POP15", col="black", nclass=3,
-*          method="equal", threshold = 0.3, sizemin = 0.5,
-*          sizemax = 10, type = "abs",legend.values.rnd = 0,
-*          legend.title.txt = "Discontinuités sur l'indice\nde
-                               veillissement 2015\n(différences\nabsolues)",
-*          legend.pos = c(-1700000, 5300000), legend.title.cex = 0.7, legend.values.cex = 0.5,
-*          add = TRUE)
+*discontinuities <- discLayer(x = subregions.borders, df = subregions_ortho,
+                             var = "POP65_POP15", col = "black", nclass=3,
+                             method = "equal", threshold = 0.3, sizemin = 0.5,
+                             sizemax = 10, type = "abs",legend.values.rnd = 0,
+                             legend.title.txt = "Discontinuités sur l'indice\nde veillissement 2015\n(différences\nabsolues)",
+                             legend.pos = c(-1700000, 5300000), legend.title.cex = 0.7, 
+                             legend.values.cex = 0.5, add = TRUE)
 ```
 
 ---
@@ -298,7 +300,7 @@ extrude <- function(id){
 # On dessine
 for (i in 1:length(discontinuities$disc))
 {
- extrude(i)
+extrude(i)
 }
 
 ```
@@ -324,9 +326,9 @@ background-size: contain
 # Des points de contrôle... 
 
 Le package **`osmdata`** permet d'effectuer des requêtes (pas trop importantes)
-sur le contenu de la base OpenStreetMap. 
+sur le contenu de la base OpenStreetMap via l'API Overpass Turbo.  
 
-La fonction *`osmdata_sf`* retourne un objet sf selon une requête OSM Overpass qui inclut une bounding box prédéfinie et un couple **clé/valeur**. 
+La fonction *`osmdata_sf`* retourne un objet sf en fonction d'une bounding box prédéfinie et d'un couple **clé/valeur**. 
 
 ```r
 
@@ -334,9 +336,9 @@ La fonction *`osmdata_sf`* retourne un objet sf selon une requête OSM Overpass 
 bbox <- st_transform(bbox_aea, 4326)
 
 # Définir la requête (clé/valeur OSM sur bounding box)
-* opqbox <- opq(bbox = bbox , timeout = 5000)
-* opquery <- add_osm_feature(opq = opqbox, key = "barrier", value = "border_control")
-* feat <- osmdata_sf(opquery)
+*opqbox <- opq(bbox = bbox , timeout = 5000)
+*opquery <- add_osm_feature(opq = opqbox, key = "barrier", value = "border_control")
+*feat <- osmdata_sf(opquery)
 
 ```
 ---
@@ -368,8 +370,8 @@ poi_osm <- st_intersection(x = featpt, st_geometry(subregions_aea))
 
 ```r
 
-* lay_aea(paste0("Au moins ", sum(grid$ncops)," postes frontières..."))
-* plot(st_geometry(poi_osm), bg = "red", col = NA, pch = 21, cex = 0.8, add = TRUE)
+*lay_aea(paste0("Au moins ", sum(grid$ncops)," postes frontières..."))
+*plot(st_geometry(poi_osm), bg = "red", col = NA, pch = 21, cex = 0.8, add = TRUE)
 legtxt <- "Chaque point rouge\nreprésente un poste\nfrontalier recensé\ndans OpenStreetMap."
 text(-1400000, y = -100000, legtxt  , cex = 0.9, pos = 4, font = 2)
 
@@ -396,7 +398,7 @@ grid <- st_make_grid(subregions_aea, cellsize = 50000)
 grid <- st_sf(grid)
 
 # Compter le nombre de postes de police par points de grille
-* grid$ncops <- lengths(st_covers(grid, poi_osm))
+*grid$ncops <- lengths(st_covers(grid, poi_osm))
 
 # Figurés proportionnels
 lay_aea("Les hot-spots du contrôle frontalier - dénombrement")
@@ -425,8 +427,7 @@ grid$dens <- (grid$ncops / sum(grid$ncops)) * 100
 grid <- grid[grid$ncops != 0, ] 
 
 lay_aea("Les hot-spots du contrôle frontalier - Part du total")
-choroLayer(x = grid, var = "dens",
-           breaks = c(min(grid$dens), 1, 2, 5, 10, max(grid$dens)),
+choroLayer(x = grid, var = "dens", breaks = c(min(grid$dens), 1, 2, 5, 10, max(grid$dens)),
            col = carto.pal(pal1 = "brown.pal", n1 = 5),
            legend.pos = "left",
            legend.title.cex = 0.7, legend.values.cex = 0.6,
@@ -593,12 +594,12 @@ Dans la base de données de l'OIM, un événement peut regrouper plusieurs déc�
 
 lay_ortho("Migrants morts et portés disparus à la frontière USA-Mexique, 2014 - 2019")
 
-* propSymbolsLayer(x = iom_ortho, var = "deads",
-*                 symbols = "circle", col =  "#eb3850",
-*                 legend.pos = "left", border = "#ede6bb", lwd = 0.5,
-*                 legend.title.txt = "Nombre de morts\net portés
-*                                     disparus\nsur la période\n2014 - 2019",
-*                 legend.style = "e")
+*propSymbolsLayer(x = iom_ortho, var = "deads",
+*                symbols = "circle", col =  "#eb3850",
+*                legend.pos = "left", border = "#ede6bb", lwd = 0.5,
+*                legend.title.txt = "Nombre de morts\net portés
+*                                    disparus\nsur la période\n2014 - 2019",
+*                legend.style = "e")
 
 plot(st_geometry(fences_ortho), col= "#3d3c3c",lwd = 3 ,add= T)
 
@@ -628,8 +629,9 @@ iom_ortho$m_weight[iom_ortho$deads >= 25] <- 0
 
 ```r
 # Cartogramme Dorling / Jitter (pour ajouter un peu de bruit dans la localisation)
-*deathsdor <- cartogram_dorling(x = st_jitter(iom_ortho),weight = "deads", 
-                                m_weight = iom_ortho$m_weight, k = .4)
+*deathsdor <- cartogram_dorling(x = st_jitter(iom_ortho),
+                               weight = "deads", 
+                               m_weight = iom_ortho$m_weight, k = .4)
 ```
 --
 ```r
@@ -679,29 +681,33 @@ background-size: contain
 Création d'un vecteur avec toutes les dates
 
 ```r
+
 m <- c("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
 y <- c("2014","2015","2016","2017","2018","2019")
+
 for (i in 1:length(y)){
-d <- paste0(m," ",y[i])
-if (i == 1) { all <- d } else {all <- c(all,d)}
+  d <- paste0(m," ",y[i])
+  if (i == 1) { all <- d } else {all <- c(all,d)}
 }
+
+
 ```
 --
 Nombre de morts par mois
 ```r
 bymonth <- aggregate(iom_ortho$deads,list(iom_ortho$date), sum, simplify = TRUE )
 all <- merge (x = all, y = bymonth, 
-                           by.x = "date",
-                           by.y = "date",
-                           all.x = T)
+              by.x = "date",
+              by.y = "date",
+              all.x = T)
 ```
 --
 Création d'un objet sf
 ```r
 iom_ortho <- merge (x = iom_ortho, y = all[,c("date","id")], 
-              by.x = "date",
-              by.y = "date",
-              all.x = T)
+                    by.x = "date",
+                    by.y = "date",
+                    all.x = T)
 ```
 
 ---
@@ -711,18 +717,18 @@ Nombre de morts au cours du mois (en jaune)
 ```r
 *layer1 <- iom_ortho[iom_ortho$id == i,]
 propSymbolsLayer(x = layer1, var = "deads",
-                   symbols = "circle", col =  "#eb385040",
-                   inches = inches, fixmax = fixmax,
-                   legend.pos = NA, border = NULL, lwd = 0.5)
+                 symbols = "circle", col =  "#eb385040",
+                 inches = inches, fixmax = fixmax,
+                 legend.pos = NA, border = NULL, lwd = 0.5)
 ```
 --
 Nombre de morts depuis le 1er janvier 2014 (en rouge)
 ```r
 *layer2 <- iom_ortho[iom_ortho$id <= i,]
 propSymbolsLayer(x = layer2, var = "deads",
-                   symbols = "circle", col =  "#ffe100",
-                   inches = inches, fixmax = fixmax,
-                   legend.pos = NA, border = "black", lwd = 1)
+                 symbols = "circle", col =  "#ffe100",
+                 inches = inches, fixmax = fixmax,
+                 legend.pos = NA, border = "black", lwd = 1)
   
 ```
 --

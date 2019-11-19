@@ -101,20 +101,20 @@ countries_aea <- st_intersection(x = countries_aea, y = bbox_aea)
 # création du template
 
 lay_aea <- function(title = ""){
-par(mar = c(0,0,1.2,0))
-plot(st_geometry(ocean_aea), col= "#b8d5e3", border = NA, xlim = bb_aea[c(1,3)],
-     ylim = bb_aea[c(2,4)])
-plot(st_geometry(subregions_aea) + c(-10000, -10000), col ="#827e6c50",
-     border = NA, add = T)
-plot(st_geometry(subregions_aea), col= "#ede6bb", border = "white",
-     cex = 0.5, add=T)
-plot(st_geometry(coastline_aea), col= "#6d9cb3",lwd = 1 ,add= T)
-plot(st_geometry(rivers_aea), col= "#6d9cb3",lwd = 1 ,add= T)
-plot(st_geometry(fences_aea), col= "#3d3c3c",lwd = 3 ,add= T)
-layoutLayer(title = title,
-            author =  authors,
-            scale = 300, south = TRUE, frame = TRUE,
-            col = "#6d9cb3", coltitle = "white")
+  par(mar = c(0,0,1.2,0))
+  plot(st_geometry(ocean_aea), col= "#b8d5e3", border = NA, xlim = bb_aea[c(1,3)],
+       ylim = bb_aea[c(2,4)])
+  plot(st_geometry(subregions_aea) + c(-10000, -10000), col ="#827e6c50",
+       border = NA, add = T)
+  plot(st_geometry(subregions_aea), col= "#ede6bb", border = "white",
+       cex = 0.5, add=T)
+  plot(st_geometry(coastline_aea), col= "#6d9cb3",lwd = 1 ,add= T)
+  plot(st_geometry(rivers_aea), col= "#6d9cb3",lwd = 1 ,add= T)
+  plot(st_geometry(fences_aea), col= "#3d3c3c",lwd = 3 ,add= T)
+  layoutLayer(title = title,
+              author =  authors,
+              scale = 300, south = TRUE, frame = TRUE,
+              col = "#6d9cb3", coltitle = "white")
 }
 
 sizes_aea <- getFigDim(x = bbox_aea, width = 1500,mar = c(0,0,1.2,0), res = 150)
@@ -359,12 +359,12 @@ choroLayer(x = subregions_ortho, var = "POP65_POP15",
 subregions.borders <- getBorders(subregions_ortho)
 
 discontinuities <- discLayer(x = subregions.borders, df = subregions_ortho,
-          var = "POP65_POP15", col="black", nclass=3,
-          method="equal", threshold = 0.3, sizemin = 0.5,
-          sizemax = 10, type = "abs",legend.values.rnd = 0,
-          legend.title.txt = "Discontinuités sur l'indice\nde veillissement 2015\n(différences\nabsolues)",
-          legend.pos = c(-1700000, 5300000), legend.title.cex = 0.7, legend.values.cex = 0.5,
-          add = TRUE)
+                             var = "POP65_POP15", col = "black", nclass=3,
+                             method = "equal", threshold = 0.3, sizemin = 0.5,
+                             sizemax = 10, type = "abs",legend.values.rnd = 0,
+                             legend.title.txt = "Discontinuités sur l'indice\nde veillissement 2015\n(différences\nabsolues)",
+                             legend.pos = c(-1700000, 5300000), legend.title.cex = 0.7, 
+                             legend.values.cex = 0.5, add = TRUE)
 
 plot(st_geometry(coastline_ortho), col= "#6d9cb3",lwd = 1 ,add= T)
 
@@ -414,8 +414,7 @@ choroLayer(x = subregions_ortho, var = "POP65_POP15",
 
 
 plot(st_geometry(coastline_ortho), col= "#6d9cb3",lwd = 1 ,add= T)
-for (i in 1:length(discontinuities$disc))
-{
+for (i in 1:length(discontinuities$disc)) {
   extrude(i)
 }
 legtxt <- "Sur cette carte, la hauteur\ndes barrières est proportionnelle\nà la valeur des discontinuités\nabsolues sur l'indice du\nvieillissement en 2015."
@@ -807,7 +806,9 @@ dev.off()
 iom_ortho$m_weight <- 1
 iom_ortho$m_weight[iom_ortho$deads > 1] <- 0.5
 iom_ortho$m_weight[iom_ortho$deads >= 25] <- 0
-deathsdor <- cartogram_dorling(x = st_jitter(iom_ortho),weight = "deads", m_weight = iom_ortho$m_weight, k = .4)
+deathsdor <- cartogram_dorling(x = st_jitter(iom_ortho),
+                               weight = "deads", 
+                               m_weight = iom_ortho$m_weight, k = .4)
 
 png("img/fig21.png", width = sizes_ortho[1], height = sizes_ortho[2], res = 150)
 lay_ortho("Migrants morts et portés disparus à la frontière USA-Mexique, 2014 - 2019")
@@ -878,24 +879,25 @@ colnames(bymonth) <- c("date","deads")
 
 m <- c("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
 y <- c("2014","2015","2016","2017","2018","2019")
+
 for (i in 1:length(y)){
-d <- paste0(m," ",y[i])
-if (i == 1) { all <- d } else {all <- c(all,d)}
+  d <- paste0(m," ",y[i])
+  if (i == 1) { all <- d } else {all <- c(all,d)}
 }
 
 all <- as.data.frame(all)
 all$id <- as.numeric(row.names(all))
 colnames(all) <- c("date","id")
 all <- merge (x = all, y = bymonth, 
-                           by.x = "date",
-                           by.y = "date",
-                           all.x = T)
-all <- all[order(all$id),]
-
-iom_ortho <- merge (x = iom_ortho, y = all[,c("date","id")], 
               by.x = "date",
               by.y = "date",
               all.x = T)
+all <- all[order(all$id),]
+
+iom_ortho <- merge (x = iom_ortho, y = all[,c("date","id")], 
+                    by.x = "date",
+                    by.y = "date",
+                    all.x = T)
 iom_ortho <- iom_ortho[,c("id.y","date","deads","geometry")]
 colnames(iom_ortho) <- c("id","date","deads","geometry")
 
