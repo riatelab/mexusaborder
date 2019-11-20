@@ -797,5 +797,10 @@ class: clear, bottom
 `RONAN YSEBAERT`<br/>
 [**ronan.ysebaert@cnrs.fr**](mailto:nronan.ysebaert@cnrs.fr)
 
-`CODE SOURCE DE CETTE PRESENTATION`<br/>
+`CODE SOURCE`<br/>
 [**github.com/riatelab/mexusaborder**](https://github.com/riatelab/mexusaborder)
+
+`PRESENTATION`<br/>
+[**riatelab.github.io/mexusaborder**](https://riatelab.github.io/mexusaborder)
+
+
